@@ -5,303 +5,587 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: Relay_🇨🇳CN-🇹🇼TW_132, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: _油管：全网最强白嫖 69, server: 120.233.7.221, port: 18001, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 中国_tg+univstar_42, server: 120.233.151.171, port: 8030, type: ss, cipher: aes-128-gcm, password: 18269676-71ae-476d-b6d3-26ca391424b9, udp: true}
+  - {name: 无法使用请刷新订阅，邀请60%返利, server: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, port: 10721, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 日本 05 | 沪日IEPL, server: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, port: 10725, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 日本 03 | 沪日IEPL, server: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, port: 10723, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 日本 02 | 沪日IEPL, server: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, port: 10722, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, skip-cert-verify: true, udp: true}
   - {name: Relay_🇯🇵JP-🇯🇵JP_281, server: jgwdb3.gaox.ml, port: 443, type: trojan, password: 8d2d5953-d649-4034-94f2-72f2df2623da, sni: jgwdb3.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_132, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
+  - {name: 日本 04 | 沪日IEPL, server: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, port: 10724, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, skip-cert-verify: true, udp: true}
   - {name: Relay_🇸🇬SG-🇸🇬SG_506, server: sg-03.licom.ml, port: 8443, type: trojan, password: ce433528-39fa-4711-bc0d-25a5b1579574, sni: sg-03.licom.ml, skip-cert-verify: true, udp: true}
+  - {name: "@SSRSUB-俄罗斯V05-付费推荐:dlj.tf/ssrsub", server: v2.tgfaka.com, port: 8443, type: vmess, uuid: 00b19c02-bc00-440a-a397-faf70ac3f44e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /api/v3/download.getFile, ws-headers: {Host: v2.tgfaka.com}, udp: true}
+  - {name: Relay_🇸🇬SG-🇸🇬SG_489, server: sg-01.licom.ml, port: 8443, type: trojan, password: ce433528-39fa-4711-bc0d-25a5b1579574, sni: sg-01.licom.ml, skip-cert-verify: true, udp: true}
+  - {name: US_1223, server: 167.88.61.14, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: Relay_🇯🇵JP-🇯🇵JP_412, server: vjp1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vjp1.0bad.com}, udp: true}
+  - {name: US_794, server: 38.114.114.67, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_989, server: trus.moonfree.top, port: 443, type: trojan, password: 4863e1b2-ec2f-4c71-b862-ce533028e57e, sni: trus.moonfree.top, skip-cert-verify: true, udp: true}
+  - {name: US_1640, server: 38.114.114.69, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_716, server: 167.88.61.175, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_1340 |78.14Mb, server: fhcamd2.gaox.ml, port: 443, type: trojan, password: dbf9bf9c-2c3f-474a-8031-d4c00666a989, sni: fhcamd2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: US_873, server: 38.114.114.19, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_923, server: 38.68.134.191, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_766, server: 38.68.134.85, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_531, server: 38.75.136.102, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_1295, server: 38.68.135.19, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_546, server: 167.88.62.68, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_1438, server: 167.88.63.82, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: Relay_🇯🇵JP-🇯🇵JP_404, server: vjp3.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vjp3.0bad.com}, udp: true}
+  - {name: ZZ_1087, server: 169.197.142.187, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 美国_tg+univstar_6, server: 625us.ok365.cyou, port: 443, type: trojan, password: 1fb5196a-77f1-44cd-8296-8ef960efd690, sni: 625us.ok365.cyou, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇬🇧GB-🇬🇧GB_198, server: jgwld3.gaox.ml, port: 443, type: trojan, password: 71b55a84-3fac-4458-abff-eaad79219c91, sni: jgwld3.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇬🇧GB-🇬🇧GB_197, server: jgwld2.gaox.ml, port: 443, type: trojan, password: d7fd8aaa-4581-4281-80aa-4b63e5e1f157, sni: jgwld2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: US_742, server: 167.88.63.79, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_661, server: 142.202.48.52, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1838, server: vus4.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vus4.0bad.com}, udp: true}
+  - {name: US_1250, server: 172.99.188.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 无法使用请刷新订阅，邀请60%返利 2, server: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, port: 10721, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 遇到问题加群@yyjc_group, server: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, port: 10721, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 日本 01 | 沪日IEPL, server: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, port: 10721, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 日本 02 | 沪日IEPL 2, server: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, port: 10722, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 日本 03 | 沪日IEPL 2, server: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, port: 10723, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 日本 04 | 沪日IEPL 2, server: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, port: 10724, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 日本 05 | 沪日IEPL 2, server: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, port: 10725, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 香港 01 | 直连, server: hk01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: hk01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 香港 02 | 直连, server: hk01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: hk01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 日本 01 | 直连, server: jp01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: jp01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 日本 03 | 直连, server: jp01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: jp01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 美国 01 | 直连, server: e8e4ad34-301f-4b6a-929c-c02a7bdc7859.62dd6326-6357-4c87-94b7-06e277adea7c.c3b3b423-4c53-4570-bff7-462da591030b.yiyuan.cyou, port: 443, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: e8e4ad34-301f-4b6a-929c-c02a7bdc7859.62dd6326-6357-4c87-94b7-06e277adea7c.c3b3b423-4c53-4570-bff7-462da591030b.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 美国 02 | 直连, server: e8e4ad34-301f-4b6a-929c-c02a7bdc7859.62dd6326-6357-4c87-94b7-06e277adea7c.c3b3b423-4c53-4570-bff7-462da591030b.yiyuan.cyou, port: 443, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: e8e4ad34-301f-4b6a-929c-c02a7bdc7859.62dd6326-6357-4c87-94b7-06e277adea7c.c3b3b423-4c53-4570-bff7-462da591030b.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_143, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇯🇵JP-🇯🇵JP_312, server: jgwdb3.gaox.ml, port: 443, type: trojan, password: 8d2d5953-d649-4034-94f2-72f2df2623da, sni: jgwdb3.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: US_1640 2, server: 38.114.114.69, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: ZZ_1266, server: 169.197.142.187, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1133, server: fhcarm2.gaox.ml, port: 443, type: trojan, password: f39bd244-f5fe-415c-8b98-a1e5250bf178, sni: fhcarm2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: US_936, server: 38.114.114.67, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_715, server: 38.75.136.102, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_1575, server: 167.88.61.14, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_980, server: 38.75.136.21, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_735, server: 167.88.62.68, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_906, server: 38.68.134.85, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_861, server: 167.88.61.175, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_1295 2, server: 38.68.135.19, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_923 2, server: 38.68.134.191, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1132, server: fhcarm1.gaox.ml, port: 443, type: trojan, password: 05742120-ce23-4cc8-88f5-6d221ce45bf4, sni: fhcarm1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: US_957, server: 38.91.100.27, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_1443, server: 167.88.63.82, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_615, server: 38.121.43.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_887, server: 167.88.63.79, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_1058, server: 38.64.138.145, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: Relay_🇦🇺AU-🇦🇺AU_61, server: jgwxn2.gaox.ml, port: 443, type: trojan, password: c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: jgwxn2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: US_795, server: 142.202.48.52, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: ZZ_1163, server: 134.195.198.95, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: FR_217, server: 149.202.82.172, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_1035, server: 172.99.190.149, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: DE_177, server: 193.108.117.75, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_1255, server: 172.99.188.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1968, server: vus4.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vus4.0bad.com}, udp: true}
+  - {name: Relay_🇨🇿CZ-🇨🇿CZ_148, server: v2cross.com.02.v2ce.com, port: 443, type: trojan, password: 3gLlCYBipVwr6Y5F, sni: v2cross.com.02.v2ce.com, skip-cert-verify: true, udp: true}
+  - {name: US_740, server: 172.99.190.39, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_1519, server: 172.99.190.61, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_1259, server: 38.86.135.36, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_1017, server: 38.114.114.19, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: NL_439, server: 41.216.177.41, port: 443, type: trojan, password: 274c1b23-2bfe-40ac-943c-ebc1aa044b22, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1123, server: jgwhdlb1.gaox.ml, port: 443, type: trojan, password: e05c749b-7c6b-41b8-9c71-9dcf685edf4a, sni: jgwhdlb1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1113, server: jgwhdlb2.gaox.ml, port: 443, type: trojan, password: 54080134-2cba-4535-8599-95650bd9aa54, sni: jgwhdlb2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇬🇧GB-🇬🇧GB_279, server: jgwld2.gaox.ml, port: 443, type: trojan, password: d7fd8aaa-4581-4281-80aa-4b63e5e1f157, sni: jgwld2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇹🇼TW-🇹🇼TW_1160, server: lc-hk01-direct01.lc-hk01.lc-node.com, port: 443, type: vmess, uuid: ec736482-173e-3eff-9114-b49df8056e7d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: lc-hk01-direct01.lc-hk01.lc-node.com}, udp: true}
+  - {name: Relay_🇺🇦UA-🇺🇦UA_592, server: v2cross.com.05.v2ce.com, port: 443, type: trojan, password: kGrwqmB1nEKUsDwE, sni: v2cross.com.05.v2ce.com, skip-cert-verify: true, udp: true}
+  - {name: 无法使用请刷新订阅，邀请60%返利 3, server: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, port: 10721, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 遇到问题加群@yyjc_group 2, server: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, port: 10721, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 日本 01 | 沪日IEPL 2, server: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, port: 10721, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 日本 02 | 沪日IEPL 3, server: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, port: 10722, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 日本 03 | 沪日IEPL 3, server: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, port: 10723, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 日本 04 | 沪日IEPL 3, server: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, port: 10724, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 香港 01 | 直连 2, server: hk01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: hk01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 香港 02 | 直连 2, server: hk01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: hk01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 日本 01 | 直连 2, server: jp01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: jp01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 美国 01 | 直连 2, server: e8e4ad34-301f-4b6a-929c-c02a7bdc7859.62dd6326-6357-4c87-94b7-06e277adea7c.c3b3b423-4c53-4570-bff7-462da591030b.yiyuan.cyou, port: 443, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: e8e4ad34-301f-4b6a-929c-c02a7bdc7859.62dd6326-6357-4c87-94b7-06e277adea7c.c3b3b423-4c53-4570-bff7-462da591030b.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 美国 02 | 直连 2, server: e8e4ad34-301f-4b6a-929c-c02a7bdc7859.62dd6326-6357-4c87-94b7-06e277adea7c.c3b3b423-4c53-4570-bff7-462da591030b.yiyuan.cyou, port: 443, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: e8e4ad34-301f-4b6a-929c-c02a7bdc7859.62dd6326-6357-4c87-94b7-06e277adea7c.c3b3b423-4c53-4570-bff7-462da591030b.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇼TW_132 2, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
+  - {name: _油管：全网最强白嫖 69, server: 120.233.7.221, port: 18001, type: vmess, uuid: 21dcbec8-eee8-3d20-82b6-f8c16fe6dc8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇯🇵JP-🇯🇵JP_281 2, server: jgwdb3.gaox.ml, port: 443, type: trojan, password: 8d2d5953-d649-4034-94f2-72f2df2623da, sni: jgwdb3.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇸🇬SG-🇸🇬SG_506 2, server: sg-03.licom.ml, port: 8443, type: trojan, password: ce433528-39fa-4711-bc0d-25a5b1579574, sni: sg-03.licom.ml, skip-cert-verify: true, udp: true}
   - {name: US_542, server: 38.75.136.102, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
   - {name: US_837, server: 38.75.136.21, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: Relay_🇯🇵JP-🇯🇵JP_282, server: jp-03.licom.ml, port: 8443, type: trojan, password: ce433528-39fa-4711-bc0d-25a5b1579574, sni: jp-03.licom.ml, skip-cert-verify: true, udp: true}
-  - {name: US_794, server: 38.114.114.67, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_794 2, server: 38.114.114.67, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
   - {name: US_526, server: 167.88.62.68, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_766, server: 38.68.134.85, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_766 2, server: 38.68.134.85, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
   - {name: US_747, server: 167.88.63.79, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_873, server: 38.114.114.19, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_873 2, server: 38.114.114.19, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
   - {name: US_815, server: 38.91.100.27, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: FR_232, server: 193.178.210.29, port: 443, type: trojan, password: iKR3Ft, skip-cert-verify: true, udp: true}
   - {name: Relay_🇺🇸US-🇺🇸US_993, server: fhcarm1.gaox.ml, port: 443, type: trojan, password: 05742120-ce23-4cc8-88f5-6d221ce45bf4, sni: fhcarm1.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_989, server: trus.moonfree.top, port: 443, type: trojan, password: 4863e1b2-ec2f-4c71-b862-ce533028e57e, sni: trus.moonfree.top, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇯🇵JP-🇯🇵JP_404, server: vjp3.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vjp3.0bad.com}, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_989 2, server: trus.moonfree.top, port: 443, type: trojan, password: 4863e1b2-ec2f-4c71-b862-ce533028e57e, sni: trus.moonfree.top, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇯🇵JP-🇯🇵JP_404 2, server: vjp3.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vjp3.0bad.com}, udp: true}
   - {name: FR_215, server: 149.202.82.172, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
   - {name: US_602, server: 38.121.43.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
   - {name: US_1240, server: 38.86.135.36, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_906, server: 38.64.138.145, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_906 2, server: 38.64.138.145, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
   - {name: Relay_🇺🇸US-🇺🇸US_996, server: jgwhdlb3.gaox.ml, port: 443, type: trojan, password: 006baa3f-4bc3-4915-b60d-c8c5dae11a11, sni: jgwhdlb3.gaox.ml, skip-cert-verify: true, udp: true}
   - {name: Relay_🇺🇸US-🇺🇸US_994, server: fhcarm2.gaox.ml, port: 443, type: trojan, password: f39bd244-f5fe-415c-8b98-a1e5250bf178, sni: fhcarm2.gaox.ml, skip-cert-verify: true, udp: true}
   - {name: US_781, server: 38.68.134.191, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
   - {name: Relay_🇦🇺AU-🇦🇺AU_39, server: jgwxn2.gaox.ml, port: 443, type: trojan, password: c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: jgwxn2.gaox.ml, skip-cert-verify: true, udp: true}
   - {name: US_888, server: 172.99.190.149, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
   - {name: US_1192, server: 172.99.190.61, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: Relay_🇺🇦UA-🇺🇦UA_514, server: v2cross.com.05.v2ce.com, port: 443, type: trojan, password: kGrwqmB1nEKUsDwE, sni: v2cross.com.05.v2ce.com, skip-cert-verify: true, udp: true}
-  - {name: US_521, server: 172.99.190.39, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: CN_112, server: ftp.cn.debian.cdnet.in, port: 8030, type: ss, cipher: aes-128-gcm, password: 18269676-71ae-476d-b6d3-26ca391424b9, udp: true}
-  - {name: ZZ_1083, server: 169.197.142.187, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: Relay_🇯🇵JP-🇯🇵JP_405, server: vjp1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vjp1.0bad.com}, udp: true}
-  - {name: Relay_🇨🇿CZ-🇨🇿CZ_126, server: v2cross.com.02.v2ce.com, port: 443, type: trojan, password: 3gLlCYBipVwr6Y5F, sni: v2cross.com.02.v2ce.com, skip-cert-verify: true, udp: true}
-  - {name: DE_135, server: 193.108.117.75, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_665, server: 142.202.48.52, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: Relay_🇺🇦UA-🇺🇦UA_512, server: v2cross.com.04.v2ce.com, port: 443, type: trojan, password: vGWCNNfBHwSY6m6M, sni: v2cross.com.04.v2ce.com, skip-cert-verify: true, udp: true}
-  - {name: 中国_tg+univstar_58, server: ftp.cn.debian.cdnet.in, port: 8070, type: ss, cipher: aes-128-gcm, password: 18269676-71ae-476d-b6d3-26ca391424b9, udp: true}
-  - {name: CN_74, server: 14.29.124.168, port: 25245, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_114, server: 14.29.124.168, port: 25218, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_91, server: 14.29.124.168, port: 25230, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_126, server: 14.29.124.168, port: 25272, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_70, server: 14.29.124.168, port: 25207, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: Relay_🇺🇦UA-🇺🇦UA_513, server: ce.rutracker-cn.com, port: 443, type: trojan, password: 5y8y3CwxRVYhyfSY, sni: ce.rutracker-cn.com, skip-cert-verify: true, udp: true}
-  - {name: CN_145, server: 14.29.124.168, port: 25284, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_161, server: 14.29.124.168, port: 25238, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_162, server: 14.29.124.168, port: 25215, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 美国_tg+univstar_95, server: 625us.ok365.cyou, port: 443, type: trojan, password: 36e4580b-d049-4ee0-bf0c-e6fa7a87e28d, sni: 625us.ok365.cyou, skip-cert-verify: true, udp: true}
-  - {name: CN_73, server: 14.29.124.168, port: 25261, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_82, server: 14.29.124.168, port: 25254, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_160, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_81, server: 14.29.124.168, port: 25233, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_138, server: 14.29.124.168, port: 25231, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_75, server: 14.29.124.168, port: 25289, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_155, server: 14.29.124.168, port: 25266, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: CN_243 | 6.75Mb, server: 14.29.124.168, port: 25286, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 无法使用请刷新订阅，邀请60%返利, server: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, port: 10721, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, skip-cert-verify: true, udp: true}
-  - {name: 遇到问题加群@yyjc_group, server: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, port: 10721, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, skip-cert-verify: true, udp: true}
-  - {name: 日本 01 | 沪日IEPL, server: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, port: 10721, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, skip-cert-verify: true, udp: true}
-  - {name: 日本 02 | 沪日IEPL, server: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, port: 10722, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, skip-cert-verify: true, udp: true}
-  - {name: 日本 03 | 沪日IEPL, server: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, port: 10723, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, skip-cert-verify: true, udp: true}
-  - {name: 日本 04 | 沪日IEPL, server: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, port: 10724, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, skip-cert-verify: true, udp: true}
-  - {name: 香港 01 | 直连, server: hk01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: hk01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
-  - {name: 香港 02 | 直连, server: hk01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: hk01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
-  - {name: 日本 01 | 直连, server: jp01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: jp01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 无法使用请刷新订阅，邀请60%返利 4, server: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, port: 10721, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 遇到问题加群@yyjc_group 3, server: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, port: 10721, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 日本 01 | 沪日IEPL 3, server: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, port: 10721, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 日本 02 | 沪日IEPL 4, server: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, port: 10722, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 日本 03 | 沪日IEPL 4, server: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, port: 10723, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 日本 04 | 沪日IEPL 4, server: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, port: 10724, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 无法使用请刷新订阅，邀请60%返利 5, server: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, port: 10721, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 遇到问题加群@yyjc_group 4, server: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, port: 10721, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 日本 01 | 沪日IEPL 4, server: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, port: 10721, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 日本 02 | 沪日IEPL 5, server: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, port: 10722, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 日本 03 | 沪日IEPL 5, server: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, port: 10723, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 日本 04 | 沪日IEPL 5, server: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, port: 10724, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: 6a702992-f6d8-4a77-bff8-51cb4f00a52e.d51de86c-54b4-418f-81e7-49ba2065d7d1.0e85557e-827c-42c7-b6c5-5c195d90e148.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 香港 01 | 直连 3, server: hk01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: hk01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 香港 02 | 直连 3, server: hk01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: hk01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 日本 01 | 直连 3, server: jp01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: jp01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
   - {name: 日本 02 | 直连, server: jp01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: jp01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
   - {name: 新加坡 01 | 直连, server: sg1.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.718be37e-804f-4696-968e-948430a90029.b1a0a095-825a-4ab6-8f9a-6cc9cb171dd2.yiyuan.cyou, port: 443, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: sg1.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.718be37e-804f-4696-968e-948430a90029.b1a0a095-825a-4ab6-8f9a-6cc9cb171dd2.yiyuan.cyou, skip-cert-verify: true, udp: true}
   - {name: 新加坡 02 | 直连, server: sg1.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.718be37e-804f-4696-968e-948430a90029.b1a0a095-825a-4ab6-8f9a-6cc9cb171dd2.yiyuan.cyou, port: 443, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: sg1.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.718be37e-804f-4696-968e-948430a90029.b1a0a095-825a-4ab6-8f9a-6cc9cb171dd2.yiyuan.cyou, skip-cert-verify: true, udp: true}
-  - {name: 美国 01 | 直连, server: e8e4ad34-301f-4b6a-929c-c02a7bdc7859.62dd6326-6357-4c87-94b7-06e277adea7c.c3b3b423-4c53-4570-bff7-462da591030b.yiyuan.cyou, port: 443, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: e8e4ad34-301f-4b6a-929c-c02a7bdc7859.62dd6326-6357-4c87-94b7-06e277adea7c.c3b3b423-4c53-4570-bff7-462da591030b.yiyuan.cyou, skip-cert-verify: true, udp: true}
-  - {name: 美国 02 | 直连, server: e8e4ad34-301f-4b6a-929c-c02a7bdc7859.62dd6326-6357-4c87-94b7-06e277adea7c.c3b3b423-4c53-4570-bff7-462da591030b.yiyuan.cyou, port: 443, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: e8e4ad34-301f-4b6a-929c-c02a7bdc7859.62dd6326-6357-4c87-94b7-06e277adea7c.c3b3b423-4c53-4570-bff7-462da591030b.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 美国 01 | 直连 3, server: e8e4ad34-301f-4b6a-929c-c02a7bdc7859.62dd6326-6357-4c87-94b7-06e277adea7c.c3b3b423-4c53-4570-bff7-462da591030b.yiyuan.cyou, port: 443, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: e8e4ad34-301f-4b6a-929c-c02a7bdc7859.62dd6326-6357-4c87-94b7-06e277adea7c.c3b3b423-4c53-4570-bff7-462da591030b.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: 美国 02 | 直连 3, server: e8e4ad34-301f-4b6a-929c-c02a7bdc7859.62dd6326-6357-4c87-94b7-06e277adea7c.c3b3b423-4c53-4570-bff7-462da591030b.yiyuan.cyou, port: 443, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: e8e4ad34-301f-4b6a-929c-c02a7bdc7859.62dd6326-6357-4c87-94b7-06e277adea7c.c3b3b423-4c53-4570-bff7-462da591030b.yiyuan.cyou, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇹🇼TW_132
-      - _油管：全网最强白嫖 69
-      - 中国_tg+univstar_42
+      - 无法使用请刷新订阅，邀请60%返利
+      - 日本 05 | 沪日IEPL
+      - 日本 03 | 沪日IEPL
+      - 日本 02 | 沪日IEPL
       - Relay_🇯🇵JP-🇯🇵JP_281
+      - Relay_🇨🇳CN-🇹🇼TW_132
+      - 日本 04 | 沪日IEPL
       - Relay_🇸🇬SG-🇸🇬SG_506
+      - "@SSRSUB-俄罗斯V05-付费推荐:dlj.tf/ssrsub"
+      - Relay_🇸🇬SG-🇸🇬SG_489
+      - US_1223
+      - Relay_🇯🇵JP-🇯🇵JP_412
+      - US_794
+      - Relay_🇺🇸US-🇺🇸US_989
+      - US_1640
+      - US_716
+      - US_1340 |78.14Mb
+      - US_873
+      - US_923
+      - US_766
+      - US_531
+      - US_1295
+      - US_546
+      - US_1438
+      - Relay_🇯🇵JP-🇯🇵JP_404
+      - ZZ_1087
+      - 美国_tg+univstar_6
+      - Relay_🇬🇧GB-🇬🇧GB_198
+      - Relay_🇬🇧GB-🇬🇧GB_197
+      - US_742
+      - US_661
+      - Relay_🇺🇸US-🇺🇸US_1838
+      - US_1250
+      - 无法使用请刷新订阅，邀请60%返利 2
+      - 遇到问题加群@yyjc_group
+      - 日本 01 | 沪日IEPL
+      - 日本 02 | 沪日IEPL 2
+      - 日本 03 | 沪日IEPL 2
+      - 日本 04 | 沪日IEPL 2
+      - 日本 05 | 沪日IEPL 2
+      - 香港 01 | 直连
+      - 香港 02 | 直连
+      - 日本 01 | 直连
+      - 日本 03 | 直连
+      - 美国 01 | 直连
+      - 美国 02 | 直连
+      - Relay_🇨🇳CN-🇹🇼TW_143
+      - Relay_🇯🇵JP-🇯🇵JP_312
+      - US_1640 2
+      - ZZ_1266
+      - Relay_🇺🇸US-🇺🇸US_1133
+      - US_936
+      - US_715
+      - US_1575
+      - US_980
+      - US_735
+      - US_906
+      - US_861
+      - US_1295 2
+      - US_923 2
+      - Relay_🇺🇸US-🇺🇸US_1132
+      - US_957
+      - US_1443
+      - US_615
+      - US_887
+      - US_1058
+      - Relay_🇦🇺AU-🇦🇺AU_61
+      - US_795
+      - ZZ_1163
+      - FR_217
+      - US_1035
+      - DE_177
+      - US_1255
+      - Relay_🇺🇸US-🇺🇸US_1968
+      - Relay_🇨🇿CZ-🇨🇿CZ_148
+      - US_740
+      - US_1519
+      - US_1259
+      - US_1017
+      - NL_439
+      - Relay_🇺🇸US-🇺🇸US_1123
+      - Relay_🇺🇸US-🇺🇸US_1113
+      - Relay_🇬🇧GB-🇬🇧GB_279
+      - Relay_🇹🇼TW-🇹🇼TW_1160
+      - Relay_🇺🇦UA-🇺🇦UA_592
+      - 无法使用请刷新订阅，邀请60%返利 3
+      - 遇到问题加群@yyjc_group 2
+      - 日本 01 | 沪日IEPL 2
+      - 日本 02 | 沪日IEPL 3
+      - 日本 03 | 沪日IEPL 3
+      - 日本 04 | 沪日IEPL 3
+      - 香港 01 | 直连 2
+      - 香港 02 | 直连 2
+      - 日本 01 | 直连 2
+      - 美国 01 | 直连 2
+      - 美国 02 | 直连 2
+      - Relay_🇨🇳CN-🇹🇼TW_132 2
+      - _油管：全网最强白嫖 69
+      - Relay_🇯🇵JP-🇯🇵JP_281 2
+      - Relay_🇸🇬SG-🇸🇬SG_506 2
       - US_542
       - US_837
-      - Relay_🇯🇵JP-🇯🇵JP_282
-      - US_794
+      - US_794 2
       - US_526
-      - US_766
+      - US_766 2
       - US_747
-      - US_873
+      - US_873 2
       - US_815
-      - FR_232
       - Relay_🇺🇸US-🇺🇸US_993
-      - Relay_🇺🇸US-🇺🇸US_989
-      - Relay_🇯🇵JP-🇯🇵JP_404
+      - Relay_🇺🇸US-🇺🇸US_989 2
+      - Relay_🇯🇵JP-🇯🇵JP_404 2
       - FR_215
       - US_602
       - US_1240
-      - US_906
+      - US_906 2
       - Relay_🇺🇸US-🇺🇸US_996
       - Relay_🇺🇸US-🇺🇸US_994
       - US_781
       - Relay_🇦🇺AU-🇦🇺AU_39
       - US_888
       - US_1192
-      - Relay_🇺🇦UA-🇺🇦UA_514
-      - US_521
-      - CN_112
-      - ZZ_1083
-      - Relay_🇯🇵JP-🇯🇵JP_405
-      - Relay_🇨🇿CZ-🇨🇿CZ_126
-      - DE_135
-      - US_665
-      - Relay_🇺🇦UA-🇺🇦UA_512
-      - 中国_tg+univstar_58
-      - CN_74
-      - CN_114
-      - CN_91
-      - CN_126
-      - CN_70
-      - Relay_🇺🇦UA-🇺🇦UA_513
-      - CN_145
-      - CN_161
-      - CN_162
-      - 美国_tg+univstar_95
-      - CN_73
-      - CN_82
-      - CN_160
-      - CN_81
-      - CN_138
-      - CN_75
-      - CN_155
-      - CN_243 | 6.75Mb
-      - 无法使用请刷新订阅，邀请60%返利
-      - 遇到问题加群@yyjc_group
-      - 日本 01 | 沪日IEPL
-      - 日本 02 | 沪日IEPL
-      - 日本 03 | 沪日IEPL
-      - 日本 04 | 沪日IEPL
-      - 香港 01 | 直连
-      - 香港 02 | 直连
-      - 日本 01 | 直连
+      - 无法使用请刷新订阅，邀请60%返利 4
+      - 遇到问题加群@yyjc_group 3
+      - 日本 01 | 沪日IEPL 3
+      - 日本 02 | 沪日IEPL 4
+      - 日本 03 | 沪日IEPL 4
+      - 日本 04 | 沪日IEPL 4
+      - 无法使用请刷新订阅，邀请60%返利 5
+      - 遇到问题加群@yyjc_group 4
+      - 日本 01 | 沪日IEPL 4
+      - 日本 02 | 沪日IEPL 5
+      - 日本 03 | 沪日IEPL 5
+      - 日本 04 | 沪日IEPL 5
+      - 香港 01 | 直连 3
+      - 香港 02 | 直连 3
+      - 日本 01 | 直连 3
       - 日本 02 | 直连
       - 新加坡 01 | 直连
       - 新加坡 02 | 直连
-      - 美国 01 | 直连
-      - 美国 02 | 直连
+      - 美国 01 | 直连 3
+      - 美国 02 | 直连 3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Relay_🇨🇳CN-🇹🇼TW_132
-      - _油管：全网最强白嫖 69
-      - 中国_tg+univstar_42
+      - 无法使用请刷新订阅，邀请60%返利
+      - 日本 05 | 沪日IEPL
+      - 日本 03 | 沪日IEPL
+      - 日本 02 | 沪日IEPL
       - Relay_🇯🇵JP-🇯🇵JP_281
+      - Relay_🇨🇳CN-🇹🇼TW_132
+      - 日本 04 | 沪日IEPL
       - Relay_🇸🇬SG-🇸🇬SG_506
+      - "@SSRSUB-俄罗斯V05-付费推荐:dlj.tf/ssrsub"
+      - Relay_🇸🇬SG-🇸🇬SG_489
+      - US_1223
+      - Relay_🇯🇵JP-🇯🇵JP_412
+      - US_794
+      - Relay_🇺🇸US-🇺🇸US_989
+      - US_1640
+      - US_716
+      - US_1340 |78.14Mb
+      - US_873
+      - US_923
+      - US_766
+      - US_531
+      - US_1295
+      - US_546
+      - US_1438
+      - Relay_🇯🇵JP-🇯🇵JP_404
+      - ZZ_1087
+      - 美国_tg+univstar_6
+      - Relay_🇬🇧GB-🇬🇧GB_198
+      - Relay_🇬🇧GB-🇬🇧GB_197
+      - US_742
+      - US_661
+      - Relay_🇺🇸US-🇺🇸US_1838
+      - US_1250
+      - 无法使用请刷新订阅，邀请60%返利 2
+      - 遇到问题加群@yyjc_group
+      - 日本 01 | 沪日IEPL
+      - 日本 02 | 沪日IEPL 2
+      - 日本 03 | 沪日IEPL 2
+      - 日本 04 | 沪日IEPL 2
+      - 日本 05 | 沪日IEPL 2
+      - 香港 01 | 直连
+      - 香港 02 | 直连
+      - 日本 01 | 直连
+      - 日本 03 | 直连
+      - 美国 01 | 直连
+      - 美国 02 | 直连
+      - Relay_🇨🇳CN-🇹🇼TW_143
+      - Relay_🇯🇵JP-🇯🇵JP_312
+      - US_1640 2
+      - ZZ_1266
+      - Relay_🇺🇸US-🇺🇸US_1133
+      - US_936
+      - US_715
+      - US_1575
+      - US_980
+      - US_735
+      - US_906
+      - US_861
+      - US_1295 2
+      - US_923 2
+      - Relay_🇺🇸US-🇺🇸US_1132
+      - US_957
+      - US_1443
+      - US_615
+      - US_887
+      - US_1058
+      - Relay_🇦🇺AU-🇦🇺AU_61
+      - US_795
+      - ZZ_1163
+      - FR_217
+      - US_1035
+      - DE_177
+      - US_1255
+      - Relay_🇺🇸US-🇺🇸US_1968
+      - Relay_🇨🇿CZ-🇨🇿CZ_148
+      - US_740
+      - US_1519
+      - US_1259
+      - US_1017
+      - NL_439
+      - Relay_🇺🇸US-🇺🇸US_1123
+      - Relay_🇺🇸US-🇺🇸US_1113
+      - Relay_🇬🇧GB-🇬🇧GB_279
+      - Relay_🇹🇼TW-🇹🇼TW_1160
+      - Relay_🇺🇦UA-🇺🇦UA_592
+      - 无法使用请刷新订阅，邀请60%返利 3
+      - 遇到问题加群@yyjc_group 2
+      - 日本 01 | 沪日IEPL 2
+      - 日本 02 | 沪日IEPL 3
+      - 日本 03 | 沪日IEPL 3
+      - 日本 04 | 沪日IEPL 3
+      - 香港 01 | 直连 2
+      - 香港 02 | 直连 2
+      - 日本 01 | 直连 2
+      - 美国 01 | 直连 2
+      - 美国 02 | 直连 2
+      - Relay_🇨🇳CN-🇹🇼TW_132 2
+      - _油管：全网最强白嫖 69
+      - Relay_🇯🇵JP-🇯🇵JP_281 2
+      - Relay_🇸🇬SG-🇸🇬SG_506 2
       - US_542
       - US_837
-      - Relay_🇯🇵JP-🇯🇵JP_282
-      - US_794
+      - US_794 2
       - US_526
-      - US_766
+      - US_766 2
       - US_747
-      - US_873
+      - US_873 2
       - US_815
-      - FR_232
       - Relay_🇺🇸US-🇺🇸US_993
-      - Relay_🇺🇸US-🇺🇸US_989
-      - Relay_🇯🇵JP-🇯🇵JP_404
+      - Relay_🇺🇸US-🇺🇸US_989 2
+      - Relay_🇯🇵JP-🇯🇵JP_404 2
       - FR_215
       - US_602
       - US_1240
-      - US_906
+      - US_906 2
       - Relay_🇺🇸US-🇺🇸US_996
       - Relay_🇺🇸US-🇺🇸US_994
       - US_781
       - Relay_🇦🇺AU-🇦🇺AU_39
       - US_888
       - US_1192
-      - Relay_🇺🇦UA-🇺🇦UA_514
-      - US_521
-      - CN_112
-      - ZZ_1083
-      - Relay_🇯🇵JP-🇯🇵JP_405
-      - Relay_🇨🇿CZ-🇨🇿CZ_126
-      - DE_135
-      - US_665
-      - Relay_🇺🇦UA-🇺🇦UA_512
-      - 中国_tg+univstar_58
-      - CN_74
-      - CN_114
-      - CN_91
-      - CN_126
-      - CN_70
-      - Relay_🇺🇦UA-🇺🇦UA_513
-      - CN_145
-      - CN_161
-      - CN_162
-      - 美国_tg+univstar_95
-      - CN_73
-      - CN_82
-      - CN_160
-      - CN_81
-      - CN_138
-      - CN_75
-      - CN_155
-      - CN_243 | 6.75Mb
-      - 无法使用请刷新订阅，邀请60%返利
-      - 遇到问题加群@yyjc_group
-      - 日本 01 | 沪日IEPL
-      - 日本 02 | 沪日IEPL
-      - 日本 03 | 沪日IEPL
-      - 日本 04 | 沪日IEPL
-      - 香港 01 | 直连
-      - 香港 02 | 直连
-      - 日本 01 | 直连
+      - 无法使用请刷新订阅，邀请60%返利 4
+      - 遇到问题加群@yyjc_group 3
+      - 日本 01 | 沪日IEPL 3
+      - 日本 02 | 沪日IEPL 4
+      - 日本 03 | 沪日IEPL 4
+      - 日本 04 | 沪日IEPL 4
+      - 无法使用请刷新订阅，邀请60%返利 5
+      - 遇到问题加群@yyjc_group 4
+      - 日本 01 | 沪日IEPL 4
+      - 日本 02 | 沪日IEPL 5
+      - 日本 03 | 沪日IEPL 5
+      - 日本 04 | 沪日IEPL 5
+      - 香港 01 | 直连 3
+      - 香港 02 | 直连 3
+      - 日本 01 | 直连 3
       - 日本 02 | 直连
       - 新加坡 01 | 直连
       - 新加坡 02 | 直连
-      - 美国 01 | 直连
-      - 美国 02 | 直连
+      - 美国 01 | 直连 3
+      - 美国 02 | 直连 3
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇹🇼TW_132
-      - _油管：全网最强白嫖 69
-      - 中国_tg+univstar_42
+      - 无法使用请刷新订阅，邀请60%返利
+      - 日本 05 | 沪日IEPL
+      - 日本 03 | 沪日IEPL
+      - 日本 02 | 沪日IEPL
       - Relay_🇯🇵JP-🇯🇵JP_281
+      - Relay_🇨🇳CN-🇹🇼TW_132
+      - 日本 04 | 沪日IEPL
       - Relay_🇸🇬SG-🇸🇬SG_506
+      - "@SSRSUB-俄罗斯V05-付费推荐:dlj.tf/ssrsub"
+      - Relay_🇸🇬SG-🇸🇬SG_489
+      - US_1223
+      - Relay_🇯🇵JP-🇯🇵JP_412
+      - US_794
+      - Relay_🇺🇸US-🇺🇸US_989
+      - US_1640
+      - US_716
+      - US_1340 |78.14Mb
+      - US_873
+      - US_923
+      - US_766
+      - US_531
+      - US_1295
+      - US_546
+      - US_1438
+      - Relay_🇯🇵JP-🇯🇵JP_404
+      - ZZ_1087
+      - 美国_tg+univstar_6
+      - Relay_🇬🇧GB-🇬🇧GB_198
+      - Relay_🇬🇧GB-🇬🇧GB_197
+      - US_742
+      - US_661
+      - Relay_🇺🇸US-🇺🇸US_1838
+      - US_1250
+      - 无法使用请刷新订阅，邀请60%返利 2
+      - 遇到问题加群@yyjc_group
+      - 日本 01 | 沪日IEPL
+      - 日本 02 | 沪日IEPL 2
+      - 日本 03 | 沪日IEPL 2
+      - 日本 04 | 沪日IEPL 2
+      - 日本 05 | 沪日IEPL 2
+      - 香港 01 | 直连
+      - 香港 02 | 直连
+      - 日本 01 | 直连
+      - 日本 03 | 直连
+      - 美国 01 | 直连
+      - 美国 02 | 直连
+      - Relay_🇨🇳CN-🇹🇼TW_143
+      - Relay_🇯🇵JP-🇯🇵JP_312
+      - US_1640 2
+      - ZZ_1266
+      - Relay_🇺🇸US-🇺🇸US_1133
+      - US_936
+      - US_715
+      - US_1575
+      - US_980
+      - US_735
+      - US_906
+      - US_861
+      - US_1295 2
+      - US_923 2
+      - Relay_🇺🇸US-🇺🇸US_1132
+      - US_957
+      - US_1443
+      - US_615
+      - US_887
+      - US_1058
+      - Relay_🇦🇺AU-🇦🇺AU_61
+      - US_795
+      - ZZ_1163
+      - FR_217
+      - US_1035
+      - DE_177
+      - US_1255
+      - Relay_🇺🇸US-🇺🇸US_1968
+      - Relay_🇨🇿CZ-🇨🇿CZ_148
+      - US_740
+      - US_1519
+      - US_1259
+      - US_1017
+      - NL_439
+      - Relay_🇺🇸US-🇺🇸US_1123
+      - Relay_🇺🇸US-🇺🇸US_1113
+      - Relay_🇬🇧GB-🇬🇧GB_279
+      - Relay_🇹🇼TW-🇹🇼TW_1160
+      - Relay_🇺🇦UA-🇺🇦UA_592
+      - 无法使用请刷新订阅，邀请60%返利 3
+      - 遇到问题加群@yyjc_group 2
+      - 日本 01 | 沪日IEPL 2
+      - 日本 02 | 沪日IEPL 3
+      - 日本 03 | 沪日IEPL 3
+      - 日本 04 | 沪日IEPL 3
+      - 香港 01 | 直连 2
+      - 香港 02 | 直连 2
+      - 日本 01 | 直连 2
+      - 美国 01 | 直连 2
+      - 美国 02 | 直连 2
+      - Relay_🇨🇳CN-🇹🇼TW_132 2
+      - _油管：全网最强白嫖 69
+      - Relay_🇯🇵JP-🇯🇵JP_281 2
+      - Relay_🇸🇬SG-🇸🇬SG_506 2
       - US_542
       - US_837
-      - Relay_🇯🇵JP-🇯🇵JP_282
-      - US_794
+      - US_794 2
       - US_526
-      - US_766
+      - US_766 2
       - US_747
-      - US_873
+      - US_873 2
       - US_815
-      - FR_232
       - Relay_🇺🇸US-🇺🇸US_993
-      - Relay_🇺🇸US-🇺🇸US_989
-      - Relay_🇯🇵JP-🇯🇵JP_404
+      - Relay_🇺🇸US-🇺🇸US_989 2
+      - Relay_🇯🇵JP-🇯🇵JP_404 2
       - FR_215
       - US_602
       - US_1240
-      - US_906
+      - US_906 2
       - Relay_🇺🇸US-🇺🇸US_996
       - Relay_🇺🇸US-🇺🇸US_994
       - US_781
       - Relay_🇦🇺AU-🇦🇺AU_39
       - US_888
       - US_1192
-      - Relay_🇺🇦UA-🇺🇦UA_514
-      - US_521
-      - CN_112
-      - ZZ_1083
-      - Relay_🇯🇵JP-🇯🇵JP_405
-      - Relay_🇨🇿CZ-🇨🇿CZ_126
-      - DE_135
-      - US_665
-      - Relay_🇺🇦UA-🇺🇦UA_512
-      - 中国_tg+univstar_58
-      - CN_74
-      - CN_114
-      - CN_91
-      - CN_126
-      - CN_70
-      - Relay_🇺🇦UA-🇺🇦UA_513
-      - CN_145
-      - CN_161
-      - CN_162
-      - 美国_tg+univstar_95
-      - CN_73
-      - CN_82
-      - CN_160
-      - CN_81
-      - CN_138
-      - CN_75
-      - CN_155
-      - CN_243 | 6.75Mb
-      - 无法使用请刷新订阅，邀请60%返利
-      - 遇到问题加群@yyjc_group
-      - 日本 01 | 沪日IEPL
-      - 日本 02 | 沪日IEPL
-      - 日本 03 | 沪日IEPL
-      - 日本 04 | 沪日IEPL
-      - 香港 01 | 直连
-      - 香港 02 | 直连
-      - 日本 01 | 直连
+      - 无法使用请刷新订阅，邀请60%返利 4
+      - 遇到问题加群@yyjc_group 3
+      - 日本 01 | 沪日IEPL 3
+      - 日本 02 | 沪日IEPL 4
+      - 日本 03 | 沪日IEPL 4
+      - 日本 04 | 沪日IEPL 4
+      - 无法使用请刷新订阅，邀请60%返利 5
+      - 遇到问题加群@yyjc_group 4
+      - 日本 01 | 沪日IEPL 4
+      - 日本 02 | 沪日IEPL 5
+      - 日本 03 | 沪日IEPL 5
+      - 日本 04 | 沪日IEPL 5
+      - 香港 01 | 直连 3
+      - 香港 02 | 直连 3
+      - 日本 01 | 直连 3
       - 日本 02 | 直连
       - 新加坡 01 | 直连
       - 新加坡 02 | 直连
-      - 美国 01 | 直连
-      - 美国 02 | 直连
+      - 美国 01 | 直连 3
+      - 美国 02 | 直连 3
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -320,309 +604,597 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇹🇼TW_132
-      - _油管：全网最强白嫖 69
-      - 中国_tg+univstar_42
+      - 无法使用请刷新订阅，邀请60%返利
+      - 日本 05 | 沪日IEPL
+      - 日本 03 | 沪日IEPL
+      - 日本 02 | 沪日IEPL
       - Relay_🇯🇵JP-🇯🇵JP_281
+      - Relay_🇨🇳CN-🇹🇼TW_132
+      - 日本 04 | 沪日IEPL
       - Relay_🇸🇬SG-🇸🇬SG_506
+      - "@SSRSUB-俄罗斯V05-付费推荐:dlj.tf/ssrsub"
+      - Relay_🇸🇬SG-🇸🇬SG_489
+      - US_1223
+      - Relay_🇯🇵JP-🇯🇵JP_412
+      - US_794
+      - Relay_🇺🇸US-🇺🇸US_989
+      - US_1640
+      - US_716
+      - US_1340 |78.14Mb
+      - US_873
+      - US_923
+      - US_766
+      - US_531
+      - US_1295
+      - US_546
+      - US_1438
+      - Relay_🇯🇵JP-🇯🇵JP_404
+      - ZZ_1087
+      - 美国_tg+univstar_6
+      - Relay_🇬🇧GB-🇬🇧GB_198
+      - Relay_🇬🇧GB-🇬🇧GB_197
+      - US_742
+      - US_661
+      - Relay_🇺🇸US-🇺🇸US_1838
+      - US_1250
+      - 无法使用请刷新订阅，邀请60%返利 2
+      - 遇到问题加群@yyjc_group
+      - 日本 01 | 沪日IEPL
+      - 日本 02 | 沪日IEPL 2
+      - 日本 03 | 沪日IEPL 2
+      - 日本 04 | 沪日IEPL 2
+      - 日本 05 | 沪日IEPL 2
+      - 香港 01 | 直连
+      - 香港 02 | 直连
+      - 日本 01 | 直连
+      - 日本 03 | 直连
+      - 美国 01 | 直连
+      - 美国 02 | 直连
+      - Relay_🇨🇳CN-🇹🇼TW_143
+      - Relay_🇯🇵JP-🇯🇵JP_312
+      - US_1640 2
+      - ZZ_1266
+      - Relay_🇺🇸US-🇺🇸US_1133
+      - US_936
+      - US_715
+      - US_1575
+      - US_980
+      - US_735
+      - US_906
+      - US_861
+      - US_1295 2
+      - US_923 2
+      - Relay_🇺🇸US-🇺🇸US_1132
+      - US_957
+      - US_1443
+      - US_615
+      - US_887
+      - US_1058
+      - Relay_🇦🇺AU-🇦🇺AU_61
+      - US_795
+      - ZZ_1163
+      - FR_217
+      - US_1035
+      - DE_177
+      - US_1255
+      - Relay_🇺🇸US-🇺🇸US_1968
+      - Relay_🇨🇿CZ-🇨🇿CZ_148
+      - US_740
+      - US_1519
+      - US_1259
+      - US_1017
+      - NL_439
+      - Relay_🇺🇸US-🇺🇸US_1123
+      - Relay_🇺🇸US-🇺🇸US_1113
+      - Relay_🇬🇧GB-🇬🇧GB_279
+      - Relay_🇹🇼TW-🇹🇼TW_1160
+      - Relay_🇺🇦UA-🇺🇦UA_592
+      - 无法使用请刷新订阅，邀请60%返利 3
+      - 遇到问题加群@yyjc_group 2
+      - 日本 01 | 沪日IEPL 2
+      - 日本 02 | 沪日IEPL 3
+      - 日本 03 | 沪日IEPL 3
+      - 日本 04 | 沪日IEPL 3
+      - 香港 01 | 直连 2
+      - 香港 02 | 直连 2
+      - 日本 01 | 直连 2
+      - 美国 01 | 直连 2
+      - 美国 02 | 直连 2
+      - Relay_🇨🇳CN-🇹🇼TW_132 2
+      - _油管：全网最强白嫖 69
+      - Relay_🇯🇵JP-🇯🇵JP_281 2
+      - Relay_🇸🇬SG-🇸🇬SG_506 2
       - US_542
       - US_837
-      - Relay_🇯🇵JP-🇯🇵JP_282
-      - US_794
+      - US_794 2
       - US_526
-      - US_766
+      - US_766 2
       - US_747
-      - US_873
+      - US_873 2
       - US_815
-      - FR_232
       - Relay_🇺🇸US-🇺🇸US_993
-      - Relay_🇺🇸US-🇺🇸US_989
-      - Relay_🇯🇵JP-🇯🇵JP_404
+      - Relay_🇺🇸US-🇺🇸US_989 2
+      - Relay_🇯🇵JP-🇯🇵JP_404 2
       - FR_215
       - US_602
       - US_1240
-      - US_906
+      - US_906 2
       - Relay_🇺🇸US-🇺🇸US_996
       - Relay_🇺🇸US-🇺🇸US_994
       - US_781
       - Relay_🇦🇺AU-🇦🇺AU_39
       - US_888
       - US_1192
-      - Relay_🇺🇦UA-🇺🇦UA_514
-      - US_521
-      - CN_112
-      - ZZ_1083
-      - Relay_🇯🇵JP-🇯🇵JP_405
-      - Relay_🇨🇿CZ-🇨🇿CZ_126
-      - DE_135
-      - US_665
-      - Relay_🇺🇦UA-🇺🇦UA_512
-      - 中国_tg+univstar_58
-      - CN_74
-      - CN_114
-      - CN_91
-      - CN_126
-      - CN_70
-      - Relay_🇺🇦UA-🇺🇦UA_513
-      - CN_145
-      - CN_161
-      - CN_162
-      - 美国_tg+univstar_95
-      - CN_73
-      - CN_82
-      - CN_160
-      - CN_81
-      - CN_138
-      - CN_75
-      - CN_155
-      - CN_243 | 6.75Mb
-      - 无法使用请刷新订阅，邀请60%返利
-      - 遇到问题加群@yyjc_group
-      - 日本 01 | 沪日IEPL
-      - 日本 02 | 沪日IEPL
-      - 日本 03 | 沪日IEPL
-      - 日本 04 | 沪日IEPL
-      - 香港 01 | 直连
-      - 香港 02 | 直连
-      - 日本 01 | 直连
+      - 无法使用请刷新订阅，邀请60%返利 4
+      - 遇到问题加群@yyjc_group 3
+      - 日本 01 | 沪日IEPL 3
+      - 日本 02 | 沪日IEPL 4
+      - 日本 03 | 沪日IEPL 4
+      - 日本 04 | 沪日IEPL 4
+      - 无法使用请刷新订阅，邀请60%返利 5
+      - 遇到问题加群@yyjc_group 4
+      - 日本 01 | 沪日IEPL 4
+      - 日本 02 | 沪日IEPL 5
+      - 日本 03 | 沪日IEPL 5
+      - 日本 04 | 沪日IEPL 5
+      - 香港 01 | 直连 3
+      - 香港 02 | 直连 3
+      - 日本 01 | 直连 3
       - 日本 02 | 直连
       - 新加坡 01 | 直连
       - 新加坡 02 | 直连
-      - 美国 01 | 直连
-      - 美国 02 | 直连
+      - 美国 01 | 直连 3
+      - 美国 02 | 直连 3
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
       - 香港 01 | 直连
       - 香港 02 | 直连
+      - 香港 01 | 直连 2
+      - 香港 02 | 直连 2
+      - 香港 01 | 直连 3
+      - 香港 02 | 直连 3
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Relay_🇨🇳CN-🇹🇼TW_132
-      - _油管：全网最强白嫖 69
-      - 中国_tg+univstar_42
+      - 无法使用请刷新订阅，邀请60%返利
+      - 日本 05 | 沪日IEPL
+      - 日本 03 | 沪日IEPL
+      - 日本 02 | 沪日IEPL
       - Relay_🇯🇵JP-🇯🇵JP_281
+      - Relay_🇨🇳CN-🇹🇼TW_132
+      - 日本 04 | 沪日IEPL
       - Relay_🇸🇬SG-🇸🇬SG_506
+      - "@SSRSUB-俄罗斯V05-付费推荐:dlj.tf/ssrsub"
+      - Relay_🇸🇬SG-🇸🇬SG_489
+      - US_1223
+      - Relay_🇯🇵JP-🇯🇵JP_412
+      - US_794
+      - Relay_🇺🇸US-🇺🇸US_989
+      - US_1640
+      - US_716
+      - US_1340 |78.14Mb
+      - US_873
+      - US_923
+      - US_766
+      - US_531
+      - US_1295
+      - US_546
+      - US_1438
+      - Relay_🇯🇵JP-🇯🇵JP_404
+      - ZZ_1087
+      - 美国_tg+univstar_6
+      - Relay_🇬🇧GB-🇬🇧GB_198
+      - Relay_🇬🇧GB-🇬🇧GB_197
+      - US_742
+      - US_661
+      - Relay_🇺🇸US-🇺🇸US_1838
+      - US_1250
+      - 无法使用请刷新订阅，邀请60%返利 2
+      - 遇到问题加群@yyjc_group
+      - 日本 01 | 沪日IEPL
+      - 日本 02 | 沪日IEPL 2
+      - 日本 03 | 沪日IEPL 2
+      - 日本 04 | 沪日IEPL 2
+      - 日本 05 | 沪日IEPL 2
+      - 香港 01 | 直连
+      - 香港 02 | 直连
+      - 日本 01 | 直连
+      - 日本 03 | 直连
+      - 美国 01 | 直连
+      - 美国 02 | 直连
+      - Relay_🇨🇳CN-🇹🇼TW_143
+      - Relay_🇯🇵JP-🇯🇵JP_312
+      - US_1640 2
+      - ZZ_1266
+      - Relay_🇺🇸US-🇺🇸US_1133
+      - US_936
+      - US_715
+      - US_1575
+      - US_980
+      - US_735
+      - US_906
+      - US_861
+      - US_1295 2
+      - US_923 2
+      - Relay_🇺🇸US-🇺🇸US_1132
+      - US_957
+      - US_1443
+      - US_615
+      - US_887
+      - US_1058
+      - Relay_🇦🇺AU-🇦🇺AU_61
+      - US_795
+      - ZZ_1163
+      - FR_217
+      - US_1035
+      - DE_177
+      - US_1255
+      - Relay_🇺🇸US-🇺🇸US_1968
+      - Relay_🇨🇿CZ-🇨🇿CZ_148
+      - US_740
+      - US_1519
+      - US_1259
+      - US_1017
+      - NL_439
+      - Relay_🇺🇸US-🇺🇸US_1123
+      - Relay_🇺🇸US-🇺🇸US_1113
+      - Relay_🇬🇧GB-🇬🇧GB_279
+      - Relay_🇹🇼TW-🇹🇼TW_1160
+      - Relay_🇺🇦UA-🇺🇦UA_592
+      - 无法使用请刷新订阅，邀请60%返利 3
+      - 遇到问题加群@yyjc_group 2
+      - 日本 01 | 沪日IEPL 2
+      - 日本 02 | 沪日IEPL 3
+      - 日本 03 | 沪日IEPL 3
+      - 日本 04 | 沪日IEPL 3
+      - 香港 01 | 直连 2
+      - 香港 02 | 直连 2
+      - 日本 01 | 直连 2
+      - 美国 01 | 直连 2
+      - 美国 02 | 直连 2
+      - Relay_🇨🇳CN-🇹🇼TW_132 2
+      - _油管：全网最强白嫖 69
+      - Relay_🇯🇵JP-🇯🇵JP_281 2
+      - Relay_🇸🇬SG-🇸🇬SG_506 2
       - US_542
       - US_837
-      - Relay_🇯🇵JP-🇯🇵JP_282
-      - US_794
+      - US_794 2
       - US_526
-      - US_766
+      - US_766 2
       - US_747
-      - US_873
+      - US_873 2
       - US_815
-      - FR_232
       - Relay_🇺🇸US-🇺🇸US_993
-      - Relay_🇺🇸US-🇺🇸US_989
-      - Relay_🇯🇵JP-🇯🇵JP_404
+      - Relay_🇺🇸US-🇺🇸US_989 2
+      - Relay_🇯🇵JP-🇯🇵JP_404 2
       - FR_215
       - US_602
       - US_1240
-      - US_906
+      - US_906 2
       - Relay_🇺🇸US-🇺🇸US_996
       - Relay_🇺🇸US-🇺🇸US_994
       - US_781
       - Relay_🇦🇺AU-🇦🇺AU_39
       - US_888
       - US_1192
-      - Relay_🇺🇦UA-🇺🇦UA_514
-      - US_521
-      - CN_112
-      - ZZ_1083
-      - Relay_🇯🇵JP-🇯🇵JP_405
-      - Relay_🇨🇿CZ-🇨🇿CZ_126
-      - DE_135
-      - US_665
-      - Relay_🇺🇦UA-🇺🇦UA_512
-      - 中国_tg+univstar_58
-      - CN_74
-      - CN_114
-      - CN_91
-      - CN_126
-      - CN_70
-      - Relay_🇺🇦UA-🇺🇦UA_513
-      - CN_145
-      - CN_161
-      - CN_162
-      - 美国_tg+univstar_95
-      - CN_73
-      - CN_82
-      - CN_160
-      - CN_81
-      - CN_138
-      - CN_75
-      - CN_155
-      - CN_243 | 6.75Mb
-      - 无法使用请刷新订阅，邀请60%返利
-      - 遇到问题加群@yyjc_group
-      - 日本 01 | 沪日IEPL
-      - 日本 02 | 沪日IEPL
-      - 日本 03 | 沪日IEPL
-      - 日本 04 | 沪日IEPL
-      - 香港 01 | 直连
-      - 香港 02 | 直连
-      - 日本 01 | 直连
+      - 无法使用请刷新订阅，邀请60%返利 4
+      - 遇到问题加群@yyjc_group 3
+      - 日本 01 | 沪日IEPL 3
+      - 日本 02 | 沪日IEPL 4
+      - 日本 03 | 沪日IEPL 4
+      - 日本 04 | 沪日IEPL 4
+      - 无法使用请刷新订阅，邀请60%返利 5
+      - 遇到问题加群@yyjc_group 4
+      - 日本 01 | 沪日IEPL 4
+      - 日本 02 | 沪日IEPL 5
+      - 日本 03 | 沪日IEPL 5
+      - 日本 04 | 沪日IEPL 5
+      - 香港 01 | 直连 3
+      - 香港 02 | 直连 3
+      - 日本 01 | 直连 3
       - 日本 02 | 直连
       - 新加坡 01 | 直连
       - 新加坡 02 | 直连
-      - 美国 01 | 直连
-      - 美国 02 | 直连
+      - 美国 01 | 直连 3
+      - 美国 02 | 直连 3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇹🇼TW_132
-      - _油管：全网最强白嫖 69
-      - 中国_tg+univstar_42
+      - 无法使用请刷新订阅，邀请60%返利
+      - 日本 05 | 沪日IEPL
+      - 日本 03 | 沪日IEPL
+      - 日本 02 | 沪日IEPL
       - Relay_🇯🇵JP-🇯🇵JP_281
+      - Relay_🇨🇳CN-🇹🇼TW_132
+      - 日本 04 | 沪日IEPL
       - Relay_🇸🇬SG-🇸🇬SG_506
+      - "@SSRSUB-俄罗斯V05-付费推荐:dlj.tf/ssrsub"
+      - Relay_🇸🇬SG-🇸🇬SG_489
+      - US_1223
+      - Relay_🇯🇵JP-🇯🇵JP_412
+      - US_794
+      - Relay_🇺🇸US-🇺🇸US_989
+      - US_1640
+      - US_716
+      - US_1340 |78.14Mb
+      - US_873
+      - US_923
+      - US_766
+      - US_531
+      - US_1295
+      - US_546
+      - US_1438
+      - Relay_🇯🇵JP-🇯🇵JP_404
+      - ZZ_1087
+      - 美国_tg+univstar_6
+      - Relay_🇬🇧GB-🇬🇧GB_198
+      - Relay_🇬🇧GB-🇬🇧GB_197
+      - US_742
+      - US_661
+      - Relay_🇺🇸US-🇺🇸US_1838
+      - US_1250
+      - 无法使用请刷新订阅，邀请60%返利 2
+      - 遇到问题加群@yyjc_group
+      - 日本 01 | 沪日IEPL
+      - 日本 02 | 沪日IEPL 2
+      - 日本 03 | 沪日IEPL 2
+      - 日本 04 | 沪日IEPL 2
+      - 日本 05 | 沪日IEPL 2
+      - 香港 01 | 直连
+      - 香港 02 | 直连
+      - 日本 01 | 直连
+      - 日本 03 | 直连
+      - 美国 01 | 直连
+      - 美国 02 | 直连
+      - Relay_🇨🇳CN-🇹🇼TW_143
+      - Relay_🇯🇵JP-🇯🇵JP_312
+      - US_1640 2
+      - ZZ_1266
+      - Relay_🇺🇸US-🇺🇸US_1133
+      - US_936
+      - US_715
+      - US_1575
+      - US_980
+      - US_735
+      - US_906
+      - US_861
+      - US_1295 2
+      - US_923 2
+      - Relay_🇺🇸US-🇺🇸US_1132
+      - US_957
+      - US_1443
+      - US_615
+      - US_887
+      - US_1058
+      - Relay_🇦🇺AU-🇦🇺AU_61
+      - US_795
+      - ZZ_1163
+      - FR_217
+      - US_1035
+      - DE_177
+      - US_1255
+      - Relay_🇺🇸US-🇺🇸US_1968
+      - Relay_🇨🇿CZ-🇨🇿CZ_148
+      - US_740
+      - US_1519
+      - US_1259
+      - US_1017
+      - NL_439
+      - Relay_🇺🇸US-🇺🇸US_1123
+      - Relay_🇺🇸US-🇺🇸US_1113
+      - Relay_🇬🇧GB-🇬🇧GB_279
+      - Relay_🇹🇼TW-🇹🇼TW_1160
+      - Relay_🇺🇦UA-🇺🇦UA_592
+      - 无法使用请刷新订阅，邀请60%返利 3
+      - 遇到问题加群@yyjc_group 2
+      - 日本 01 | 沪日IEPL 2
+      - 日本 02 | 沪日IEPL 3
+      - 日本 03 | 沪日IEPL 3
+      - 日本 04 | 沪日IEPL 3
+      - 香港 01 | 直连 2
+      - 香港 02 | 直连 2
+      - 日本 01 | 直连 2
+      - 美国 01 | 直连 2
+      - 美国 02 | 直连 2
+      - Relay_🇨🇳CN-🇹🇼TW_132 2
+      - _油管：全网最强白嫖 69
+      - Relay_🇯🇵JP-🇯🇵JP_281 2
+      - Relay_🇸🇬SG-🇸🇬SG_506 2
       - US_542
       - US_837
-      - Relay_🇯🇵JP-🇯🇵JP_282
-      - US_794
+      - US_794 2
       - US_526
-      - US_766
+      - US_766 2
       - US_747
-      - US_873
+      - US_873 2
       - US_815
-      - FR_232
       - Relay_🇺🇸US-🇺🇸US_993
-      - Relay_🇺🇸US-🇺🇸US_989
-      - Relay_🇯🇵JP-🇯🇵JP_404
+      - Relay_🇺🇸US-🇺🇸US_989 2
+      - Relay_🇯🇵JP-🇯🇵JP_404 2
       - FR_215
       - US_602
       - US_1240
-      - US_906
+      - US_906 2
       - Relay_🇺🇸US-🇺🇸US_996
       - Relay_🇺🇸US-🇺🇸US_994
       - US_781
       - Relay_🇦🇺AU-🇦🇺AU_39
       - US_888
       - US_1192
-      - Relay_🇺🇦UA-🇺🇦UA_514
-      - US_521
-      - CN_112
-      - ZZ_1083
-      - Relay_🇯🇵JP-🇯🇵JP_405
-      - Relay_🇨🇿CZ-🇨🇿CZ_126
-      - DE_135
-      - US_665
-      - Relay_🇺🇦UA-🇺🇦UA_512
-      - 中国_tg+univstar_58
-      - CN_74
-      - CN_114
-      - CN_91
-      - CN_126
-      - CN_70
-      - Relay_🇺🇦UA-🇺🇦UA_513
-      - CN_145
-      - CN_161
-      - CN_162
-      - 美国_tg+univstar_95
-      - CN_73
-      - CN_82
-      - CN_160
-      - CN_81
-      - CN_138
-      - CN_75
-      - CN_155
-      - CN_243 | 6.75Mb
-      - 无法使用请刷新订阅，邀请60%返利
-      - 遇到问题加群@yyjc_group
-      - 日本 01 | 沪日IEPL
-      - 日本 02 | 沪日IEPL
-      - 日本 03 | 沪日IEPL
-      - 日本 04 | 沪日IEPL
-      - 香港 01 | 直连
-      - 香港 02 | 直连
-      - 日本 01 | 直连
+      - 无法使用请刷新订阅，邀请60%返利 4
+      - 遇到问题加群@yyjc_group 3
+      - 日本 01 | 沪日IEPL 3
+      - 日本 02 | 沪日IEPL 4
+      - 日本 03 | 沪日IEPL 4
+      - 日本 04 | 沪日IEPL 4
+      - 无法使用请刷新订阅，邀请60%返利 5
+      - 遇到问题加群@yyjc_group 4
+      - 日本 01 | 沪日IEPL 4
+      - 日本 02 | 沪日IEPL 5
+      - 日本 03 | 沪日IEPL 5
+      - 日本 04 | 沪日IEPL 5
+      - 香港 01 | 直连 3
+      - 香港 02 | 直连 3
+      - 日本 01 | 直连 3
       - 日本 02 | 直连
       - 新加坡 01 | 直连
       - 新加坡 02 | 直连
-      - 美国 01 | 直连
-      - 美国 02 | 直连
+      - 美国 01 | 直连 3
+      - 美国 02 | 直连 3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇨🇳CN-🇹🇼TW_132
-      - _油管：全网最强白嫖 69
-      - 中国_tg+univstar_42
+      - 无法使用请刷新订阅，邀请60%返利
+      - 日本 05 | 沪日IEPL
+      - 日本 03 | 沪日IEPL
+      - 日本 02 | 沪日IEPL
       - Relay_🇯🇵JP-🇯🇵JP_281
+      - Relay_🇨🇳CN-🇹🇼TW_132
+      - 日本 04 | 沪日IEPL
       - Relay_🇸🇬SG-🇸🇬SG_506
+      - "@SSRSUB-俄罗斯V05-付费推荐:dlj.tf/ssrsub"
+      - Relay_🇸🇬SG-🇸🇬SG_489
+      - US_1223
+      - Relay_🇯🇵JP-🇯🇵JP_412
+      - US_794
+      - Relay_🇺🇸US-🇺🇸US_989
+      - US_1640
+      - US_716
+      - US_1340 |78.14Mb
+      - US_873
+      - US_923
+      - US_766
+      - US_531
+      - US_1295
+      - US_546
+      - US_1438
+      - Relay_🇯🇵JP-🇯🇵JP_404
+      - ZZ_1087
+      - 美国_tg+univstar_6
+      - Relay_🇬🇧GB-🇬🇧GB_198
+      - Relay_🇬🇧GB-🇬🇧GB_197
+      - US_742
+      - US_661
+      - Relay_🇺🇸US-🇺🇸US_1838
+      - US_1250
+      - 无法使用请刷新订阅，邀请60%返利 2
+      - 遇到问题加群@yyjc_group
+      - 日本 01 | 沪日IEPL
+      - 日本 02 | 沪日IEPL 2
+      - 日本 03 | 沪日IEPL 2
+      - 日本 04 | 沪日IEPL 2
+      - 日本 05 | 沪日IEPL 2
+      - 香港 01 | 直连
+      - 香港 02 | 直连
+      - 日本 01 | 直连
+      - 日本 03 | 直连
+      - 美国 01 | 直连
+      - 美国 02 | 直连
+      - Relay_🇨🇳CN-🇹🇼TW_143
+      - Relay_🇯🇵JP-🇯🇵JP_312
+      - US_1640 2
+      - ZZ_1266
+      - Relay_🇺🇸US-🇺🇸US_1133
+      - US_936
+      - US_715
+      - US_1575
+      - US_980
+      - US_735
+      - US_906
+      - US_861
+      - US_1295 2
+      - US_923 2
+      - Relay_🇺🇸US-🇺🇸US_1132
+      - US_957
+      - US_1443
+      - US_615
+      - US_887
+      - US_1058
+      - Relay_🇦🇺AU-🇦🇺AU_61
+      - US_795
+      - ZZ_1163
+      - FR_217
+      - US_1035
+      - DE_177
+      - US_1255
+      - Relay_🇺🇸US-🇺🇸US_1968
+      - Relay_🇨🇿CZ-🇨🇿CZ_148
+      - US_740
+      - US_1519
+      - US_1259
+      - US_1017
+      - NL_439
+      - Relay_🇺🇸US-🇺🇸US_1123
+      - Relay_🇺🇸US-🇺🇸US_1113
+      - Relay_🇬🇧GB-🇬🇧GB_279
+      - Relay_🇹🇼TW-🇹🇼TW_1160
+      - Relay_🇺🇦UA-🇺🇦UA_592
+      - 无法使用请刷新订阅，邀请60%返利 3
+      - 遇到问题加群@yyjc_group 2
+      - 日本 01 | 沪日IEPL 2
+      - 日本 02 | 沪日IEPL 3
+      - 日本 03 | 沪日IEPL 3
+      - 日本 04 | 沪日IEPL 3
+      - 香港 01 | 直连 2
+      - 香港 02 | 直连 2
+      - 日本 01 | 直连 2
+      - 美国 01 | 直连 2
+      - 美国 02 | 直连 2
+      - Relay_🇨🇳CN-🇹🇼TW_132 2
+      - _油管：全网最强白嫖 69
+      - Relay_🇯🇵JP-🇯🇵JP_281 2
+      - Relay_🇸🇬SG-🇸🇬SG_506 2
       - US_542
       - US_837
-      - Relay_🇯🇵JP-🇯🇵JP_282
-      - US_794
+      - US_794 2
       - US_526
-      - US_766
+      - US_766 2
       - US_747
-      - US_873
+      - US_873 2
       - US_815
-      - FR_232
       - Relay_🇺🇸US-🇺🇸US_993
-      - Relay_🇺🇸US-🇺🇸US_989
-      - Relay_🇯🇵JP-🇯🇵JP_404
+      - Relay_🇺🇸US-🇺🇸US_989 2
+      - Relay_🇯🇵JP-🇯🇵JP_404 2
       - FR_215
       - US_602
       - US_1240
-      - US_906
+      - US_906 2
       - Relay_🇺🇸US-🇺🇸US_996
       - Relay_🇺🇸US-🇺🇸US_994
       - US_781
       - Relay_🇦🇺AU-🇦🇺AU_39
       - US_888
       - US_1192
-      - Relay_🇺🇦UA-🇺🇦UA_514
-      - US_521
-      - CN_112
-      - ZZ_1083
-      - Relay_🇯🇵JP-🇯🇵JP_405
-      - Relay_🇨🇿CZ-🇨🇿CZ_126
-      - DE_135
-      - US_665
-      - Relay_🇺🇦UA-🇺🇦UA_512
-      - 中国_tg+univstar_58
-      - CN_74
-      - CN_114
-      - CN_91
-      - CN_126
-      - CN_70
-      - Relay_🇺🇦UA-🇺🇦UA_513
-      - CN_145
-      - CN_161
-      - CN_162
-      - 美国_tg+univstar_95
-      - CN_73
-      - CN_82
-      - CN_160
-      - CN_81
-      - CN_138
-      - CN_75
-      - CN_155
-      - CN_243 | 6.75Mb
-      - 无法使用请刷新订阅，邀请60%返利
-      - 遇到问题加群@yyjc_group
-      - 日本 01 | 沪日IEPL
-      - 日本 02 | 沪日IEPL
-      - 日本 03 | 沪日IEPL
-      - 日本 04 | 沪日IEPL
-      - 香港 01 | 直连
-      - 香港 02 | 直连
-      - 日本 01 | 直连
+      - 无法使用请刷新订阅，邀请60%返利 4
+      - 遇到问题加群@yyjc_group 3
+      - 日本 01 | 沪日IEPL 3
+      - 日本 02 | 沪日IEPL 4
+      - 日本 03 | 沪日IEPL 4
+      - 日本 04 | 沪日IEPL 4
+      - 无法使用请刷新订阅，邀请60%返利 5
+      - 遇到问题加群@yyjc_group 4
+      - 日本 01 | 沪日IEPL 4
+      - 日本 02 | 沪日IEPL 5
+      - 日本 03 | 沪日IEPL 5
+      - 日本 04 | 沪日IEPL 5
+      - 香港 01 | 直连 3
+      - 香港 02 | 直连 3
+      - 日本 01 | 直连 3
       - 日本 02 | 直连
       - 新加坡 01 | 直连
       - 新加坡 02 | 直连
-      - 美国 01 | 直连
-      - 美国 02 | 直连
+      - 美国 01 | 直连 3
+      - 美国 02 | 直连 3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -638,76 +1210,147 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇨🇳CN-🇹🇼TW_132
-      - _油管：全网最强白嫖 69
-      - 中国_tg+univstar_42
+      - 无法使用请刷新订阅，邀请60%返利
+      - 日本 05 | 沪日IEPL
+      - 日本 03 | 沪日IEPL
+      - 日本 02 | 沪日IEPL
       - Relay_🇯🇵JP-🇯🇵JP_281
+      - Relay_🇨🇳CN-🇹🇼TW_132
+      - 日本 04 | 沪日IEPL
       - Relay_🇸🇬SG-🇸🇬SG_506
+      - "@SSRSUB-俄罗斯V05-付费推荐:dlj.tf/ssrsub"
+      - Relay_🇸🇬SG-🇸🇬SG_489
+      - US_1223
+      - Relay_🇯🇵JP-🇯🇵JP_412
+      - US_794
+      - Relay_🇺🇸US-🇺🇸US_989
+      - US_1640
+      - US_716
+      - US_1340 |78.14Mb
+      - US_873
+      - US_923
+      - US_766
+      - US_531
+      - US_1295
+      - US_546
+      - US_1438
+      - Relay_🇯🇵JP-🇯🇵JP_404
+      - ZZ_1087
+      - 美国_tg+univstar_6
+      - Relay_🇬🇧GB-🇬🇧GB_198
+      - Relay_🇬🇧GB-🇬🇧GB_197
+      - US_742
+      - US_661
+      - Relay_🇺🇸US-🇺🇸US_1838
+      - US_1250
+      - 无法使用请刷新订阅，邀请60%返利 2
+      - 遇到问题加群@yyjc_group
+      - 日本 01 | 沪日IEPL
+      - 日本 02 | 沪日IEPL 2
+      - 日本 03 | 沪日IEPL 2
+      - 日本 04 | 沪日IEPL 2
+      - 日本 05 | 沪日IEPL 2
+      - 香港 01 | 直连
+      - 香港 02 | 直连
+      - 日本 01 | 直连
+      - 日本 03 | 直连
+      - 美国 01 | 直连
+      - 美国 02 | 直连
+      - Relay_🇨🇳CN-🇹🇼TW_143
+      - Relay_🇯🇵JP-🇯🇵JP_312
+      - US_1640 2
+      - ZZ_1266
+      - Relay_🇺🇸US-🇺🇸US_1133
+      - US_936
+      - US_715
+      - US_1575
+      - US_980
+      - US_735
+      - US_906
+      - US_861
+      - US_1295 2
+      - US_923 2
+      - Relay_🇺🇸US-🇺🇸US_1132
+      - US_957
+      - US_1443
+      - US_615
+      - US_887
+      - US_1058
+      - Relay_🇦🇺AU-🇦🇺AU_61
+      - US_795
+      - ZZ_1163
+      - FR_217
+      - US_1035
+      - DE_177
+      - US_1255
+      - Relay_🇺🇸US-🇺🇸US_1968
+      - Relay_🇨🇿CZ-🇨🇿CZ_148
+      - US_740
+      - US_1519
+      - US_1259
+      - US_1017
+      - NL_439
+      - Relay_🇺🇸US-🇺🇸US_1123
+      - Relay_🇺🇸US-🇺🇸US_1113
+      - Relay_🇬🇧GB-🇬🇧GB_279
+      - Relay_🇹🇼TW-🇹🇼TW_1160
+      - Relay_🇺🇦UA-🇺🇦UA_592
+      - 无法使用请刷新订阅，邀请60%返利 3
+      - 遇到问题加群@yyjc_group 2
+      - 日本 01 | 沪日IEPL 2
+      - 日本 02 | 沪日IEPL 3
+      - 日本 03 | 沪日IEPL 3
+      - 日本 04 | 沪日IEPL 3
+      - 香港 01 | 直连 2
+      - 香港 02 | 直连 2
+      - 日本 01 | 直连 2
+      - 美国 01 | 直连 2
+      - 美国 02 | 直连 2
+      - Relay_🇨🇳CN-🇹🇼TW_132 2
+      - _油管：全网最强白嫖 69
+      - Relay_🇯🇵JP-🇯🇵JP_281 2
+      - Relay_🇸🇬SG-🇸🇬SG_506 2
       - US_542
       - US_837
-      - Relay_🇯🇵JP-🇯🇵JP_282
-      - US_794
+      - US_794 2
       - US_526
-      - US_766
+      - US_766 2
       - US_747
-      - US_873
+      - US_873 2
       - US_815
-      - FR_232
       - Relay_🇺🇸US-🇺🇸US_993
-      - Relay_🇺🇸US-🇺🇸US_989
-      - Relay_🇯🇵JP-🇯🇵JP_404
+      - Relay_🇺🇸US-🇺🇸US_989 2
+      - Relay_🇯🇵JP-🇯🇵JP_404 2
       - FR_215
       - US_602
       - US_1240
-      - US_906
+      - US_906 2
       - Relay_🇺🇸US-🇺🇸US_996
       - Relay_🇺🇸US-🇺🇸US_994
       - US_781
       - Relay_🇦🇺AU-🇦🇺AU_39
       - US_888
       - US_1192
-      - Relay_🇺🇦UA-🇺🇦UA_514
-      - US_521
-      - CN_112
-      - ZZ_1083
-      - Relay_🇯🇵JP-🇯🇵JP_405
-      - Relay_🇨🇿CZ-🇨🇿CZ_126
-      - DE_135
-      - US_665
-      - Relay_🇺🇦UA-🇺🇦UA_512
-      - 中国_tg+univstar_58
-      - CN_74
-      - CN_114
-      - CN_91
-      - CN_126
-      - CN_70
-      - Relay_🇺🇦UA-🇺🇦UA_513
-      - CN_145
-      - CN_161
-      - CN_162
-      - 美国_tg+univstar_95
-      - CN_73
-      - CN_82
-      - CN_160
-      - CN_81
-      - CN_138
-      - CN_75
-      - CN_155
-      - CN_243 | 6.75Mb
-      - 无法使用请刷新订阅，邀请60%返利
-      - 遇到问题加群@yyjc_group
-      - 日本 01 | 沪日IEPL
-      - 日本 02 | 沪日IEPL
-      - 日本 03 | 沪日IEPL
-      - 日本 04 | 沪日IEPL
-      - 香港 01 | 直连
-      - 香港 02 | 直连
-      - 日本 01 | 直连
+      - 无法使用请刷新订阅，邀请60%返利 4
+      - 遇到问题加群@yyjc_group 3
+      - 日本 01 | 沪日IEPL 3
+      - 日本 02 | 沪日IEPL 4
+      - 日本 03 | 沪日IEPL 4
+      - 日本 04 | 沪日IEPL 4
+      - 无法使用请刷新订阅，邀请60%返利 5
+      - 遇到问题加群@yyjc_group 4
+      - 日本 01 | 沪日IEPL 4
+      - 日本 02 | 沪日IEPL 5
+      - 日本 03 | 沪日IEPL 5
+      - 日本 04 | 沪日IEPL 5
+      - 香港 01 | 直连 3
+      - 香港 02 | 直连 3
+      - 日本 01 | 直连 3
       - 日本 02 | 直连
       - 新加坡 01 | 直连
       - 新加坡 02 | 直连
-      - 美国 01 | 直连
-      - 美国 02 | 直连
+      - 美国 01 | 直连 3
+      - 美国 02 | 直连 3
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
