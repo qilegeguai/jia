@@ -5,583 +5,215 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 日本 02 | 直连, server: jp01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: jp01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_164, server: 14.29.124.174, port: 11008, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1240, server: lc-kr02-direct01.lc-kr02.lc-node.com, port: 443, type: vmess, uuid: ec736482-173e-3eff-9114-b49df8056e7d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: lc-kr02-direct01.lc-kr02.lc-node.com}, udp: true}
-  - {name: 日本 01 | 直连, server: jp01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: jp01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
-  - {name: 小螃蟹专用 02, server: cc38ab4a-1b5e-4c23-b6c1-73d08ef459a7.2501eeec-5bab-428d-b482-d79ef0f1db2d.63f6bbc5-ab80-4683-916c-2384f116aa74.yiyuan.cyou, port: 10531, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: cc38ab4a-1b5e-4c23-b6c1-73d08ef459a7.2501eeec-5bab-428d-b482-d79ef0f1db2d.63f6bbc5-ab80-4683-916c-2384f116aa74.yiyuan.cyou, skip-cert-verify: true, udp: true}
-  - {name: 日本 01 | 直连 2, server: jp01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: jp01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
-  - {name: US_925, server: 172.99.190.39, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_983, server: fhcarm2.gaox.ml, port: 443, type: trojan, password: f39bd244-f5fe-415c-8b98-a1e5250bf178, sni: fhcarm2.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: US_1577, server: ukt-1.opensvr.net, port: 443, type: trojan, password: opentunnel.net-zdrgvbhjnmhgfx, sni: ukt-1.opensvr.net, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_990, server: jgwhdlb1.gaox.ml, port: 443, type: trojan, password: e05c749b-7c6b-41b8-9c71-9dcf685edf4a, sni: jgwhdlb1.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: US_1250, server: 172.99.188.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: CN_297, server: jp-tyo-04-tr.cdn.savoy.click, port: 889, type: trojan, password: UiLPqefVfielqkDjEwBV, sni: jp-tyo-04-tr.cdn.savoy.click, skip-cert-verify: true, udp: true}
-  - {name: JP_520, server: jgwdb4.gaox.ml, port: 443, type: trojan, password: -40f9-475c-bf46-e3883ee7da5c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: jgwdb4.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: US_1548, server: vip-kl-01.click, port: 443, type: trojan, password: q8uTrVmj95aTrFAa, sni: vip-kl-01.click, skip-cert-verify: true, udp: true}
-  - {name: TW_958, server: tw.tcpbbr.net, port: 443, type: trojan, password: 283695dc-fcc8-11ea-8684-f23c913c8d2b, sni: tw.tcpbbr.net, skip-cert-verify: true, udp: true}
-  - {name: US_1576, server: xioix.gq, port: 443, type: trojan, password: 9b7195ba-f029-4d7d-a728-ece6e0fdc363, sni: xioix.gq, skip-cert-verify: true, udp: true}
-  - {name: TW_963, server: tw.tcpbbr.net, port: 443, type: trojan, password: b155c2a4-ee79-11eb-a8bf-f23c91cfbbc9, sni: tw.tcpbbr.net, skip-cert-verify: true, udp: true}
-  - {name: US_1555, server: 184.168.127.50, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇬🇧GB-🇬🇧GB_197, server: jgwld2.gaox.ml, port: 443, type: trojan, password: d7fd8aaa-4581-4281-80aa-4b63e5e1f157, sni: jgwld2.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: US_1438, server: 167.88.63.82, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 美国 01 | 直连, server: e8e4ad34-301f-4b6a-929c-c02a7bdc7859.62dd6326-6357-4c87-94b7-06e277adea7c.c3b3b423-4c53-4570-bff7-462da591030b.yiyuan.cyou, port: 443, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: e8e4ad34-301f-4b6a-929c-c02a7bdc7859.62dd6326-6357-4c87-94b7-06e277adea7c.c3b3b423-4c53-4570-bff7-462da591030b.yiyuan.cyou, skip-cert-verify: true, udp: true}
-  - {name: FR_169, server: 149.202.82.172, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: TW_956, server: tw.tcpbbr.net, port: 443, type: trojan, password: 5c7b33c6-6d83-11eb-b77b-f23c913c8d2b, sni: tw.tcpbbr.net, skip-cert-verify: true, udp: true}
-  - {name: TW_959, server: tw-oo-01.click, port: 443, type: trojan, password: q8uTrVmj95aTrFAa, sni: tw-oo-01.click, skip-cert-verify: true, udp: true}
-  - {name: US_1585, server: hg.053111.xyz, port: 443, type: trojan, password: d4435b69-3d08-d58a-919f-7f1707150ecb, sni: hg.053111.xyz, skip-cert-verify: true, udp: true}
-  - {name: CN_296, server: jp2.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: jp2.91js.pw, skip-cert-verify: true, udp: true}
-  - {name: US_1556, server: us-trojan.bonds.id, port: 443, type: trojan, password: 38239dd0-902b-11eb-afc1-1239d0255272, sni: us-trojan.bonds.id, skip-cert-verify: true, udp: true}
-  - {name: US_546, server: 167.88.62.68, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: TW_962, server: tw.tcpbbr.net, port: 443, type: trojan, password: 280a1162-00cb-11ec-a8bf-f23c91cfbbc9, sni: tw.tcpbbr.net, skip-cert-verify: true, udp: true}
-  - {name: US_1549, server: us-trojan.bonds.id, port: 443, type: trojan, password: ccf1ee40-b4ab-11eb-b421-1239d0255272, sni: us-trojan.bonds.id, skip-cert-verify: true, udp: true}
-  - {name: US_1570, server: t03.ssrsub.com.xyz, port: 443, type: trojan, password: 640e3ef0-9c44-49a8-98f6-0895b11eecd6, sni: t03.ssrsub.com.xyz, skip-cert-verify: true, udp: true}
-  - {name: US_745, server: 38.75.136.21, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: CN_302, server: jp-tyo-04-tr.cdn.savoy.click, port: 889, type: trojan, password: SfobRIcergHchqBFzzua, sni: jp-tyo-04-tr.cdn.savoy.click, skip-cert-verify: true, udp: true}
-  - {name: JP_515, server: tky3.ssgnode.ga, port: 443, type: trojan, password: lWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: tky3.ssgnode.ga, skip-cert-verify: true, udp: true}
-  - {name: JP_510, server: tky3.ssgnode.ga, port: 443, type: trojan, password: 82a115db-6e59-4319-973-40f9-475c-bf46-e3883ee7da5c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: tky3.ssgnode.ga, skip-cert-verify: true, udp: true}
-  - {name: US_1588, server: usa-sr-106.mitoption.com, port: 443, type: trojan, password: e5d46365e25e31d94279c2bcf93390a2, sni: usa-sr-106.mitoption.com, skip-cert-verify: true, udp: true}
-  - {name: US_531, server: 38.75.136.102, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_814, server: 38.64.138.145, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: Relay_🇬🇧GB-🇬🇧GB_257, server: jgwld1.gaox.ml, port: 443, type: trojan, password: 02e653c9-7c93-46a9-999d-11834bd0c577, sni: jgwld1.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: US_1640, server: 38.114.114.69, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: ZZ_1052, server: 134.195.198.95, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_796, server: 172.99.190.149, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: DE_148, server: 193.108.117.75, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: CN_301, server: 19206tj.matrixxx888.com, port: 19206, type: trojan, password: 084a8035-579c-3486-bb59-b6ab3b31b131, sni: 19206tj.matrixxx888.com, skip-cert-verify: true, udp: true}
-  - {name: US_496, server: 167.88.63.59, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_985, server: jgwdj4.gaox.ml, port: 443, type: trojan, password: c09eb137-bf68-4658-84e0-102d94b74168, sni: jgwdj4.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: "@SSRSUB-V12-付费推荐:suo.yt/ssrsub", server: in-us-1.onebox6.org, port: 38401, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: YouTube-aweikeji}, udp: true}
-  - {name: 俄罗斯02(TG频道:@kxswa), server: 139.227.190.250, port: 15301, type: vmess, uuid: 6dc17fdb-9bcd-3231-ad6a-6af308aef4cc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 45.8.159.229}, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1001, server: jgwhdlb2.gaox.ml, port: 443, type: trojan, password: 54080134-2cba-4535-8599-95650bd9aa54, sni: jgwhdlb2.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: JP_512, server: tky3.ssgnode.ga, port: 443, type: trojan, password: bcYWVzLTI1Ni1nY206Q1VuZFNabll23115_5a451f03, sni: tky3.ssgnode.ga, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇬🇧GB-🇬🇧GB_238, server: jgwld3.gaox.ml, port: 443, type: trojan, password: 71b55a84-3fac-4458-abff-eaad79219c91, sni: jgwld3.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: US_704, server: 38.114.114.67, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: AU_41, server: jgwxn2.gaox.ml, port: 443, type: trojan, password: 54c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: jgwxn2.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇦UA-🇺🇦UA_488, server: v2cross.com.05.v2ce.com, port: 443, type: trojan, password: kGrwqmB1nEKUsDwE, sni: v2cross.com.05.v2ce.com, skip-cert-verify: true, udp: true}
-  - {name: US_1546, server: 184.168.127.50, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1012, server: fhcamd1.gaox.ml, port: 443, type: trojan, password: e23f408a-012e-4030-8b31-02022031cb50, sni: fhcamd1.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: "@SSRSUB-V09-付费推荐:suo.yt/ssrsub", server: in-sg-1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: www.ivpnpro.net}, udp: true}
-  - {name: JP_514, server: tky3.ssgnode.ga, port: 443, type: trojan, password: 82lWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: tky3.ssgnode.ga, skip-cert-verify: true, udp: true}
-  - {name: JP_516, server: kr1.api-aws.com, port: 443, type: trojan, password: 1f9e7c79-ce39-44f3-bdbd-90ea117629b3, sni: kr1.api-aws.com, skip-cert-verify: true, udp: true}
-  - {name: CN_300, server: hk-hkg-sh-hk-02-tr.cdn.savoy.click, port: 21089, type: trojan, password: uDTmEAGwuCUZXZvwhWJk, sni: hk-hkg-sh-hk-02-tr.cdn.savoy.click, skip-cert-verify: true, udp: true}
-  - {name: JP_513, server: 153.122.173.202, port: 443, type: trojan, password: d9a81731-3abb-37ed-a0b0-bff56f3f5a1c, skip-cert-verify: true, udp: true}
-  - {name: US_1551, server: us07.vip-kl-02.click, port: 443, type: trojan, password: s6rIg1Mkke73fwZU, sni: us07.vip-kl-02.click, skip-cert-verify: true, udp: true}
-  - {name: US_771, server: 38.114.114.19, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: JP_521, server: tky3.ssgnode.ga, port: 443, type: trojan, password: 82-40f9-475c-bf46-e3883ee7da5c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: tky3.ssgnode.ga, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1010, server: us23.567568.ml, port: 443, type: trojan, password: 3df66137-a428-429c-a858-8b150721b354, sni: us23.567568.ml, skip-cert-verify: true, udp: true}
-  - {name: CN_157, server: 175.178.125.181, port: 8000, type: vmess, uuid: dcd7ebf6-8220-476a-ada0-34a83b9c6072, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP_511, server: jgw4.gaox.ml, port: 443, type: trojan, password: b7e0e71f-070c-437a-9826-6e23caeb0307, sni: jgw4.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: TW_961, server: tw-oo-01.click, port: 443, type: trojan, password: s6rIg1Mkke73fwZU, sni: tw-oo-01.click, skip-cert-verify: true, udp: true}
-  - {name: US_1575, server: 72.167.45.6, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇿CZ-🇨🇿CZ_112, server: v2cross.com.01.v2ce.com, port: 443, type: trojan, password: mMQ6qJB9xbhiRvgg, sni: v2cross.com.01.v2ce.com, skip-cert-verify: true, udp: true}
-  - {name: CN_305, server: cscu.wecanfly.top, port: 50207, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, sni: cscu.wecanfly.top, skip-cert-verify: true, udp: true}
-  - {name: "@SSRSUB-V10-付费推荐:suo.yt/ssrsub", server: ingress-i1.onebox6.org, port: 38701, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: aweikeji-YouTube}, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1002, server: jgwhdlb3.gaox.ml, port: 443, type: trojan, password: 006baa3f-4bc3-4915-b60d-c8c5dae11a11, sni: jgwhdlb3.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇦🇺AU-🇦🇺AU_29, server: jgwxn4.gaox.ml, port: 443, type: trojan, password: e8c1ab3c-89b3-4933-92df-682e6dce7819, sni: jgwxn4.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: US_677, server: 38.68.134.85, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1008, server: jgwdj3.gaox.ml, port: 443, type: trojan, password: da777aae-defb-41d0-a183-2c27da2b4677, sni: jgwdj3.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: TW_957, server: mv-tw05.link, port: 443, type: trojan, password: s6rIg1Mkke73fwZU, sni: mv-tw05.link, skip-cert-verify: true, udp: true}
-  - {name: US_1580, server: 167.88.61.2, port: 443, type: trojan, password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHIXlCd1BXSDNWYW8, skip-cert-verify: true, udp: true}
-  - {name: CN_288, server: t2.doggogogo.top, port: 50207, type: trojan, password: 5eaea1b9-b977-3391-b7cb-370addb40ce2, sni: t2.doggogogo.top, skip-cert-verify: true, udp: true}
-  - {name: US_1589, server: usa-sr-105.mitoption.com, port: 443, type: trojan, password: e5d46365e25e31d94279c2bcf93390a2, sni: usa-sr-105.mitoption.com, skip-cert-verify: true, udp: true}
-  - {name: CN_306, server: tw-tpe-h-tr.cdn.savoy.click, port: 10089, type: trojan, password: RrtlDxQADjwemQkcYGqJHPcSjDtXIuHn, sni: tw-tpe-h-tr.cdn.savoy.click, skip-cert-verify: true, udp: true}
-  - {name: JP_522, server: tky3.ssgnode.ga, port: 443, type: trojan, password: -40f9-475c-bf46-e3883ee7da5c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: tky3.ssgnode.ga, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_982, server: fhcarm1.gaox.ml, port: 443, type: trojan, password: 05742120-ce23-4cc8-88f5-6d221ce45bf4, sni: fhcarm1.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: US_1259, server: 38.86.135.36, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: CN_284 | 7.30Mb, server: in-us-1.onebox6.org, port: 38401, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: in-us-1.onebox6.org}, udp: true}
-  - {name: CN_295, server: zz6.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: zz6.91js.pw, skip-cert-verify: true, udp: true}
-  - {name: US_1592, server: 209.141.47.137, port: 443, type: trojan, password: b3d27d09-77fe-431d-9829-6eba7dce20b0, skip-cert-verify: true, udp: true}
-  - {name: 美国(油管:破解资源君2.0), server: www.digitalocean.com, port: 443, type: vmess, uuid: 3df66137-a428-429c-a858-8b150721b354, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /youtbue@bai-piao-wang-zhe_vws, ws-headers: {Host: us23.567568.ml}, udp: true}
-  - {name: CN_303, server: hk-hkg-sh-hk-02-tr.cdn.savoy.click, port: 21089, type: trojan, password: RrtlDxQADjwemQkcYGqJHPcSjDtXIuHn, sni: hk-hkg-sh-hk-02-tr.cdn.savoy.click, skip-cert-verify: true, udp: true}
-  - {name: US_1295, server: 38.68.135.19, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: JP_507, server: tky3.ssgnode.ga, port: 443, type: trojan, password: 23115_5a451f03, sni: tky3.ssgnode.ga, skip-cert-verify: true, udp: true}
-  - {name: US_635, server: 167.88.61.175, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_1565, server: 72.167.45.6, port: 443, type: trojan, password: 28d98f761aca9d636f44db62544628eb, skip-cert-verify: true, udp: true}
-  - {name: "@SSRSUB-V06-付费推荐:suo.yt/ssrsub", server: cn04.downloadmovie.cn, port: 65036, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: "%7B%22Host%22:%22cn04.downloadmovie.cn%22%7D"}, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1308, server: vus4.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vus4.0bad.com}, udp: true}
-  - {name: US_1127, server: 167.88.63.79, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: CN_293, server: hk-hkg-sh-hk-02-tr.cdn.savoy.click, port: 21089, type: trojan, password: SfobRIcergHchqBFzzua, sni: hk-hkg-sh-hk-02-tr.cdn.savoy.click, skip-cert-verify: true, udp: true}
-  - {name: CN_292 | 2.33Mb, server: sg-cn-hk-relay-3-dd4440.dk-3a4e.com, port: 9303, type: trojan, password: f2a28b26-3462-11e9-96d3-020b85e0a428, sni: sg-cn-hk-relay-3-dd4440.dk-3a4e.com, skip-cert-verify: true, udp: true}
-  - {name: US_1564, server: 72.167.45.6, port: 443, type: trojan, password: a3fa58b581353bb375d2ddad0f327938, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇭🇰HK_101, server: 14.29.124.174, port: 11033, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: Relay_🇺🇸US-🇩🇪DE_1341, server: vfly1.win, port: 443, type: vmess, uuid: e45b5aac-b852-4055-cbbf-d366499e53e8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /myblog, ws-headers: {Host: vfly1.win}, udp: true}
-  - {name: 小螃蟹专用 01, server: cc38ab4a-1b5e-4c23-b6c1-73d08ef459a7.2501eeec-5bab-428d-b482-d79ef0f1db2d.63f6bbc5-ab80-4683-916c-2384f116aa74.yiyuan.cyou, port: 10531, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: cc38ab4a-1b5e-4c23-b6c1-73d08ef459a7.2501eeec-5bab-428d-b482-d79ef0f1db2d.63f6bbc5-ab80-4683-916c-2384f116aa74.yiyuan.cyou, skip-cert-verify: true, udp: true}
-  - {name: US_770, server: 172.99.190.61, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
   - {name: CN_130, server: 1.14.43.171, port: 8000, type: vmess, uuid: 8886ec29-27f5-46d9-885b-8126d1f6b765, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: "@SSRSUB-V17-付费推荐:suo.yt/ssrsub", server: 120.233.29.189, port: 65039, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: 120.233.29.189}, udp: true}
-  - {name: 香港 01 | 直连, server: hk01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: hk01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
-  - {name: 小飞侠专用 01, server: cc38ab4a-1b5e-4c23-b6c1-73d08ef459a7.2501eeec-5bab-428d-b482-d79ef0f1db2d.63f6bbc5-ab80-4683-916c-2384f116aa74.yiyuan.cyou, port: 10511, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: cc38ab4a-1b5e-4c23-b6c1-73d08ef459a7.2501eeec-5bab-428d-b482-d79ef0f1db2d.63f6bbc5-ab80-4683-916c-2384f116aa74.yiyuan.cyou, skip-cert-verify: true, udp: true}
-  - {name: 香港 02 | 直连, server: hk01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: hk01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
-  - {name: 小飞侠专用  02, server: cc38ab4a-1b5e-4c23-b6c1-73d08ef459a7.2501eeec-5bab-428d-b482-d79ef0f1db2d.63f6bbc5-ab80-4683-916c-2384f116aa74.yiyuan.cyou, port: 10511, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: cc38ab4a-1b5e-4c23-b6c1-73d08ef459a7.2501eeec-5bab-428d-b482-d79ef0f1db2d.63f6bbc5-ab80-4683-916c-2384f116aa74.yiyuan.cyou, skip-cert-verify: true, udp: true}
-  - {name: 小螃蟹专用 01 2, server: cc38ab4a-1b5e-4c23-b6c1-73d08ef459a7.2501eeec-5bab-428d-b482-d79ef0f1db2d.63f6bbc5-ab80-4683-916c-2384f116aa74.yiyuan.cyou, port: 10531, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: cc38ab4a-1b5e-4c23-b6c1-73d08ef459a7.2501eeec-5bab-428d-b482-d79ef0f1db2d.63f6bbc5-ab80-4683-916c-2384f116aa74.yiyuan.cyou, skip-cert-verify: true, udp: true}
-  - {name: "@SSRSUB-V08-付费推荐:suo.yt/ssrsub", server: cn04.downloadmovie.cn, port: 65025, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: "%7B%22Host%22:%22cn04.downloadmovie.cn%22%7D"}, udp: true}
-  - {name: US_580, server: 142.202.48.52, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_692, server: 38.68.134.191, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: Relay_🇨🇳CN-🇷🇺RU_141, server: 116.162.120.23, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 35195:123510, obfs-param: "", udp: true}
-  - {name: JP_509, server: tky3.ssgnode.ga, port: 443, type: trojan, password: 82a115db-6e59-4319-973lWNFc1RmRBNk5NQU5KSnga3fa58ac5a3ef0-b4ab-11eb-b65e-1239d0255272, sni: tky3.ssgnode.ga, skip-cert-verify: true, udp: true}
-  - {name: 韩国03(TG频道:@kxswa), server: 139.227.190.250, port: 15312, type: vmess, uuid: 6dc17fdb-9bcd-3231-ad6a-6af308aef4cc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 158.247.207.1}, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1013, server: jgwcc2.gaox.ml, port: 443, type: trojan, password: 9c822f05-cfdc-479a-9534-60f3d4127435, sni: jgwcc2.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: FR_213, server: 195.154.200.150, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_1593, server: 209.141.47.137, port: 443, type: trojan, password: 03f9d1c7-40f9-475c-bf46-e3883ee7da5f, skip-cert-verify: true, udp: true}
-  - {name: CN_291, server: ct.91js.pw, port: 10051, type: trojan, password: a13820c547fa34c5c45515c12f0cd576, sni: ct.91js.pw, skip-cert-verify: true, udp: true}
-  - {name: CN_294 | 7.81Mb, server: sg-cn-relay-6-689145.dk-3a4e.com, port: 9306, type: trojan, password: f2a28b26-3462-11e9-96d3-020b85e0a428, sni: sg-cn-relay-6-689145.dk-3a4e.com, skip-cert-verify: true, udp: true}
-  - {name: CN_299, server: jp-tyo-04-tr.cdn.savoy.click, port: 889, type: trojan, password: uDTmEAGwuCUZXZvwhWJk, sni: jp-tyo-04-tr.cdn.savoy.click, skip-cert-verify: true, udp: true}
-  - {name: US_1597, server: bai-piao-wang-zhe-iplc8.98848.xyz, port: 443, type: trojan, password: 8ac13614-d93e-4aab-a546-6a00e8360fb1, sni: bai-piao-wang-zhe-iplc8.98848.xyz, skip-cert-verify: true, udp: true}
-  - {name: Pool_🇳🇱NL_673 | 6.04Mb, server: 85.208.108.20, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_570, server: 38.121.43.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: Pool_🇳🇱NL_454, server: 85.208.108.91, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: JP_506, server: tky3.ssgnode.ga, port: 443, type: trojan, password: 82a115db-6e59-4319-9730-8f5638908d59YWVzLTI1Ni1nY2023115_5a451f03, sni: tky3.ssgnode.ga, skip-cert-verify: true, udp: true}
-  - {name: ZZ_1087, server: 169.197.142.187, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1338, server: guibi.ml, port: 443, type: vmess, uuid: 9d090c5f-56b9-4408-fc6b-b9316cc377c1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: guibi.ml}, udp: true}
-  - {name: CN_298, server: tw-tpe-h-tr.cdn.savoy.click, port: 10089, type: trojan, password: uDTmEAGwuCUZXZvwhWJk, sni: tw-tpe-h-tr.cdn.savoy.click, skip-cert-verify: true, udp: true}
-  - {name: US_1559, server: 184.168.127.50, port: 443, type: trojan, password: 36ebef7d1b1d6205fd0c55f28800e674, skip-cert-verify: true, udp: true}
+  - {name: 小螃蟹专用 02, server: cc38ab4a-1b5e-4c23-b6c1-73d08ef459a7.2501eeec-5bab-428d-b482-d79ef0f1db2d.63f6bbc5-ab80-4683-916c-2384f116aa74.yiyuan.cyou, port: 10531, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: cc38ab4a-1b5e-4c23-b6c1-73d08ef459a7.2501eeec-5bab-428d-b482-d79ef0f1db2d.63f6bbc5-ab80-4683-916c-2384f116aa74.yiyuan.cyou, skip-cert-verify: true, udp: true}
   - {name: Relay_🇨🇳CN-🇹🇼TW_115, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: 小飞侠专用 01 2, server: cc38ab4a-1b5e-4c23-b6c1-73d08ef459a7.2501eeec-5bab-428d-b482-d79ef0f1db2d.63f6bbc5-ab80-4683-916c-2384f116aa74.yiyuan.cyou, port: 10511, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: cc38ab4a-1b5e-4c23-b6c1-73d08ef459a7.2501eeec-5bab-428d-b482-d79ef0f1db2d.63f6bbc5-ab80-4683-916c-2384f116aa74.yiyuan.cyou, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇦🇺AU-🇦🇺AU_40, server: jgwxn2.gaox.ml, port: 443, type: trojan, password: c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: jgwxn2.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯05(TG频道:@kxswa), server: 139.227.190.250, port: 15304, type: vmess, uuid: 6dc17fdb-9bcd-3231-ad6a-6af308aef4cc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 2.56.240.65}, udp: true}
-  - {name: 美国 02 | 直连, server: e8e4ad34-301f-4b6a-929c-c02a7bdc7859.62dd6326-6357-4c87-94b7-06e277adea7c.c3b3b423-4c53-4570-bff7-462da591030b.yiyuan.cyou, port: 443, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: e8e4ad34-301f-4b6a-929c-c02a7bdc7859.62dd6326-6357-4c87-94b7-06e277adea7c.c3b3b423-4c53-4570-bff7-462da591030b.yiyuan.cyou, skip-cert-verify: true, udp: true}
-  - {name: 中国_tg+univstar_113, server: auto-moble.downloadmovie.cn, port: 65022, type: vmess, uuid: 0253b574-8020-3186-a647-0267295ac9bb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /rocket, ws-headers: {Host: auto-moble.downloadmovie.cn}, udp: true}
-  - {name: 香港 01 | 直连 2, server: hk01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: hk01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: US_1295, server: 38.68.135.19, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: CN_157, server: 175.178.125.181, port: 8000, type: vmess, uuid: dcd7ebf6-8220-476a-ada0-34a83b9c6072, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_1438, server: 167.88.63.82, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_692, server: 38.68.134.191, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_814, server: 38.64.138.145, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_531, server: 38.75.136.102, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_546, server: 167.88.62.68, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 香港 01 | 直连, server: hk01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: hk01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: US_745, server: 38.75.136.21, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: Relay_🇬🇧GB-🇬🇧GB_257, server: jgwld1.gaox.ml, port: 443, type: trojan, password: 02e653c9-7c93-46a9-999d-11834bd0c577, sni: jgwld1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 美国 01 | 直连, server: e8e4ad34-301f-4b6a-929c-c02a7bdc7859.62dd6326-6357-4c87-94b7-06e277adea7c.c3b3b423-4c53-4570-bff7-462da591030b.yiyuan.cyou, port: 443, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: e8e4ad34-301f-4b6a-929c-c02a7bdc7859.62dd6326-6357-4c87-94b7-06e277adea7c.c3b3b423-4c53-4570-bff7-462da591030b.yiyuan.cyou, skip-cert-verify: true, udp: true}
   - {name: Relay_🇨🇳 CN-🇭🇰HK_126, server: cm.spacez.cloud, port: 30002, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
+  - {name: US_925, server: 172.99.190.39, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: ZZ_1087, server: 169.197.142.187, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1001, server: jgwhdlb2.gaox.ml, port: 443, type: trojan, password: 54080134-2cba-4535-8599-95650bd9aa54, sni: jgwhdlb2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: FR_213, server: 195.154.200.150, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: Relay_🇬🇧GB-🇬🇧GB_197, server: jgwld2.gaox.ml, port: 443, type: trojan, password: d7fd8aaa-4581-4281-80aa-4b63e5e1f157, sni: jgwld2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1308, server: vus4.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vus4.0bad.com}, udp: true}
+  - {name: FR_169, server: 149.202.82.172, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_796, server: 172.99.190.149, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_1250, server: 172.99.188.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
   - {name: Relay_🇯🇵JP-🇯🇵JP_281, server: jgwdb3.gaox.ml, port: 443, type: trojan, password: 8d2d5953-d649-4034-94f2-72f2df2623da, sni: jgwdb3.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇦🇺AU-🇦🇺AU_40, server: jgwxn2.gaox.ml, port: 443, type: trojan, password: c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: jgwxn2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇦🇺AU-🇦🇺AU_29, server: jgwxn4.gaox.ml, port: 443, type: trojan, password: e8c1ab3c-89b3-4933-92df-682e6dce7819, sni: jgwxn4.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: US_570, server: 38.121.43.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: ZZ_1052, server: 134.195.198.95, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_1259, server: 38.86.135.36, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1002, server: jgwhdlb3.gaox.ml, port: 443, type: trojan, password: 006baa3f-4bc3-4915-b60d-c8c5dae11a11, sni: jgwhdlb3.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: US_677, server: 38.68.134.85, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_496, server: 167.88.63.59, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_771, server: 38.114.114.19, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_982, server: fhcarm1.gaox.ml, port: 443, type: trojan, password: 05742120-ce23-4cc8-88f5-6d221ce45bf4, sni: fhcarm1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: US_580, server: 142.202.48.52, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_1127, server: 167.88.63.79, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_983, server: fhcarm2.gaox.ml, port: 443, type: trojan, password: f39bd244-f5fe-415c-8b98-a1e5250bf178, sni: fhcarm2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: US_635, server: 167.88.61.175, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_1640, server: 38.114.114.69, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_704, server: 38.114.114.67, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1012, server: fhcamd1.gaox.ml, port: 443, type: trojan, password: e23f408a-012e-4030-8b31-02022031cb50, sni: fhcamd1.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 日本 01 | 直连, server: jp01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: jp01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: Pool_🇳🇱NL_454, server: 85.208.108.91, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: Pool_🇳🇱NL_673 | 6.04Mb, server: 85.208.108.20, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_1008, server: jgwdj3.gaox.ml, port: 443, type: trojan, password: da777aae-defb-41d0-a183-2c27da2b4677, sni: jgwdj3.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_985, server: jgwdj4.gaox.ml, port: 443, type: trojan, password: c09eb137-bf68-4658-84e0-102d94b74168, sni: jgwdj4.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: 小飞侠专用 01, server: cc38ab4a-1b5e-4c23-b6c1-73d08ef459a7.2501eeec-5bab-428d-b482-d79ef0f1db2d.63f6bbc5-ab80-4683-916c-2384f116aa74.yiyuan.cyou, port: 10511, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: cc38ab4a-1b5e-4c23-b6c1-73d08ef459a7.2501eeec-5bab-428d-b482-d79ef0f1db2d.63f6bbc5-ab80-4683-916c-2384f116aa74.yiyuan.cyou, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本 02 | 直连
-      - Relay_🇨🇳CN-🇭🇰HK_164
-      - Relay_🇺🇸US-🇺🇸US_1240
-      - 日本 01 | 直连
-      - 小螃蟹专用 02
-      - 日本 01 | 直连 2
-      - US_925
-      - Relay_🇺🇸US-🇺🇸US_983
-      - US_1577
-      - Relay_🇺🇸US-🇺🇸US_990
-      - US_1250
-      - CN_297
-      - JP_520
-      - US_1548
-      - TW_958
-      - US_1576
-      - TW_963
-      - US_1555
-      - Relay_🇬🇧GB-🇬🇧GB_197
-      - US_1438
-      - 美国 01 | 直连
-      - FR_169
-      - TW_956
-      - TW_959
-      - US_1585
-      - CN_296
-      - US_1556
-      - US_546
-      - TW_962
-      - US_1549
-      - US_1570
-      - US_745
-      - CN_302
-      - JP_515
-      - JP_510
-      - US_1588
-      - US_531
-      - US_814
-      - Relay_🇬🇧GB-🇬🇧GB_257
-      - US_1640
-      - ZZ_1052
-      - US_796
-      - DE_148
-      - CN_301
-      - US_496
-      - Relay_🇺🇸US-🇺🇸US_985
-      - "@SSRSUB-V12-付费推荐:suo.yt/ssrsub"
-      - 俄罗斯02(TG频道:@kxswa)
-      - Relay_🇺🇸US-🇺🇸US_1001
-      - JP_512
-      - Relay_🇬🇧GB-🇬🇧GB_238
-      - US_704
-      - AU_41
-      - Relay_🇺🇦UA-🇺🇦UA_488
-      - US_1546
-      - Relay_🇺🇸US-🇺🇸US_1012
-      - "@SSRSUB-V09-付费推荐:suo.yt/ssrsub"
-      - JP_514
-      - JP_516
-      - CN_300
-      - JP_513
-      - US_1551
-      - US_771
-      - JP_521
-      - Relay_🇺🇸US-🇺🇸US_1010
-      - CN_157
-      - JP_511
-      - TW_961
-      - US_1575
-      - Relay_🇨🇿CZ-🇨🇿CZ_112
-      - CN_305
-      - "@SSRSUB-V10-付费推荐:suo.yt/ssrsub"
-      - Relay_🇺🇸US-🇺🇸US_1002
-      - Relay_🇦🇺AU-🇦🇺AU_29
-      - US_677
-      - Relay_🇺🇸US-🇺🇸US_1008
-      - TW_957
-      - US_1580
-      - CN_288
-      - US_1589
-      - CN_306
-      - JP_522
-      - Relay_🇺🇸US-🇺🇸US_982
-      - US_1259
-      - CN_284 | 7.30Mb
-      - CN_295
-      - US_1592
-      - 美国(油管:破解资源君2.0)
-      - CN_303
-      - US_1295
-      - JP_507
-      - US_635
-      - US_1565
-      - "@SSRSUB-V06-付费推荐:suo.yt/ssrsub"
-      - Relay_🇺🇸US-🇺🇸US_1308
-      - US_1127
-      - CN_293
-      - CN_292 | 2.33Mb
-      - US_1564
-      - Relay_🇨🇳CN-🇭🇰HK_101
-      - Relay_🇺🇸US-🇩🇪DE_1341
-      - 小螃蟹专用 01
-      - US_770
       - CN_130
-      - "@SSRSUB-V17-付费推荐:suo.yt/ssrsub"
-      - 香港 01 | 直连
-      - 小飞侠专用 01
-      - 香港 02 | 直连
-      - 小飞侠专用  02
-      - 小螃蟹专用 01 2
-      - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub"
-      - US_580
-      - US_692
-      - Relay_🇨🇳CN-🇷🇺RU_141
-      - JP_509
-      - 韩国03(TG频道:@kxswa)
-      - Relay_🇺🇸US-🇺🇸US_1013
-      - FR_213
-      - US_1593
-      - CN_291
-      - CN_294 | 7.81Mb
-      - CN_299
-      - US_1597
-      - Pool_🇳🇱NL_673 | 6.04Mb
-      - US_570
-      - Pool_🇳🇱NL_454
-      - JP_506
-      - ZZ_1087
-      - Relay_🇺🇸US-🇺🇸US_1338
-      - CN_298
-      - US_1559
+      - 小螃蟹专用 02
       - Relay_🇨🇳CN-🇹🇼TW_115
-      - 小飞侠专用 01 2
-      - Relay_🇦🇺AU-🇦🇺AU_40
-      - 俄罗斯05(TG频道:@kxswa)
-      - 美国 02 | 直连
-      - 中国_tg+univstar_113
-      - 香港 01 | 直连 2
+      - US_1295
+      - CN_157
+      - US_1438
+      - US_692
+      - US_814
+      - US_531
+      - US_546
+      - 香港 01 | 直连
+      - US_745
+      - Relay_🇬🇧GB-🇬🇧GB_257
+      - 美国 01 | 直连
       - Relay_🇨🇳 CN-🇭🇰HK_126
+      - US_925
+      - ZZ_1087
+      - Relay_🇺🇸US-🇺🇸US_1001
+      - FR_213
+      - Relay_🇬🇧GB-🇬🇧GB_197
+      - Relay_🇺🇸US-🇺🇸US_1308
+      - FR_169
+      - US_796
+      - US_1250
       - Relay_🇯🇵JP-🇯🇵JP_281
+      - Relay_🇦🇺AU-🇦🇺AU_40
+      - Relay_🇦🇺AU-🇦🇺AU_29
+      - US_570
+      - ZZ_1052
+      - US_1259
+      - Relay_🇺🇸US-🇺🇸US_1002
+      - US_677
+      - US_496
+      - US_771
+      - Relay_🇺🇸US-🇺🇸US_982
+      - US_580
+      - US_1127
+      - Relay_🇺🇸US-🇺🇸US_983
+      - US_635
+      - US_1640
+      - US_704
+      - Relay_🇺🇸US-🇺🇸US_1012
+      - 日本 01 | 直连
+      - Pool_🇳🇱NL_454
+      - Pool_🇳🇱NL_673 | 6.04Mb
+      - Relay_🇺🇸US-🇺🇸US_1008
+      - Relay_🇺🇸US-🇺🇸US_985
+      - 小飞侠专用 01
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 日本 02 | 直连
-      - Relay_🇨🇳CN-🇭🇰HK_164
-      - Relay_🇺🇸US-🇺🇸US_1240
-      - 日本 01 | 直连
-      - 小螃蟹专用 02
-      - 日本 01 | 直连 2
-      - US_925
-      - Relay_🇺🇸US-🇺🇸US_983
-      - US_1577
-      - Relay_🇺🇸US-🇺🇸US_990
-      - US_1250
-      - CN_297
-      - JP_520
-      - US_1548
-      - TW_958
-      - US_1576
-      - TW_963
-      - US_1555
-      - Relay_🇬🇧GB-🇬🇧GB_197
-      - US_1438
-      - 美国 01 | 直连
-      - FR_169
-      - TW_956
-      - TW_959
-      - US_1585
-      - CN_296
-      - US_1556
-      - US_546
-      - TW_962
-      - US_1549
-      - US_1570
-      - US_745
-      - CN_302
-      - JP_515
-      - JP_510
-      - US_1588
-      - US_531
-      - US_814
-      - Relay_🇬🇧GB-🇬🇧GB_257
-      - US_1640
-      - ZZ_1052
-      - US_796
-      - DE_148
-      - CN_301
-      - US_496
-      - Relay_🇺🇸US-🇺🇸US_985
-      - "@SSRSUB-V12-付费推荐:suo.yt/ssrsub"
-      - 俄罗斯02(TG频道:@kxswa)
-      - Relay_🇺🇸US-🇺🇸US_1001
-      - JP_512
-      - Relay_🇬🇧GB-🇬🇧GB_238
-      - US_704
-      - AU_41
-      - Relay_🇺🇦UA-🇺🇦UA_488
-      - US_1546
-      - Relay_🇺🇸US-🇺🇸US_1012
-      - "@SSRSUB-V09-付费推荐:suo.yt/ssrsub"
-      - JP_514
-      - JP_516
-      - CN_300
-      - JP_513
-      - US_1551
-      - US_771
-      - JP_521
-      - Relay_🇺🇸US-🇺🇸US_1010
-      - CN_157
-      - JP_511
-      - TW_961
-      - US_1575
-      - Relay_🇨🇿CZ-🇨🇿CZ_112
-      - CN_305
-      - "@SSRSUB-V10-付费推荐:suo.yt/ssrsub"
-      - Relay_🇺🇸US-🇺🇸US_1002
-      - Relay_🇦🇺AU-🇦🇺AU_29
-      - US_677
-      - Relay_🇺🇸US-🇺🇸US_1008
-      - TW_957
-      - US_1580
-      - CN_288
-      - US_1589
-      - CN_306
-      - JP_522
-      - Relay_🇺🇸US-🇺🇸US_982
-      - US_1259
-      - CN_284 | 7.30Mb
-      - CN_295
-      - US_1592
-      - 美国(油管:破解资源君2.0)
-      - CN_303
-      - US_1295
-      - JP_507
-      - US_635
-      - US_1565
-      - "@SSRSUB-V06-付费推荐:suo.yt/ssrsub"
-      - Relay_🇺🇸US-🇺🇸US_1308
-      - US_1127
-      - CN_293
-      - CN_292 | 2.33Mb
-      - US_1564
-      - Relay_🇨🇳CN-🇭🇰HK_101
-      - Relay_🇺🇸US-🇩🇪DE_1341
-      - 小螃蟹专用 01
-      - US_770
       - CN_130
-      - "@SSRSUB-V17-付费推荐:suo.yt/ssrsub"
-      - 香港 01 | 直连
-      - 小飞侠专用 01
-      - 香港 02 | 直连
-      - 小飞侠专用  02
-      - 小螃蟹专用 01 2
-      - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub"
-      - US_580
-      - US_692
-      - Relay_🇨🇳CN-🇷🇺RU_141
-      - JP_509
-      - 韩国03(TG频道:@kxswa)
-      - Relay_🇺🇸US-🇺🇸US_1013
-      - FR_213
-      - US_1593
-      - CN_291
-      - CN_294 | 7.81Mb
-      - CN_299
-      - US_1597
-      - Pool_🇳🇱NL_673 | 6.04Mb
-      - US_570
-      - Pool_🇳🇱NL_454
-      - JP_506
-      - ZZ_1087
-      - Relay_🇺🇸US-🇺🇸US_1338
-      - CN_298
-      - US_1559
+      - 小螃蟹专用 02
       - Relay_🇨🇳CN-🇹🇼TW_115
-      - 小飞侠专用 01 2
-      - Relay_🇦🇺AU-🇦🇺AU_40
-      - 俄罗斯05(TG频道:@kxswa)
-      - 美国 02 | 直连
-      - 中国_tg+univstar_113
-      - 香港 01 | 直连 2
+      - US_1295
+      - CN_157
+      - US_1438
+      - US_692
+      - US_814
+      - US_531
+      - US_546
+      - 香港 01 | 直连
+      - US_745
+      - Relay_🇬🇧GB-🇬🇧GB_257
+      - 美国 01 | 直连
       - Relay_🇨🇳 CN-🇭🇰HK_126
+      - US_925
+      - ZZ_1087
+      - Relay_🇺🇸US-🇺🇸US_1001
+      - FR_213
+      - Relay_🇬🇧GB-🇬🇧GB_197
+      - Relay_🇺🇸US-🇺🇸US_1308
+      - FR_169
+      - US_796
+      - US_1250
       - Relay_🇯🇵JP-🇯🇵JP_281
+      - Relay_🇦🇺AU-🇦🇺AU_40
+      - Relay_🇦🇺AU-🇦🇺AU_29
+      - US_570
+      - ZZ_1052
+      - US_1259
+      - Relay_🇺🇸US-🇺🇸US_1002
+      - US_677
+      - US_496
+      - US_771
+      - Relay_🇺🇸US-🇺🇸US_982
+      - US_580
+      - US_1127
+      - Relay_🇺🇸US-🇺🇸US_983
+      - US_635
+      - US_1640
+      - US_704
+      - Relay_🇺🇸US-🇺🇸US_1012
+      - 日本 01 | 直连
+      - Pool_🇳🇱NL_454
+      - Pool_🇳🇱NL_673 | 6.04Mb
+      - Relay_🇺🇸US-🇺🇸US_1008
+      - Relay_🇺🇸US-🇺🇸US_985
+      - 小飞侠专用 01
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本 02 | 直连
-      - Relay_🇨🇳CN-🇭🇰HK_164
-      - Relay_🇺🇸US-🇺🇸US_1240
-      - 日本 01 | 直连
-      - 小螃蟹专用 02
-      - 日本 01 | 直连 2
-      - US_925
-      - Relay_🇺🇸US-🇺🇸US_983
-      - US_1577
-      - Relay_🇺🇸US-🇺🇸US_990
-      - US_1250
-      - CN_297
-      - JP_520
-      - US_1548
-      - TW_958
-      - US_1576
-      - TW_963
-      - US_1555
-      - Relay_🇬🇧GB-🇬🇧GB_197
-      - US_1438
-      - 美国 01 | 直连
-      - FR_169
-      - TW_956
-      - TW_959
-      - US_1585
-      - CN_296
-      - US_1556
-      - US_546
-      - TW_962
-      - US_1549
-      - US_1570
-      - US_745
-      - CN_302
-      - JP_515
-      - JP_510
-      - US_1588
-      - US_531
-      - US_814
-      - Relay_🇬🇧GB-🇬🇧GB_257
-      - US_1640
-      - ZZ_1052
-      - US_796
-      - DE_148
-      - CN_301
-      - US_496
-      - Relay_🇺🇸US-🇺🇸US_985
-      - "@SSRSUB-V12-付费推荐:suo.yt/ssrsub"
-      - 俄罗斯02(TG频道:@kxswa)
-      - Relay_🇺🇸US-🇺🇸US_1001
-      - JP_512
-      - Relay_🇬🇧GB-🇬🇧GB_238
-      - US_704
-      - AU_41
-      - Relay_🇺🇦UA-🇺🇦UA_488
-      - US_1546
-      - Relay_🇺🇸US-🇺🇸US_1012
-      - "@SSRSUB-V09-付费推荐:suo.yt/ssrsub"
-      - JP_514
-      - JP_516
-      - CN_300
-      - JP_513
-      - US_1551
-      - US_771
-      - JP_521
-      - Relay_🇺🇸US-🇺🇸US_1010
-      - CN_157
-      - JP_511
-      - TW_961
-      - US_1575
-      - Relay_🇨🇿CZ-🇨🇿CZ_112
-      - CN_305
-      - "@SSRSUB-V10-付费推荐:suo.yt/ssrsub"
-      - Relay_🇺🇸US-🇺🇸US_1002
-      - Relay_🇦🇺AU-🇦🇺AU_29
-      - US_677
-      - Relay_🇺🇸US-🇺🇸US_1008
-      - TW_957
-      - US_1580
-      - CN_288
-      - US_1589
-      - CN_306
-      - JP_522
-      - Relay_🇺🇸US-🇺🇸US_982
-      - US_1259
-      - CN_284 | 7.30Mb
-      - CN_295
-      - US_1592
-      - 美国(油管:破解资源君2.0)
-      - CN_303
-      - US_1295
-      - JP_507
-      - US_635
-      - US_1565
-      - "@SSRSUB-V06-付费推荐:suo.yt/ssrsub"
-      - Relay_🇺🇸US-🇺🇸US_1308
-      - US_1127
-      - CN_293
-      - CN_292 | 2.33Mb
-      - US_1564
-      - Relay_🇨🇳CN-🇭🇰HK_101
-      - Relay_🇺🇸US-🇩🇪DE_1341
-      - 小螃蟹专用 01
-      - US_770
       - CN_130
-      - "@SSRSUB-V17-付费推荐:suo.yt/ssrsub"
-      - 香港 01 | 直连
-      - 小飞侠专用 01
-      - 香港 02 | 直连
-      - 小飞侠专用  02
-      - 小螃蟹专用 01 2
-      - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub"
-      - US_580
-      - US_692
-      - Relay_🇨🇳CN-🇷🇺RU_141
-      - JP_509
-      - 韩国03(TG频道:@kxswa)
-      - Relay_🇺🇸US-🇺🇸US_1013
-      - FR_213
-      - US_1593
-      - CN_291
-      - CN_294 | 7.81Mb
-      - CN_299
-      - US_1597
-      - Pool_🇳🇱NL_673 | 6.04Mb
-      - US_570
-      - Pool_🇳🇱NL_454
-      - JP_506
-      - ZZ_1087
-      - Relay_🇺🇸US-🇺🇸US_1338
-      - CN_298
-      - US_1559
+      - 小螃蟹专用 02
       - Relay_🇨🇳CN-🇹🇼TW_115
-      - 小飞侠专用 01 2
-      - Relay_🇦🇺AU-🇦🇺AU_40
-      - 俄罗斯05(TG频道:@kxswa)
-      - 美国 02 | 直连
-      - 中国_tg+univstar_113
-      - 香港 01 | 直连 2
+      - US_1295
+      - CN_157
+      - US_1438
+      - US_692
+      - US_814
+      - US_531
+      - US_546
+      - 香港 01 | 直连
+      - US_745
+      - Relay_🇬🇧GB-🇬🇧GB_257
+      - 美国 01 | 直连
       - Relay_🇨🇳 CN-🇭🇰HK_126
+      - US_925
+      - ZZ_1087
+      - Relay_🇺🇸US-🇺🇸US_1001
+      - FR_213
+      - Relay_🇬🇧GB-🇬🇧GB_197
+      - Relay_🇺🇸US-🇺🇸US_1308
+      - FR_169
+      - US_796
+      - US_1250
       - Relay_🇯🇵JP-🇯🇵JP_281
+      - Relay_🇦🇺AU-🇦🇺AU_40
+      - Relay_🇦🇺AU-🇦🇺AU_29
+      - US_570
+      - ZZ_1052
+      - US_1259
+      - Relay_🇺🇸US-🇺🇸US_1002
+      - US_677
+      - US_496
+      - US_771
+      - Relay_🇺🇸US-🇺🇸US_982
+      - US_580
+      - US_1127
+      - Relay_🇺🇸US-🇺🇸US_983
+      - US_635
+      - US_1640
+      - US_704
+      - Relay_🇺🇸US-🇺🇸US_1012
+      - 日本 01 | 直连
+      - Pool_🇳🇱NL_454
+      - Pool_🇳🇱NL_673 | 6.04Mb
+      - Relay_🇺🇸US-🇺🇸US_1008
+      - Relay_🇺🇸US-🇺🇸US_985
+      - 小飞侠专用 01
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -600,590 +232,220 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 日本 02 | 直连
-      - Relay_🇨🇳CN-🇭🇰HK_164
-      - Relay_🇺🇸US-🇺🇸US_1240
-      - 日本 01 | 直连
-      - 小螃蟹专用 02
-      - 日本 01 | 直连 2
-      - US_925
-      - Relay_🇺🇸US-🇺🇸US_983
-      - US_1577
-      - Relay_🇺🇸US-🇺🇸US_990
-      - US_1250
-      - CN_297
-      - JP_520
-      - US_1548
-      - TW_958
-      - US_1576
-      - TW_963
-      - US_1555
-      - Relay_🇬🇧GB-🇬🇧GB_197
-      - US_1438
-      - 美国 01 | 直连
-      - FR_169
-      - TW_956
-      - TW_959
-      - US_1585
-      - CN_296
-      - US_1556
-      - US_546
-      - TW_962
-      - US_1549
-      - US_1570
-      - US_745
-      - CN_302
-      - JP_515
-      - JP_510
-      - US_1588
-      - US_531
-      - US_814
-      - Relay_🇬🇧GB-🇬🇧GB_257
-      - US_1640
-      - ZZ_1052
-      - US_796
-      - DE_148
-      - CN_301
-      - US_496
-      - Relay_🇺🇸US-🇺🇸US_985
-      - "@SSRSUB-V12-付费推荐:suo.yt/ssrsub"
-      - 俄罗斯02(TG频道:@kxswa)
-      - Relay_🇺🇸US-🇺🇸US_1001
-      - JP_512
-      - Relay_🇬🇧GB-🇬🇧GB_238
-      - US_704
-      - AU_41
-      - Relay_🇺🇦UA-🇺🇦UA_488
-      - US_1546
-      - Relay_🇺🇸US-🇺🇸US_1012
-      - "@SSRSUB-V09-付费推荐:suo.yt/ssrsub"
-      - JP_514
-      - JP_516
-      - CN_300
-      - JP_513
-      - US_1551
-      - US_771
-      - JP_521
-      - Relay_🇺🇸US-🇺🇸US_1010
-      - CN_157
-      - JP_511
-      - TW_961
-      - US_1575
-      - Relay_🇨🇿CZ-🇨🇿CZ_112
-      - CN_305
-      - "@SSRSUB-V10-付费推荐:suo.yt/ssrsub"
-      - Relay_🇺🇸US-🇺🇸US_1002
-      - Relay_🇦🇺AU-🇦🇺AU_29
-      - US_677
-      - Relay_🇺🇸US-🇺🇸US_1008
-      - TW_957
-      - US_1580
-      - CN_288
-      - US_1589
-      - CN_306
-      - JP_522
-      - Relay_🇺🇸US-🇺🇸US_982
-      - US_1259
-      - CN_284 | 7.30Mb
-      - CN_295
-      - US_1592
-      - 美国(油管:破解资源君2.0)
-      - CN_303
-      - US_1295
-      - JP_507
-      - US_635
-      - US_1565
-      - "@SSRSUB-V06-付费推荐:suo.yt/ssrsub"
-      - Relay_🇺🇸US-🇺🇸US_1308
-      - US_1127
-      - CN_293
-      - CN_292 | 2.33Mb
-      - US_1564
-      - Relay_🇨🇳CN-🇭🇰HK_101
-      - Relay_🇺🇸US-🇩🇪DE_1341
-      - 小螃蟹专用 01
-      - US_770
       - CN_130
-      - "@SSRSUB-V17-付费推荐:suo.yt/ssrsub"
-      - 香港 01 | 直连
-      - 小飞侠专用 01
-      - 香港 02 | 直连
-      - 小飞侠专用  02
-      - 小螃蟹专用 01 2
-      - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub"
-      - US_580
-      - US_692
-      - Relay_🇨🇳CN-🇷🇺RU_141
-      - JP_509
-      - 韩国03(TG频道:@kxswa)
-      - Relay_🇺🇸US-🇺🇸US_1013
-      - FR_213
-      - US_1593
-      - CN_291
-      - CN_294 | 7.81Mb
-      - CN_299
-      - US_1597
-      - Pool_🇳🇱NL_673 | 6.04Mb
-      - US_570
-      - Pool_🇳🇱NL_454
-      - JP_506
-      - ZZ_1087
-      - Relay_🇺🇸US-🇺🇸US_1338
-      - CN_298
-      - US_1559
+      - 小螃蟹专用 02
       - Relay_🇨🇳CN-🇹🇼TW_115
-      - 小飞侠专用 01 2
-      - Relay_🇦🇺AU-🇦🇺AU_40
-      - 俄罗斯05(TG频道:@kxswa)
-      - 美国 02 | 直连
-      - 中国_tg+univstar_113
-      - 香港 01 | 直连 2
+      - US_1295
+      - CN_157
+      - US_1438
+      - US_692
+      - US_814
+      - US_531
+      - US_546
+      - 香港 01 | 直连
+      - US_745
+      - Relay_🇬🇧GB-🇬🇧GB_257
+      - 美国 01 | 直连
       - Relay_🇨🇳 CN-🇭🇰HK_126
+      - US_925
+      - ZZ_1087
+      - Relay_🇺🇸US-🇺🇸US_1001
+      - FR_213
+      - Relay_🇬🇧GB-🇬🇧GB_197
+      - Relay_🇺🇸US-🇺🇸US_1308
+      - FR_169
+      - US_796
+      - US_1250
       - Relay_🇯🇵JP-🇯🇵JP_281
+      - Relay_🇦🇺AU-🇦🇺AU_40
+      - Relay_🇦🇺AU-🇦🇺AU_29
+      - US_570
+      - ZZ_1052
+      - US_1259
+      - Relay_🇺🇸US-🇺🇸US_1002
+      - US_677
+      - US_496
+      - US_771
+      - Relay_🇺🇸US-🇺🇸US_982
+      - US_580
+      - US_1127
+      - Relay_🇺🇸US-🇺🇸US_983
+      - US_635
+      - US_1640
+      - US_704
+      - Relay_🇺🇸US-🇺🇸US_1012
+      - 日本 01 | 直连
+      - Pool_🇳🇱NL_454
+      - Pool_🇳🇱NL_673 | 6.04Mb
+      - Relay_🇺🇸US-🇺🇸US_1008
+      - Relay_🇺🇸US-🇺🇸US_985
+      - 小飞侠专用 01
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
       - 香港 01 | 直连
-      - 香港 02 | 直连
-      - 香港 01 | 直连 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 日本 02 | 直连
-      - Relay_🇨🇳CN-🇭🇰HK_164
-      - Relay_🇺🇸US-🇺🇸US_1240
-      - 日本 01 | 直连
-      - 小螃蟹专用 02
-      - 日本 01 | 直连 2
-      - US_925
-      - Relay_🇺🇸US-🇺🇸US_983
-      - US_1577
-      - Relay_🇺🇸US-🇺🇸US_990
-      - US_1250
-      - CN_297
-      - JP_520
-      - US_1548
-      - TW_958
-      - US_1576
-      - TW_963
-      - US_1555
-      - Relay_🇬🇧GB-🇬🇧GB_197
-      - US_1438
-      - 美国 01 | 直连
-      - FR_169
-      - TW_956
-      - TW_959
-      - US_1585
-      - CN_296
-      - US_1556
-      - US_546
-      - TW_962
-      - US_1549
-      - US_1570
-      - US_745
-      - CN_302
-      - JP_515
-      - JP_510
-      - US_1588
-      - US_531
-      - US_814
-      - Relay_🇬🇧GB-🇬🇧GB_257
-      - US_1640
-      - ZZ_1052
-      - US_796
-      - DE_148
-      - CN_301
-      - US_496
-      - Relay_🇺🇸US-🇺🇸US_985
-      - "@SSRSUB-V12-付费推荐:suo.yt/ssrsub"
-      - 俄罗斯02(TG频道:@kxswa)
-      - Relay_🇺🇸US-🇺🇸US_1001
-      - JP_512
-      - Relay_🇬🇧GB-🇬🇧GB_238
-      - US_704
-      - AU_41
-      - Relay_🇺🇦UA-🇺🇦UA_488
-      - US_1546
-      - Relay_🇺🇸US-🇺🇸US_1012
-      - "@SSRSUB-V09-付费推荐:suo.yt/ssrsub"
-      - JP_514
-      - JP_516
-      - CN_300
-      - JP_513
-      - US_1551
-      - US_771
-      - JP_521
-      - Relay_🇺🇸US-🇺🇸US_1010
-      - CN_157
-      - JP_511
-      - TW_961
-      - US_1575
-      - Relay_🇨🇿CZ-🇨🇿CZ_112
-      - CN_305
-      - "@SSRSUB-V10-付费推荐:suo.yt/ssrsub"
-      - Relay_🇺🇸US-🇺🇸US_1002
-      - Relay_🇦🇺AU-🇦🇺AU_29
-      - US_677
-      - Relay_🇺🇸US-🇺🇸US_1008
-      - TW_957
-      - US_1580
-      - CN_288
-      - US_1589
-      - CN_306
-      - JP_522
-      - Relay_🇺🇸US-🇺🇸US_982
-      - US_1259
-      - CN_284 | 7.30Mb
-      - CN_295
-      - US_1592
-      - 美国(油管:破解资源君2.0)
-      - CN_303
-      - US_1295
-      - JP_507
-      - US_635
-      - US_1565
-      - "@SSRSUB-V06-付费推荐:suo.yt/ssrsub"
-      - Relay_🇺🇸US-🇺🇸US_1308
-      - US_1127
-      - CN_293
-      - CN_292 | 2.33Mb
-      - US_1564
-      - Relay_🇨🇳CN-🇭🇰HK_101
-      - Relay_🇺🇸US-🇩🇪DE_1341
-      - 小螃蟹专用 01
-      - US_770
       - CN_130
-      - "@SSRSUB-V17-付费推荐:suo.yt/ssrsub"
-      - 香港 01 | 直连
-      - 小飞侠专用 01
-      - 香港 02 | 直连
-      - 小飞侠专用  02
-      - 小螃蟹专用 01 2
-      - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub"
-      - US_580
-      - US_692
-      - Relay_🇨🇳CN-🇷🇺RU_141
-      - JP_509
-      - 韩国03(TG频道:@kxswa)
-      - Relay_🇺🇸US-🇺🇸US_1013
-      - FR_213
-      - US_1593
-      - CN_291
-      - CN_294 | 7.81Mb
-      - CN_299
-      - US_1597
-      - Pool_🇳🇱NL_673 | 6.04Mb
-      - US_570
-      - Pool_🇳🇱NL_454
-      - JP_506
-      - ZZ_1087
-      - Relay_🇺🇸US-🇺🇸US_1338
-      - CN_298
-      - US_1559
+      - 小螃蟹专用 02
       - Relay_🇨🇳CN-🇹🇼TW_115
-      - 小飞侠专用 01 2
-      - Relay_🇦🇺AU-🇦🇺AU_40
-      - 俄罗斯05(TG频道:@kxswa)
-      - 美国 02 | 直连
-      - 中国_tg+univstar_113
-      - 香港 01 | 直连 2
+      - US_1295
+      - CN_157
+      - US_1438
+      - US_692
+      - US_814
+      - US_531
+      - US_546
+      - 香港 01 | 直连
+      - US_745
+      - Relay_🇬🇧GB-🇬🇧GB_257
+      - 美国 01 | 直连
       - Relay_🇨🇳 CN-🇭🇰HK_126
+      - US_925
+      - ZZ_1087
+      - Relay_🇺🇸US-🇺🇸US_1001
+      - FR_213
+      - Relay_🇬🇧GB-🇬🇧GB_197
+      - Relay_🇺🇸US-🇺🇸US_1308
+      - FR_169
+      - US_796
+      - US_1250
       - Relay_🇯🇵JP-🇯🇵JP_281
+      - Relay_🇦🇺AU-🇦🇺AU_40
+      - Relay_🇦🇺AU-🇦🇺AU_29
+      - US_570
+      - ZZ_1052
+      - US_1259
+      - Relay_🇺🇸US-🇺🇸US_1002
+      - US_677
+      - US_496
+      - US_771
+      - Relay_🇺🇸US-🇺🇸US_982
+      - US_580
+      - US_1127
+      - Relay_🇺🇸US-🇺🇸US_983
+      - US_635
+      - US_1640
+      - US_704
+      - Relay_🇺🇸US-🇺🇸US_1012
+      - 日本 01 | 直连
+      - Pool_🇳🇱NL_454
+      - Pool_🇳🇱NL_673 | 6.04Mb
+      - Relay_🇺🇸US-🇺🇸US_1008
+      - Relay_🇺🇸US-🇺🇸US_985
+      - 小飞侠专用 01
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 日本 02 | 直连
-      - Relay_🇨🇳CN-🇭🇰HK_164
-      - Relay_🇺🇸US-🇺🇸US_1240
-      - 日本 01 | 直连
-      - 小螃蟹专用 02
-      - 日本 01 | 直连 2
-      - US_925
-      - Relay_🇺🇸US-🇺🇸US_983
-      - US_1577
-      - Relay_🇺🇸US-🇺🇸US_990
-      - US_1250
-      - CN_297
-      - JP_520
-      - US_1548
-      - TW_958
-      - US_1576
-      - TW_963
-      - US_1555
-      - Relay_🇬🇧GB-🇬🇧GB_197
-      - US_1438
-      - 美国 01 | 直连
-      - FR_169
-      - TW_956
-      - TW_959
-      - US_1585
-      - CN_296
-      - US_1556
-      - US_546
-      - TW_962
-      - US_1549
-      - US_1570
-      - US_745
-      - CN_302
-      - JP_515
-      - JP_510
-      - US_1588
-      - US_531
-      - US_814
-      - Relay_🇬🇧GB-🇬🇧GB_257
-      - US_1640
-      - ZZ_1052
-      - US_796
-      - DE_148
-      - CN_301
-      - US_496
-      - Relay_🇺🇸US-🇺🇸US_985
-      - "@SSRSUB-V12-付费推荐:suo.yt/ssrsub"
-      - 俄罗斯02(TG频道:@kxswa)
-      - Relay_🇺🇸US-🇺🇸US_1001
-      - JP_512
-      - Relay_🇬🇧GB-🇬🇧GB_238
-      - US_704
-      - AU_41
-      - Relay_🇺🇦UA-🇺🇦UA_488
-      - US_1546
-      - Relay_🇺🇸US-🇺🇸US_1012
-      - "@SSRSUB-V09-付费推荐:suo.yt/ssrsub"
-      - JP_514
-      - JP_516
-      - CN_300
-      - JP_513
-      - US_1551
-      - US_771
-      - JP_521
-      - Relay_🇺🇸US-🇺🇸US_1010
-      - CN_157
-      - JP_511
-      - TW_961
-      - US_1575
-      - Relay_🇨🇿CZ-🇨🇿CZ_112
-      - CN_305
-      - "@SSRSUB-V10-付费推荐:suo.yt/ssrsub"
-      - Relay_🇺🇸US-🇺🇸US_1002
-      - Relay_🇦🇺AU-🇦🇺AU_29
-      - US_677
-      - Relay_🇺🇸US-🇺🇸US_1008
-      - TW_957
-      - US_1580
-      - CN_288
-      - US_1589
-      - CN_306
-      - JP_522
-      - Relay_🇺🇸US-🇺🇸US_982
-      - US_1259
-      - CN_284 | 7.30Mb
-      - CN_295
-      - US_1592
-      - 美国(油管:破解资源君2.0)
-      - CN_303
-      - US_1295
-      - JP_507
-      - US_635
-      - US_1565
-      - "@SSRSUB-V06-付费推荐:suo.yt/ssrsub"
-      - Relay_🇺🇸US-🇺🇸US_1308
-      - US_1127
-      - CN_293
-      - CN_292 | 2.33Mb
-      - US_1564
-      - Relay_🇨🇳CN-🇭🇰HK_101
-      - Relay_🇺🇸US-🇩🇪DE_1341
-      - 小螃蟹专用 01
-      - US_770
       - CN_130
-      - "@SSRSUB-V17-付费推荐:suo.yt/ssrsub"
-      - 香港 01 | 直连
-      - 小飞侠专用 01
-      - 香港 02 | 直连
-      - 小飞侠专用  02
-      - 小螃蟹专用 01 2
-      - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub"
-      - US_580
-      - US_692
-      - Relay_🇨🇳CN-🇷🇺RU_141
-      - JP_509
-      - 韩国03(TG频道:@kxswa)
-      - Relay_🇺🇸US-🇺🇸US_1013
-      - FR_213
-      - US_1593
-      - CN_291
-      - CN_294 | 7.81Mb
-      - CN_299
-      - US_1597
-      - Pool_🇳🇱NL_673 | 6.04Mb
-      - US_570
-      - Pool_🇳🇱NL_454
-      - JP_506
-      - ZZ_1087
-      - Relay_🇺🇸US-🇺🇸US_1338
-      - CN_298
-      - US_1559
+      - 小螃蟹专用 02
       - Relay_🇨🇳CN-🇹🇼TW_115
-      - 小飞侠专用 01 2
-      - Relay_🇦🇺AU-🇦🇺AU_40
-      - 俄罗斯05(TG频道:@kxswa)
-      - 美国 02 | 直连
-      - 中国_tg+univstar_113
-      - 香港 01 | 直连 2
+      - US_1295
+      - CN_157
+      - US_1438
+      - US_692
+      - US_814
+      - US_531
+      - US_546
+      - 香港 01 | 直连
+      - US_745
+      - Relay_🇬🇧GB-🇬🇧GB_257
+      - 美国 01 | 直连
       - Relay_🇨🇳 CN-🇭🇰HK_126
+      - US_925
+      - ZZ_1087
+      - Relay_🇺🇸US-🇺🇸US_1001
+      - FR_213
+      - Relay_🇬🇧GB-🇬🇧GB_197
+      - Relay_🇺🇸US-🇺🇸US_1308
+      - FR_169
+      - US_796
+      - US_1250
       - Relay_🇯🇵JP-🇯🇵JP_281
+      - Relay_🇦🇺AU-🇦🇺AU_40
+      - Relay_🇦🇺AU-🇦🇺AU_29
+      - US_570
+      - ZZ_1052
+      - US_1259
+      - Relay_🇺🇸US-🇺🇸US_1002
+      - US_677
+      - US_496
+      - US_771
+      - Relay_🇺🇸US-🇺🇸US_982
+      - US_580
+      - US_1127
+      - Relay_🇺🇸US-🇺🇸US_983
+      - US_635
+      - US_1640
+      - US_704
+      - Relay_🇺🇸US-🇺🇸US_1012
+      - 日本 01 | 直连
+      - Pool_🇳🇱NL_454
+      - Pool_🇳🇱NL_673 | 6.04Mb
+      - Relay_🇺🇸US-🇺🇸US_1008
+      - Relay_🇺🇸US-🇺🇸US_985
+      - 小飞侠专用 01
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本 02 | 直连
-      - Relay_🇨🇳CN-🇭🇰HK_164
-      - Relay_🇺🇸US-🇺🇸US_1240
-      - 日本 01 | 直连
-      - 小螃蟹专用 02
-      - 日本 01 | 直连 2
-      - US_925
-      - Relay_🇺🇸US-🇺🇸US_983
-      - US_1577
-      - Relay_🇺🇸US-🇺🇸US_990
-      - US_1250
-      - CN_297
-      - JP_520
-      - US_1548
-      - TW_958
-      - US_1576
-      - TW_963
-      - US_1555
-      - Relay_🇬🇧GB-🇬🇧GB_197
-      - US_1438
-      - 美国 01 | 直连
-      - FR_169
-      - TW_956
-      - TW_959
-      - US_1585
-      - CN_296
-      - US_1556
-      - US_546
-      - TW_962
-      - US_1549
-      - US_1570
-      - US_745
-      - CN_302
-      - JP_515
-      - JP_510
-      - US_1588
-      - US_531
-      - US_814
-      - Relay_🇬🇧GB-🇬🇧GB_257
-      - US_1640
-      - ZZ_1052
-      - US_796
-      - DE_148
-      - CN_301
-      - US_496
-      - Relay_🇺🇸US-🇺🇸US_985
-      - "@SSRSUB-V12-付费推荐:suo.yt/ssrsub"
-      - 俄罗斯02(TG频道:@kxswa)
-      - Relay_🇺🇸US-🇺🇸US_1001
-      - JP_512
-      - Relay_🇬🇧GB-🇬🇧GB_238
-      - US_704
-      - AU_41
-      - Relay_🇺🇦UA-🇺🇦UA_488
-      - US_1546
-      - Relay_🇺🇸US-🇺🇸US_1012
-      - "@SSRSUB-V09-付费推荐:suo.yt/ssrsub"
-      - JP_514
-      - JP_516
-      - CN_300
-      - JP_513
-      - US_1551
-      - US_771
-      - JP_521
-      - Relay_🇺🇸US-🇺🇸US_1010
-      - CN_157
-      - JP_511
-      - TW_961
-      - US_1575
-      - Relay_🇨🇿CZ-🇨🇿CZ_112
-      - CN_305
-      - "@SSRSUB-V10-付费推荐:suo.yt/ssrsub"
-      - Relay_🇺🇸US-🇺🇸US_1002
-      - Relay_🇦🇺AU-🇦🇺AU_29
-      - US_677
-      - Relay_🇺🇸US-🇺🇸US_1008
-      - TW_957
-      - US_1580
-      - CN_288
-      - US_1589
-      - CN_306
-      - JP_522
-      - Relay_🇺🇸US-🇺🇸US_982
-      - US_1259
-      - CN_284 | 7.30Mb
-      - CN_295
-      - US_1592
-      - 美国(油管:破解资源君2.0)
-      - CN_303
-      - US_1295
-      - JP_507
-      - US_635
-      - US_1565
-      - "@SSRSUB-V06-付费推荐:suo.yt/ssrsub"
-      - Relay_🇺🇸US-🇺🇸US_1308
-      - US_1127
-      - CN_293
-      - CN_292 | 2.33Mb
-      - US_1564
-      - Relay_🇨🇳CN-🇭🇰HK_101
-      - Relay_🇺🇸US-🇩🇪DE_1341
-      - 小螃蟹专用 01
-      - US_770
       - CN_130
-      - "@SSRSUB-V17-付费推荐:suo.yt/ssrsub"
-      - 香港 01 | 直连
-      - 小飞侠专用 01
-      - 香港 02 | 直连
-      - 小飞侠专用  02
-      - 小螃蟹专用 01 2
-      - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub"
-      - US_580
-      - US_692
-      - Relay_🇨🇳CN-🇷🇺RU_141
-      - JP_509
-      - 韩国03(TG频道:@kxswa)
-      - Relay_🇺🇸US-🇺🇸US_1013
-      - FR_213
-      - US_1593
-      - CN_291
-      - CN_294 | 7.81Mb
-      - CN_299
-      - US_1597
-      - Pool_🇳🇱NL_673 | 6.04Mb
-      - US_570
-      - Pool_🇳🇱NL_454
-      - JP_506
-      - ZZ_1087
-      - Relay_🇺🇸US-🇺🇸US_1338
-      - CN_298
-      - US_1559
+      - 小螃蟹专用 02
       - Relay_🇨🇳CN-🇹🇼TW_115
-      - 小飞侠专用 01 2
-      - Relay_🇦🇺AU-🇦🇺AU_40
-      - 俄罗斯05(TG频道:@kxswa)
-      - 美国 02 | 直连
-      - 中国_tg+univstar_113
-      - 香港 01 | 直连 2
+      - US_1295
+      - CN_157
+      - US_1438
+      - US_692
+      - US_814
+      - US_531
+      - US_546
+      - 香港 01 | 直连
+      - US_745
+      - Relay_🇬🇧GB-🇬🇧GB_257
+      - 美国 01 | 直连
       - Relay_🇨🇳 CN-🇭🇰HK_126
+      - US_925
+      - ZZ_1087
+      - Relay_🇺🇸US-🇺🇸US_1001
+      - FR_213
+      - Relay_🇬🇧GB-🇬🇧GB_197
+      - Relay_🇺🇸US-🇺🇸US_1308
+      - FR_169
+      - US_796
+      - US_1250
       - Relay_🇯🇵JP-🇯🇵JP_281
+      - Relay_🇦🇺AU-🇦🇺AU_40
+      - Relay_🇦🇺AU-🇦🇺AU_29
+      - US_570
+      - ZZ_1052
+      - US_1259
+      - Relay_🇺🇸US-🇺🇸US_1002
+      - US_677
+      - US_496
+      - US_771
+      - Relay_🇺🇸US-🇺🇸US_982
+      - US_580
+      - US_1127
+      - Relay_🇺🇸US-🇺🇸US_983
+      - US_635
+      - US_1640
+      - US_704
+      - Relay_🇺🇸US-🇺🇸US_1012
+      - 日本 01 | 直连
+      - Pool_🇳🇱NL_454
+      - Pool_🇳🇱NL_673 | 6.04Mb
+      - Relay_🇺🇸US-🇺🇸US_1008
+      - Relay_🇺🇸US-🇺🇸US_985
+      - 小飞侠专用 01
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1199,146 +461,54 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 日本 02 | 直连
-      - Relay_🇨🇳CN-🇭🇰HK_164
-      - Relay_🇺🇸US-🇺🇸US_1240
-      - 日本 01 | 直连
-      - 小螃蟹专用 02
-      - 日本 01 | 直连 2
-      - US_925
-      - Relay_🇺🇸US-🇺🇸US_983
-      - US_1577
-      - Relay_🇺🇸US-🇺🇸US_990
-      - US_1250
-      - CN_297
-      - JP_520
-      - US_1548
-      - TW_958
-      - US_1576
-      - TW_963
-      - US_1555
-      - Relay_🇬🇧GB-🇬🇧GB_197
-      - US_1438
-      - 美国 01 | 直连
-      - FR_169
-      - TW_956
-      - TW_959
-      - US_1585
-      - CN_296
-      - US_1556
-      - US_546
-      - TW_962
-      - US_1549
-      - US_1570
-      - US_745
-      - CN_302
-      - JP_515
-      - JP_510
-      - US_1588
-      - US_531
-      - US_814
-      - Relay_🇬🇧GB-🇬🇧GB_257
-      - US_1640
-      - ZZ_1052
-      - US_796
-      - DE_148
-      - CN_301
-      - US_496
-      - Relay_🇺🇸US-🇺🇸US_985
-      - "@SSRSUB-V12-付费推荐:suo.yt/ssrsub"
-      - 俄罗斯02(TG频道:@kxswa)
-      - Relay_🇺🇸US-🇺🇸US_1001
-      - JP_512
-      - Relay_🇬🇧GB-🇬🇧GB_238
-      - US_704
-      - AU_41
-      - Relay_🇺🇦UA-🇺🇦UA_488
-      - US_1546
-      - Relay_🇺🇸US-🇺🇸US_1012
-      - "@SSRSUB-V09-付费推荐:suo.yt/ssrsub"
-      - JP_514
-      - JP_516
-      - CN_300
-      - JP_513
-      - US_1551
-      - US_771
-      - JP_521
-      - Relay_🇺🇸US-🇺🇸US_1010
-      - CN_157
-      - JP_511
-      - TW_961
-      - US_1575
-      - Relay_🇨🇿CZ-🇨🇿CZ_112
-      - CN_305
-      - "@SSRSUB-V10-付费推荐:suo.yt/ssrsub"
-      - Relay_🇺🇸US-🇺🇸US_1002
-      - Relay_🇦🇺AU-🇦🇺AU_29
-      - US_677
-      - Relay_🇺🇸US-🇺🇸US_1008
-      - TW_957
-      - US_1580
-      - CN_288
-      - US_1589
-      - CN_306
-      - JP_522
-      - Relay_🇺🇸US-🇺🇸US_982
-      - US_1259
-      - CN_284 | 7.30Mb
-      - CN_295
-      - US_1592
-      - 美国(油管:破解资源君2.0)
-      - CN_303
-      - US_1295
-      - JP_507
-      - US_635
-      - US_1565
-      - "@SSRSUB-V06-付费推荐:suo.yt/ssrsub"
-      - Relay_🇺🇸US-🇺🇸US_1308
-      - US_1127
-      - CN_293
-      - CN_292 | 2.33Mb
-      - US_1564
-      - Relay_🇨🇳CN-🇭🇰HK_101
-      - Relay_🇺🇸US-🇩🇪DE_1341
-      - 小螃蟹专用 01
-      - US_770
       - CN_130
-      - "@SSRSUB-V17-付费推荐:suo.yt/ssrsub"
-      - 香港 01 | 直连
-      - 小飞侠专用 01
-      - 香港 02 | 直连
-      - 小飞侠专用  02
-      - 小螃蟹专用 01 2
-      - "@SSRSUB-V08-付费推荐:suo.yt/ssrsub"
-      - US_580
-      - US_692
-      - Relay_🇨🇳CN-🇷🇺RU_141
-      - JP_509
-      - 韩国03(TG频道:@kxswa)
-      - Relay_🇺🇸US-🇺🇸US_1013
-      - FR_213
-      - US_1593
-      - CN_291
-      - CN_294 | 7.81Mb
-      - CN_299
-      - US_1597
-      - Pool_🇳🇱NL_673 | 6.04Mb
-      - US_570
-      - Pool_🇳🇱NL_454
-      - JP_506
-      - ZZ_1087
-      - Relay_🇺🇸US-🇺🇸US_1338
-      - CN_298
-      - US_1559
+      - 小螃蟹专用 02
       - Relay_🇨🇳CN-🇹🇼TW_115
-      - 小飞侠专用 01 2
-      - Relay_🇦🇺AU-🇦🇺AU_40
-      - 俄罗斯05(TG频道:@kxswa)
-      - 美国 02 | 直连
-      - 中国_tg+univstar_113
-      - 香港 01 | 直连 2
+      - US_1295
+      - CN_157
+      - US_1438
+      - US_692
+      - US_814
+      - US_531
+      - US_546
+      - 香港 01 | 直连
+      - US_745
+      - Relay_🇬🇧GB-🇬🇧GB_257
+      - 美国 01 | 直连
       - Relay_🇨🇳 CN-🇭🇰HK_126
+      - US_925
+      - ZZ_1087
+      - Relay_🇺🇸US-🇺🇸US_1001
+      - FR_213
+      - Relay_🇬🇧GB-🇬🇧GB_197
+      - Relay_🇺🇸US-🇺🇸US_1308
+      - FR_169
+      - US_796
+      - US_1250
       - Relay_🇯🇵JP-🇯🇵JP_281
+      - Relay_🇦🇺AU-🇦🇺AU_40
+      - Relay_🇦🇺AU-🇦🇺AU_29
+      - US_570
+      - ZZ_1052
+      - US_1259
+      - Relay_🇺🇸US-🇺🇸US_1002
+      - US_677
+      - US_496
+      - US_771
+      - Relay_🇺🇸US-🇺🇸US_982
+      - US_580
+      - US_1127
+      - Relay_🇺🇸US-🇺🇸US_983
+      - US_635
+      - US_1640
+      - US_704
+      - Relay_🇺🇸US-🇺🇸US_1012
+      - 日本 01 | 直连
+      - Pool_🇳🇱NL_454
+      - Pool_🇳🇱NL_673 | 6.04Mb
+      - Relay_🇺🇸US-🇺🇸US_1008
+      - Relay_🇺🇸US-🇺🇸US_985
+      - 小飞侠专用 01
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
