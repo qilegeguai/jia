@@ -5,215 +5,671 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN_130, server: 1.14.43.171, port: 8000, type: vmess, uuid: 8886ec29-27f5-46d9-885b-8126d1f6b765, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 小螃蟹专用 02, server: cc38ab4a-1b5e-4c23-b6c1-73d08ef459a7.2501eeec-5bab-428d-b482-d79ef0f1db2d.63f6bbc5-ab80-4683-916c-2384f116aa74.yiyuan.cyou, port: 10531, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: cc38ab4a-1b5e-4c23-b6c1-73d08ef459a7.2501eeec-5bab-428d-b482-d79ef0f1db2d.63f6bbc5-ab80-4683-916c-2384f116aa74.yiyuan.cyou, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳CN-🇹🇼TW_115, server: cm.spacez.cloud, port: 30003, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: US_1295, server: 38.68.135.19, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: CN_157, server: 175.178.125.181, port: 8000, type: vmess, uuid: dcd7ebf6-8220-476a-ada0-34a83b9c6072, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US_1438, server: 167.88.63.82, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_692, server: 38.68.134.191, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_814, server: 38.64.138.145, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_531, server: 38.75.136.102, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_546, server: 167.88.62.68, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 香港 01 | 直连, server: hk01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: hk01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
-  - {name: US_745, server: 38.75.136.21, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: Relay_🇬🇧GB-🇬🇧GB_257, server: jgwld1.gaox.ml, port: 443, type: trojan, password: 02e653c9-7c93-46a9-999d-11834bd0c577, sni: jgwld1.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: 美国 01 | 直连, server: e8e4ad34-301f-4b6a-929c-c02a7bdc7859.62dd6326-6357-4c87-94b7-06e277adea7c.c3b3b423-4c53-4570-bff7-462da591030b.yiyuan.cyou, port: 443, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: e8e4ad34-301f-4b6a-929c-c02a7bdc7859.62dd6326-6357-4c87-94b7-06e277adea7c.c3b3b423-4c53-4570-bff7-462da591030b.yiyuan.cyou, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇨🇳 CN-🇭🇰HK_126, server: cm.spacez.cloud, port: 30002, type: trojan, password: c9a3a61d-5d49-4158-9e60-6fa32684b122, sni: cm.spacez.cloud, skip-cert-verify: true, udp: true}
-  - {name: US_925, server: 172.99.190.39, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: ZZ_1087, server: 169.197.142.187, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1001, server: jgwhdlb2.gaox.ml, port: 443, type: trojan, password: 54080134-2cba-4535-8599-95650bd9aa54, sni: jgwhdlb2.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: FR_213, server: 195.154.200.150, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: Relay_🇬🇧GB-🇬🇧GB_197, server: jgwld2.gaox.ml, port: 443, type: trojan, password: d7fd8aaa-4581-4281-80aa-4b63e5e1f157, sni: jgwld2.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1308, server: vus4.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: vus4.0bad.com}, udp: true}
-  - {name: FR_169, server: 149.202.82.172, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_796, server: 172.99.190.149, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_1250, server: 172.99.188.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: Relay_🇯🇵JP-🇯🇵JP_281, server: jgwdb3.gaox.ml, port: 443, type: trojan, password: 8d2d5953-d649-4034-94f2-72f2df2623da, sni: jgwdb3.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇦🇺AU-🇦🇺AU_40, server: jgwxn2.gaox.ml, port: 443, type: trojan, password: c2b60d6a-a2f5-40ff-b7f9-f7658abcbf26, sni: jgwxn2.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇦🇺AU-🇦🇺AU_29, server: jgwxn4.gaox.ml, port: 443, type: trojan, password: e8c1ab3c-89b3-4933-92df-682e6dce7819, sni: jgwxn4.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: US_570, server: 38.121.43.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: ZZ_1052, server: 134.195.198.95, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_1259, server: 38.86.135.36, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1002, server: jgwhdlb3.gaox.ml, port: 443, type: trojan, password: 006baa3f-4bc3-4915-b60d-c8c5dae11a11, sni: jgwhdlb3.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: US_677, server: 38.68.134.85, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_496, server: 167.88.63.59, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_771, server: 38.114.114.19, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_982, server: fhcarm1.gaox.ml, port: 443, type: trojan, password: 05742120-ce23-4cc8-88f5-6d221ce45bf4, sni: fhcarm1.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: US_580, server: 142.202.48.52, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_1127, server: 167.88.63.79, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_983, server: fhcarm2.gaox.ml, port: 443, type: trojan, password: f39bd244-f5fe-415c-8b98-a1e5250bf178, sni: fhcarm2.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: US_635, server: 167.88.61.175, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_1640, server: 38.114.114.69, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_704, server: 38.114.114.67, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1012, server: fhcamd1.gaox.ml, port: 443, type: trojan, password: e23f408a-012e-4030-8b31-02022031cb50, sni: fhcamd1.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: 日本 01 | 直连, server: jp01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, port: 443, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: jp01.00000000-0000-0000-0000-000000000000.00000000-0000-0000-0000-000000000000.yiyuan.cyou, skip-cert-verify: true, udp: true}
-  - {name: Pool_🇳🇱NL_454, server: 85.208.108.91, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: Pool_🇳🇱NL_673 | 6.04Mb, server: 85.208.108.20, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_1008, server: jgwdj3.gaox.ml, port: 443, type: trojan, password: da777aae-defb-41d0-a183-2c27da2b4677, sni: jgwdj3.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: Relay_🇺🇸US-🇺🇸US_985, server: jgwdj4.gaox.ml, port: 443, type: trojan, password: c09eb137-bf68-4658-84e0-102d94b74168, sni: jgwdj4.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: 小飞侠专用 01, server: cc38ab4a-1b5e-4c23-b6c1-73d08ef459a7.2501eeec-5bab-428d-b482-d79ef0f1db2d.63f6bbc5-ab80-4683-916c-2384f116aa74.yiyuan.cyou, port: 10511, type: trojan, password: fc9683dc-f255-41f0-bd45-1b0a9bd367e8, sni: cc38ab4a-1b5e-4c23-b6c1-73d08ef459a7.2501eeec-5bab-428d-b482-d79ef0f1db2d.63f6bbc5-ab80-4683-916c-2384f116aa74.yiyuan.cyou, skip-cert-verify: true, udp: true}
+  - {name: CN_126 | 5.60Mb, server: 14.29.124.168, port: 24009, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: US_2428 | 1.98Mb, server: 38.91.101.159, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: NL_853 |23.84Mb, server: 5.255.97.94, port: 4439, type: ss, cipher: aes-256-gcm, password: 8ce6f8a8-9aca-4029-994a-cedc1ba8292c, udp: true}
+  - {name: NL_837 |36.20Mb, server: 85.208.108.18, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: NL_712 |36.31Mb, server: 85.208.108.94, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: NL_687 |37.87Mb, server: 85.208.108.21, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: NL_841 |35.88Mb, server: 85.208.108.94, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: NL_669 |39.83Mb, server: 85.208.108.94, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: NL_726 |27.89Mb, server: 85.208.108.21, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: NL_661 |35.73Mb, server: 85.208.108.94, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: NL_854 |38.67Mb, server: 85.208.108.94, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: NL_697 |37.54Mb, server: 85.208.108.20, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: NL_676 |39.67Mb, server: 85.208.108.94, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: NL_708 |40.10Mb, server: 85.208.108.94, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: NL_816 |38.69Mb, server: 85.208.108.18, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: NL_820 |37.54Mb, server: 85.208.108.20, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: NL_714 |37.46Mb, server: 85.208.108.21, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: NL_797 | 1.94Mb, server: 85.208.108.60, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: NL_784 | 4.31Mb, server: 85.208.108.59, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: NL_822 |39.93Mb, server: 85.208.108.90, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: NL_730 |35.99Mb, server: 85.208.108.94, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: ZZ_2009 | 8.74Mb, server: ak1506.free.www.outline.network, port: 804, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: NO_865 | 9.47Mb, server: pl-ss.sshmax.xyz, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: MDA3MTVm, udp: true}
+  - {name: NL_775 |13.07Mb, server: 85.208.108.59, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: ZZ_2002 |41.87Mb, server: 103.172.116.5, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+  - {name: NL_773 | 5.04Mb, server: 85.208.108.60, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ZZ_1880 | 2.46Mb, server: 103.172.116.6, port: 9014, type: ss, cipher: aes-256-cfb, password: KnJGad3FqTvjqbaX, udp: true}
+  - {name: US_1665 |23.71Mb, server: 172.99.188.71, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: DE_271 |23.55Mb, server: 193.108.118.34, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: NL_765 | 6.23Mb, server: 85.208.108.60, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_1736 |38.02Mb, server: 206.119.112.6, port: 8189, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8638, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: US_1640 |13.39Mb, server: 38.114.114.67, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US_1303 |22.26Mb, server: 38.114.114.19, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_1581 |11.61Mb, server: 38.114.114.49, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_1315 |20.33Mb, server: 38.114.114.69, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_1206 |19.74Mb, server: 38.114.114.69, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_1306 | 7.81Mb, server: 167.88.61.175, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US_1297 |18.97Mb, server: 167.88.61.175, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: ZZ_2000 | 2.65Mb, server: 103.172.116.6, port: 9019, type: ss, cipher: aes-256-cfb, password: GA9KzeEgvfxNrgmM, udp: true}
+  - {name: US_1376 |21.81Mb, server: 38.114.114.19, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_1255 |13.07Mb, server: 167.88.61.50, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_1266 |11.30Mb, server: 38.143.66.64, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: US_1227 |11.99Mb, server: 167.88.62.68, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_1261 |11.70Mb, server: 167.88.61.50, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_1201 | 8.36Mb, server: 167.88.61.50, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_1262 |10.16Mb, server: 167.88.61.50, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_1685 |10.58Mb, server: 167.88.61.14, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_1235 |16.55Mb, server: 38.68.135.19, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_1107 | 9.66Mb, server: 38.68.135.18, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: CA_50 |11.72Mb, server: 38.111.114.246, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: US_1557 |15.02Mb, server: 38.64.138.145, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: Relay_🇨🇳CN-🏁ZZ_851 |18.98Mb, server: 117.164.185.222, port: 16115, type: vmess, uuid: 1163b4ed-dc46-31d4-8e90-f53f3ca0eaf8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 中国_tg+univstar_27, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN_846, server: 14.29.124.168, port: 25210, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_842, server: 14.29.124.168, port: 25226, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_88 | 3.95Mb, server: 14.29.124.168, port: 25270, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_105, server: 14.29.124.168, port: 25268, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_832, server: 14.29.124.168, port: 25251, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_840, server: 14.29.124.168, port: 25287, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_89 | 2.15Mb, server: 14.29.124.168, port: 25245, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_112, server: 14.29.124.168, port: 25247, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_122, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_834, server: 14.29.124.168, port: 25219, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_101, server: 14.29.124.168, port: 25283, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_125 | 7.36Mb, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_837, server: 14.29.124.168, port: 25207, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_85 | 8.54Mb, server: 14.29.124.168, port: 25272, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: _01 | 2.98Mb, server: 14.29.124.168, port: 24006, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_98, server: 14.29.124.168, port: 25238, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_94, server: 14.29.124.168, port: 25220, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_95, server: 14.29.124.168, port: 25271, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_110, server: 14.29.124.168, port: 25280, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_830, server: 14.29.124.168, port: 25254, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_99 | 1.92Mb, server: 14.29.124.168, port: 25294, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_100 | 3.88Mb, server: 14.29.124.168, port: 25231, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_108, server: 14.29.124.168, port: 25267, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_104, server: 14.29.124.168, port: 25233, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_841, server: 14.29.124.168, port: 25222, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_109 | 3.53Mb, server: 14.29.124.168, port: 25261, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_121 | 7.52Mb, server: 14.29.124.168, port: 25284, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_838, server: 14.29.124.168, port: 25256, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_117 | 8.53Mb, server: 14.29.124.168, port: 25266, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: NL_700 |23.18Mb, server: 85.208.108.20, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: NL_809 |37.33Mb, server: 85.208.108.18, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: NL_768 | 5.96Mb, server: 85.208.108.60, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: NL_727 |32.93Mb, server: 85.208.108.20, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: NL_791 | 1.60Mb, server: 85.208.108.59, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: NL_818 |25.55Mb, server: 85.208.108.94, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: NL_698 |36.90Mb, server: 85.208.108.20, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: NL_842 |26.46Mb, server: 85.208.108.18, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: NL_660 |37.46Mb, server: 85.208.108.18, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: NL_752 | 5.39Mb, server: 85.208.108.60, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: NL_814 |39.83Mb, server: 85.208.108.20, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US_1341 | 9.70Mb, server: 38.121.43.71, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_1237 |18.64Mb, server: 38.68.135.19, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_1236 |21.37Mb, server: 38.68.135.19, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_1259 | 4.65Mb, server: 167.88.61.50, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ZZ_1934 |13.54Mb, server: 169.197.142.187, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: ZZ_1884 |11.62Mb, server: 134.195.196.149, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: ZZ_1900 | 9.13Mb, server: 134.195.196.231, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_2137 | 6.25Mb, server: 38.75.136.34, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ZZ_1887 |11.70Mb, server: 134.195.198.95, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US_1263 |16.67Mb, server: 38.121.43.204, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: ZZ_1918 |17.40Mb, server: 134.195.196.149, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: ZZ_2007 |10.92Mb, server: 134.195.196.85, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_1429 | 8.15Mb, server: 38.121.43.71, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_1213 | 8.60Mb, server: 167.88.61.50, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US_1229 |12.81Mb, server: 167.88.62.68, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: ZZ_1896 |11.60Mb, server: 134.195.196.231, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_2277 | 4.44Mb, server: 38.91.107.66, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: ZZ_1930 |11.16Mb, server: 169.197.141.187, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ZZ_1999 | 7.60Mb, server: 169.197.141.14, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: ZZ_1901 |11.44Mb, server: 134.195.196.231, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: ZZ_1939 |11.94Mb, server: 134.195.198.95, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_1577 |11.57Mb, server: 38.107.226.238, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: RO_879 |19.75Mb, server: 193.239.87.134, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: US_1310 |13.05Mb, server: 38.68.134.191, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_1247 |21.43Mb, server: 172.99.188.99, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_1327 |14.71Mb, server: 172.99.190.149, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_1663 |12.52Mb, server: 172.99.188.71, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: US_1657 |23.66Mb, server: 172.99.188.71, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_1570 |20.00Mb, server: 37.120.147.230, port: 804, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: US_1661 |23.84Mb, server: 172.99.188.71, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: US_1548 |13.80Mb, server: 172.99.190.39, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: US_1409 |14.00Mb, server: 172.99.190.39, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_1636 |14.52Mb, server: 172.99.190.149, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: NL_738 |22.35Mb, server: 91.232.105.253, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: FR_311, server: 149.202.82.172, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: FR_299 |10.07Mb, server: 145.239.1.100, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: FR_333, server: 195.154.200.150, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: FR_324 | 9.98Mb, server: 145.239.1.100, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: ZZ_1904 |10.73Mb, server: 134.195.196.231, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: FR_336 | 9.95Mb, server: 145.239.1.100, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_1372 |20.01Mb, server: 167.88.61.175, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: Relay_🇨🇳CN-🇺🇸US_848, server: 121.14.201.230, port: 49532, type: vmess, uuid: 988a4e28-d112-47d8-ad58-9402af1435dc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /5e60be4f/, ws-headers: {Host: 121.14.201.230}, udp: true}
+  - {name: US_1187, server: 38.68.134.191, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_1355 |25.54Mb, server: 38.114.114.19, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_1371 |13.75Mb, server: 167.88.61.175, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_1534 | 4.53Mb, server: 167.88.63.59, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: CN_127 |32.58Mb, server: 14.29.124.168, port: 24001, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: CN_115 |19.07Mb, server: 14.29.124.168, port: 24004, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: US_1307 |10.62Mb, server: ak1446.free.www.outline.network, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: DE_269 |20.77Mb, server: 193.176.86.190, port: 804, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: NL_693 | 9.26Mb, server: 85.208.108.58, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_1311 |15.01Mb, server: 172.99.190.149, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US_1344 |23.94Mb, server: 172.99.190.87, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_1430 |14.53Mb, server: 172.99.190.149, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_1415 |11.56Mb, server: 172.99.190.149, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: US_1620 |23.00Mb, server: 172.99.190.39, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_1629 |24.23Mb, server: 172.99.190.87, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_1304 |11.38Mb, server: ak1415.free.www.outline.network, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_1667 |14.74Mb, server: 172.99.190.61, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_1622 |22.89Mb, server: 172.99.190.39, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_1621 |23.78Mb, server: 172.99.190.39, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: FR_316, server: 149.202.82.172, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_1554 |14.34Mb, server: 172.99.190.39, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: FR_304, server: 149.202.82.172, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: FR_345, server: 149.202.82.172, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_1222 |21.59Mb, server: ak1502.free.www.outline.network, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: Relay_-🇺🇸US_752 |23.98Mb, server: 223.111.202.209, port: 30020, type: trojan, password: d2727ecc-87bd-4bd0-b321-eb037b5d4cca, skip-cert-verify: true, udp: true}
+  - {name: FR_328 | 9.28Mb, server: ak1485.free.www.outline.network, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: US_1249, server: 142.202.48.52, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_130
-      - 小螃蟹专用 02
-      - Relay_🇨🇳CN-🇹🇼TW_115
-      - US_1295
-      - CN_157
-      - US_1438
-      - US_692
-      - US_814
-      - US_531
-      - US_546
-      - 香港 01 | 直连
-      - US_745
-      - Relay_🇬🇧GB-🇬🇧GB_257
-      - 美国 01 | 直连
-      - Relay_🇨🇳 CN-🇭🇰HK_126
-      - US_925
-      - ZZ_1087
-      - Relay_🇺🇸US-🇺🇸US_1001
-      - FR_213
-      - Relay_🇬🇧GB-🇬🇧GB_197
-      - Relay_🇺🇸US-🇺🇸US_1308
-      - FR_169
-      - US_796
-      - US_1250
-      - Relay_🇯🇵JP-🇯🇵JP_281
-      - Relay_🇦🇺AU-🇦🇺AU_40
-      - Relay_🇦🇺AU-🇦🇺AU_29
-      - US_570
-      - ZZ_1052
-      - US_1259
-      - Relay_🇺🇸US-🇺🇸US_1002
-      - US_677
-      - US_496
-      - US_771
-      - Relay_🇺🇸US-🇺🇸US_982
-      - US_580
-      - US_1127
-      - Relay_🇺🇸US-🇺🇸US_983
-      - US_635
-      - US_1640
-      - US_704
-      - Relay_🇺🇸US-🇺🇸US_1012
-      - 日本 01 | 直连
-      - Pool_🇳🇱NL_454
-      - Pool_🇳🇱NL_673 | 6.04Mb
-      - Relay_🇺🇸US-🇺🇸US_1008
-      - Relay_🇺🇸US-🇺🇸US_985
-      - 小飞侠专用 01
+      - CN_126 | 5.60Mb
+      - US_2428 | 1.98Mb
+      - NL_853 |23.84Mb
+      - NL_837 |36.20Mb
+      - NL_712 |36.31Mb
+      - NL_687 |37.87Mb
+      - NL_841 |35.88Mb
+      - NL_669 |39.83Mb
+      - NL_726 |27.89Mb
+      - NL_661 |35.73Mb
+      - NL_854 |38.67Mb
+      - NL_697 |37.54Mb
+      - NL_676 |39.67Mb
+      - NL_708 |40.10Mb
+      - NL_816 |38.69Mb
+      - NL_820 |37.54Mb
+      - NL_714 |37.46Mb
+      - NL_797 | 1.94Mb
+      - NL_784 | 4.31Mb
+      - NL_822 |39.93Mb
+      - NL_730 |35.99Mb
+      - ZZ_2009 | 8.74Mb
+      - NO_865 | 9.47Mb
+      - NL_775 |13.07Mb
+      - ZZ_2002 |41.87Mb
+      - NL_773 | 5.04Mb
+      - ZZ_1880 | 2.46Mb
+      - US_1665 |23.71Mb
+      - DE_271 |23.55Mb
+      - NL_765 | 6.23Mb
+      - US_1736 |38.02Mb
+      - US_1640 |13.39Mb
+      - US_1303 |22.26Mb
+      - US_1581 |11.61Mb
+      - US_1315 |20.33Mb
+      - US_1206 |19.74Mb
+      - US_1306 | 7.81Mb
+      - US_1297 |18.97Mb
+      - ZZ_2000 | 2.65Mb
+      - US_1376 |21.81Mb
+      - US_1255 |13.07Mb
+      - US_1266 |11.30Mb
+      - US_1227 |11.99Mb
+      - US_1261 |11.70Mb
+      - US_1201 | 8.36Mb
+      - US_1262 |10.16Mb
+      - US_1685 |10.58Mb
+      - US_1235 |16.55Mb
+      - US_1107 | 9.66Mb
+      - CA_50 |11.72Mb
+      - US_1557 |15.02Mb
+      - Relay_🇨🇳CN-🏁ZZ_851 |18.98Mb
+      - 中国_tg+univstar_27
+      - CN_846
+      - CN_842
+      - CN_88 | 3.95Mb
+      - CN_105
+      - CN_832
+      - CN_840
+      - CN_89 | 2.15Mb
+      - CN_112
+      - CN_122
+      - CN_834
+      - CN_101
+      - CN_125 | 7.36Mb
+      - CN_837
+      - CN_85 | 8.54Mb
+      - _01 | 2.98Mb
+      - CN_98
+      - CN_94
+      - CN_95
+      - CN_110
+      - CN_830
+      - CN_99 | 1.92Mb
+      - CN_100 | 3.88Mb
+      - CN_108
+      - CN_104
+      - CN_841
+      - CN_109 | 3.53Mb
+      - CN_121 | 7.52Mb
+      - CN_838
+      - CN_117 | 8.53Mb
+      - NL_700 |23.18Mb
+      - NL_809 |37.33Mb
+      - NL_768 | 5.96Mb
+      - NL_727 |32.93Mb
+      - NL_791 | 1.60Mb
+      - NL_818 |25.55Mb
+      - NL_698 |36.90Mb
+      - NL_842 |26.46Mb
+      - NL_660 |37.46Mb
+      - NL_752 | 5.39Mb
+      - NL_814 |39.83Mb
+      - US_1341 | 9.70Mb
+      - US_1237 |18.64Mb
+      - US_1236 |21.37Mb
+      - US_1259 | 4.65Mb
+      - ZZ_1934 |13.54Mb
+      - ZZ_1884 |11.62Mb
+      - ZZ_1900 | 9.13Mb
+      - US_2137 | 6.25Mb
+      - ZZ_1887 |11.70Mb
+      - US_1263 |16.67Mb
+      - ZZ_1918 |17.40Mb
+      - ZZ_2007 |10.92Mb
+      - US_1429 | 8.15Mb
+      - US_1213 | 8.60Mb
+      - US_1229 |12.81Mb
+      - ZZ_1896 |11.60Mb
+      - US_2277 | 4.44Mb
+      - ZZ_1930 |11.16Mb
+      - ZZ_1999 | 7.60Mb
+      - ZZ_1901 |11.44Mb
+      - ZZ_1939 |11.94Mb
+      - US_1577 |11.57Mb
+      - RO_879 |19.75Mb
+      - US_1310 |13.05Mb
+      - US_1247 |21.43Mb
+      - US_1327 |14.71Mb
+      - US_1663 |12.52Mb
+      - US_1657 |23.66Mb
+      - US_1570 |20.00Mb
+      - US_1661 |23.84Mb
+      - US_1548 |13.80Mb
+      - US_1409 |14.00Mb
+      - US_1636 |14.52Mb
+      - NL_738 |22.35Mb
+      - FR_311
+      - FR_299 |10.07Mb
+      - FR_333
+      - FR_324 | 9.98Mb
+      - ZZ_1904 |10.73Mb
+      - FR_336 | 9.95Mb
+      - US_1372 |20.01Mb
+      - Relay_🇨🇳CN-🇺🇸US_848
+      - US_1187
+      - US_1355 |25.54Mb
+      - US_1371 |13.75Mb
+      - US_1534 | 4.53Mb
+      - CN_127 |32.58Mb
+      - CN_115 |19.07Mb
+      - US_1307 |10.62Mb
+      - DE_269 |20.77Mb
+      - NL_693 | 9.26Mb
+      - US_1311 |15.01Mb
+      - US_1344 |23.94Mb
+      - US_1430 |14.53Mb
+      - US_1415 |11.56Mb
+      - US_1620 |23.00Mb
+      - US_1629 |24.23Mb
+      - US_1304 |11.38Mb
+      - US_1667 |14.74Mb
+      - US_1622 |22.89Mb
+      - US_1621 |23.78Mb
+      - FR_316
+      - US_1554 |14.34Mb
+      - FR_304
+      - FR_345
+      - US_1222 |21.59Mb
+      - Relay_-🇺🇸US_752 |23.98Mb
+      - FR_328 | 9.28Mb
+      - US_1249
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CN_130
-      - 小螃蟹专用 02
-      - Relay_🇨🇳CN-🇹🇼TW_115
-      - US_1295
-      - CN_157
-      - US_1438
-      - US_692
-      - US_814
-      - US_531
-      - US_546
-      - 香港 01 | 直连
-      - US_745
-      - Relay_🇬🇧GB-🇬🇧GB_257
-      - 美国 01 | 直连
-      - Relay_🇨🇳 CN-🇭🇰HK_126
-      - US_925
-      - ZZ_1087
-      - Relay_🇺🇸US-🇺🇸US_1001
-      - FR_213
-      - Relay_🇬🇧GB-🇬🇧GB_197
-      - Relay_🇺🇸US-🇺🇸US_1308
-      - FR_169
-      - US_796
-      - US_1250
-      - Relay_🇯🇵JP-🇯🇵JP_281
-      - Relay_🇦🇺AU-🇦🇺AU_40
-      - Relay_🇦🇺AU-🇦🇺AU_29
-      - US_570
-      - ZZ_1052
-      - US_1259
-      - Relay_🇺🇸US-🇺🇸US_1002
-      - US_677
-      - US_496
-      - US_771
-      - Relay_🇺🇸US-🇺🇸US_982
-      - US_580
-      - US_1127
-      - Relay_🇺🇸US-🇺🇸US_983
-      - US_635
-      - US_1640
-      - US_704
-      - Relay_🇺🇸US-🇺🇸US_1012
-      - 日本 01 | 直连
-      - Pool_🇳🇱NL_454
-      - Pool_🇳🇱NL_673 | 6.04Mb
-      - Relay_🇺🇸US-🇺🇸US_1008
-      - Relay_🇺🇸US-🇺🇸US_985
-      - 小飞侠专用 01
+      - CN_126 | 5.60Mb
+      - US_2428 | 1.98Mb
+      - NL_853 |23.84Mb
+      - NL_837 |36.20Mb
+      - NL_712 |36.31Mb
+      - NL_687 |37.87Mb
+      - NL_841 |35.88Mb
+      - NL_669 |39.83Mb
+      - NL_726 |27.89Mb
+      - NL_661 |35.73Mb
+      - NL_854 |38.67Mb
+      - NL_697 |37.54Mb
+      - NL_676 |39.67Mb
+      - NL_708 |40.10Mb
+      - NL_816 |38.69Mb
+      - NL_820 |37.54Mb
+      - NL_714 |37.46Mb
+      - NL_797 | 1.94Mb
+      - NL_784 | 4.31Mb
+      - NL_822 |39.93Mb
+      - NL_730 |35.99Mb
+      - ZZ_2009 | 8.74Mb
+      - NO_865 | 9.47Mb
+      - NL_775 |13.07Mb
+      - ZZ_2002 |41.87Mb
+      - NL_773 | 5.04Mb
+      - ZZ_1880 | 2.46Mb
+      - US_1665 |23.71Mb
+      - DE_271 |23.55Mb
+      - NL_765 | 6.23Mb
+      - US_1736 |38.02Mb
+      - US_1640 |13.39Mb
+      - US_1303 |22.26Mb
+      - US_1581 |11.61Mb
+      - US_1315 |20.33Mb
+      - US_1206 |19.74Mb
+      - US_1306 | 7.81Mb
+      - US_1297 |18.97Mb
+      - ZZ_2000 | 2.65Mb
+      - US_1376 |21.81Mb
+      - US_1255 |13.07Mb
+      - US_1266 |11.30Mb
+      - US_1227 |11.99Mb
+      - US_1261 |11.70Mb
+      - US_1201 | 8.36Mb
+      - US_1262 |10.16Mb
+      - US_1685 |10.58Mb
+      - US_1235 |16.55Mb
+      - US_1107 | 9.66Mb
+      - CA_50 |11.72Mb
+      - US_1557 |15.02Mb
+      - Relay_🇨🇳CN-🏁ZZ_851 |18.98Mb
+      - 中国_tg+univstar_27
+      - CN_846
+      - CN_842
+      - CN_88 | 3.95Mb
+      - CN_105
+      - CN_832
+      - CN_840
+      - CN_89 | 2.15Mb
+      - CN_112
+      - CN_122
+      - CN_834
+      - CN_101
+      - CN_125 | 7.36Mb
+      - CN_837
+      - CN_85 | 8.54Mb
+      - _01 | 2.98Mb
+      - CN_98
+      - CN_94
+      - CN_95
+      - CN_110
+      - CN_830
+      - CN_99 | 1.92Mb
+      - CN_100 | 3.88Mb
+      - CN_108
+      - CN_104
+      - CN_841
+      - CN_109 | 3.53Mb
+      - CN_121 | 7.52Mb
+      - CN_838
+      - CN_117 | 8.53Mb
+      - NL_700 |23.18Mb
+      - NL_809 |37.33Mb
+      - NL_768 | 5.96Mb
+      - NL_727 |32.93Mb
+      - NL_791 | 1.60Mb
+      - NL_818 |25.55Mb
+      - NL_698 |36.90Mb
+      - NL_842 |26.46Mb
+      - NL_660 |37.46Mb
+      - NL_752 | 5.39Mb
+      - NL_814 |39.83Mb
+      - US_1341 | 9.70Mb
+      - US_1237 |18.64Mb
+      - US_1236 |21.37Mb
+      - US_1259 | 4.65Mb
+      - ZZ_1934 |13.54Mb
+      - ZZ_1884 |11.62Mb
+      - ZZ_1900 | 9.13Mb
+      - US_2137 | 6.25Mb
+      - ZZ_1887 |11.70Mb
+      - US_1263 |16.67Mb
+      - ZZ_1918 |17.40Mb
+      - ZZ_2007 |10.92Mb
+      - US_1429 | 8.15Mb
+      - US_1213 | 8.60Mb
+      - US_1229 |12.81Mb
+      - ZZ_1896 |11.60Mb
+      - US_2277 | 4.44Mb
+      - ZZ_1930 |11.16Mb
+      - ZZ_1999 | 7.60Mb
+      - ZZ_1901 |11.44Mb
+      - ZZ_1939 |11.94Mb
+      - US_1577 |11.57Mb
+      - RO_879 |19.75Mb
+      - US_1310 |13.05Mb
+      - US_1247 |21.43Mb
+      - US_1327 |14.71Mb
+      - US_1663 |12.52Mb
+      - US_1657 |23.66Mb
+      - US_1570 |20.00Mb
+      - US_1661 |23.84Mb
+      - US_1548 |13.80Mb
+      - US_1409 |14.00Mb
+      - US_1636 |14.52Mb
+      - NL_738 |22.35Mb
+      - FR_311
+      - FR_299 |10.07Mb
+      - FR_333
+      - FR_324 | 9.98Mb
+      - ZZ_1904 |10.73Mb
+      - FR_336 | 9.95Mb
+      - US_1372 |20.01Mb
+      - Relay_🇨🇳CN-🇺🇸US_848
+      - US_1187
+      - US_1355 |25.54Mb
+      - US_1371 |13.75Mb
+      - US_1534 | 4.53Mb
+      - CN_127 |32.58Mb
+      - CN_115 |19.07Mb
+      - US_1307 |10.62Mb
+      - DE_269 |20.77Mb
+      - NL_693 | 9.26Mb
+      - US_1311 |15.01Mb
+      - US_1344 |23.94Mb
+      - US_1430 |14.53Mb
+      - US_1415 |11.56Mb
+      - US_1620 |23.00Mb
+      - US_1629 |24.23Mb
+      - US_1304 |11.38Mb
+      - US_1667 |14.74Mb
+      - US_1622 |22.89Mb
+      - US_1621 |23.78Mb
+      - FR_316
+      - US_1554 |14.34Mb
+      - FR_304
+      - FR_345
+      - US_1222 |21.59Mb
+      - Relay_-🇺🇸US_752 |23.98Mb
+      - FR_328 | 9.28Mb
+      - US_1249
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_130
-      - 小螃蟹专用 02
-      - Relay_🇨🇳CN-🇹🇼TW_115
-      - US_1295
-      - CN_157
-      - US_1438
-      - US_692
-      - US_814
-      - US_531
-      - US_546
-      - 香港 01 | 直连
-      - US_745
-      - Relay_🇬🇧GB-🇬🇧GB_257
-      - 美国 01 | 直连
-      - Relay_🇨🇳 CN-🇭🇰HK_126
-      - US_925
-      - ZZ_1087
-      - Relay_🇺🇸US-🇺🇸US_1001
-      - FR_213
-      - Relay_🇬🇧GB-🇬🇧GB_197
-      - Relay_🇺🇸US-🇺🇸US_1308
-      - FR_169
-      - US_796
-      - US_1250
-      - Relay_🇯🇵JP-🇯🇵JP_281
-      - Relay_🇦🇺AU-🇦🇺AU_40
-      - Relay_🇦🇺AU-🇦🇺AU_29
-      - US_570
-      - ZZ_1052
-      - US_1259
-      - Relay_🇺🇸US-🇺🇸US_1002
-      - US_677
-      - US_496
-      - US_771
-      - Relay_🇺🇸US-🇺🇸US_982
-      - US_580
-      - US_1127
-      - Relay_🇺🇸US-🇺🇸US_983
-      - US_635
-      - US_1640
-      - US_704
-      - Relay_🇺🇸US-🇺🇸US_1012
-      - 日本 01 | 直连
-      - Pool_🇳🇱NL_454
-      - Pool_🇳🇱NL_673 | 6.04Mb
-      - Relay_🇺🇸US-🇺🇸US_1008
-      - Relay_🇺🇸US-🇺🇸US_985
-      - 小飞侠专用 01
+      - CN_126 | 5.60Mb
+      - US_2428 | 1.98Mb
+      - NL_853 |23.84Mb
+      - NL_837 |36.20Mb
+      - NL_712 |36.31Mb
+      - NL_687 |37.87Mb
+      - NL_841 |35.88Mb
+      - NL_669 |39.83Mb
+      - NL_726 |27.89Mb
+      - NL_661 |35.73Mb
+      - NL_854 |38.67Mb
+      - NL_697 |37.54Mb
+      - NL_676 |39.67Mb
+      - NL_708 |40.10Mb
+      - NL_816 |38.69Mb
+      - NL_820 |37.54Mb
+      - NL_714 |37.46Mb
+      - NL_797 | 1.94Mb
+      - NL_784 | 4.31Mb
+      - NL_822 |39.93Mb
+      - NL_730 |35.99Mb
+      - ZZ_2009 | 8.74Mb
+      - NO_865 | 9.47Mb
+      - NL_775 |13.07Mb
+      - ZZ_2002 |41.87Mb
+      - NL_773 | 5.04Mb
+      - ZZ_1880 | 2.46Mb
+      - US_1665 |23.71Mb
+      - DE_271 |23.55Mb
+      - NL_765 | 6.23Mb
+      - US_1736 |38.02Mb
+      - US_1640 |13.39Mb
+      - US_1303 |22.26Mb
+      - US_1581 |11.61Mb
+      - US_1315 |20.33Mb
+      - US_1206 |19.74Mb
+      - US_1306 | 7.81Mb
+      - US_1297 |18.97Mb
+      - ZZ_2000 | 2.65Mb
+      - US_1376 |21.81Mb
+      - US_1255 |13.07Mb
+      - US_1266 |11.30Mb
+      - US_1227 |11.99Mb
+      - US_1261 |11.70Mb
+      - US_1201 | 8.36Mb
+      - US_1262 |10.16Mb
+      - US_1685 |10.58Mb
+      - US_1235 |16.55Mb
+      - US_1107 | 9.66Mb
+      - CA_50 |11.72Mb
+      - US_1557 |15.02Mb
+      - Relay_🇨🇳CN-🏁ZZ_851 |18.98Mb
+      - 中国_tg+univstar_27
+      - CN_846
+      - CN_842
+      - CN_88 | 3.95Mb
+      - CN_105
+      - CN_832
+      - CN_840
+      - CN_89 | 2.15Mb
+      - CN_112
+      - CN_122
+      - CN_834
+      - CN_101
+      - CN_125 | 7.36Mb
+      - CN_837
+      - CN_85 | 8.54Mb
+      - _01 | 2.98Mb
+      - CN_98
+      - CN_94
+      - CN_95
+      - CN_110
+      - CN_830
+      - CN_99 | 1.92Mb
+      - CN_100 | 3.88Mb
+      - CN_108
+      - CN_104
+      - CN_841
+      - CN_109 | 3.53Mb
+      - CN_121 | 7.52Mb
+      - CN_838
+      - CN_117 | 8.53Mb
+      - NL_700 |23.18Mb
+      - NL_809 |37.33Mb
+      - NL_768 | 5.96Mb
+      - NL_727 |32.93Mb
+      - NL_791 | 1.60Mb
+      - NL_818 |25.55Mb
+      - NL_698 |36.90Mb
+      - NL_842 |26.46Mb
+      - NL_660 |37.46Mb
+      - NL_752 | 5.39Mb
+      - NL_814 |39.83Mb
+      - US_1341 | 9.70Mb
+      - US_1237 |18.64Mb
+      - US_1236 |21.37Mb
+      - US_1259 | 4.65Mb
+      - ZZ_1934 |13.54Mb
+      - ZZ_1884 |11.62Mb
+      - ZZ_1900 | 9.13Mb
+      - US_2137 | 6.25Mb
+      - ZZ_1887 |11.70Mb
+      - US_1263 |16.67Mb
+      - ZZ_1918 |17.40Mb
+      - ZZ_2007 |10.92Mb
+      - US_1429 | 8.15Mb
+      - US_1213 | 8.60Mb
+      - US_1229 |12.81Mb
+      - ZZ_1896 |11.60Mb
+      - US_2277 | 4.44Mb
+      - ZZ_1930 |11.16Mb
+      - ZZ_1999 | 7.60Mb
+      - ZZ_1901 |11.44Mb
+      - ZZ_1939 |11.94Mb
+      - US_1577 |11.57Mb
+      - RO_879 |19.75Mb
+      - US_1310 |13.05Mb
+      - US_1247 |21.43Mb
+      - US_1327 |14.71Mb
+      - US_1663 |12.52Mb
+      - US_1657 |23.66Mb
+      - US_1570 |20.00Mb
+      - US_1661 |23.84Mb
+      - US_1548 |13.80Mb
+      - US_1409 |14.00Mb
+      - US_1636 |14.52Mb
+      - NL_738 |22.35Mb
+      - FR_311
+      - FR_299 |10.07Mb
+      - FR_333
+      - FR_324 | 9.98Mb
+      - ZZ_1904 |10.73Mb
+      - FR_336 | 9.95Mb
+      - US_1372 |20.01Mb
+      - Relay_🇨🇳CN-🇺🇸US_848
+      - US_1187
+      - US_1355 |25.54Mb
+      - US_1371 |13.75Mb
+      - US_1534 | 4.53Mb
+      - CN_127 |32.58Mb
+      - CN_115 |19.07Mb
+      - US_1307 |10.62Mb
+      - DE_269 |20.77Mb
+      - NL_693 | 9.26Mb
+      - US_1311 |15.01Mb
+      - US_1344 |23.94Mb
+      - US_1430 |14.53Mb
+      - US_1415 |11.56Mb
+      - US_1620 |23.00Mb
+      - US_1629 |24.23Mb
+      - US_1304 |11.38Mb
+      - US_1667 |14.74Mb
+      - US_1622 |22.89Mb
+      - US_1621 |23.78Mb
+      - FR_316
+      - US_1554 |14.34Mb
+      - FR_304
+      - FR_345
+      - US_1222 |21.59Mb
+      - Relay_-🇺🇸US_752 |23.98Mb
+      - FR_328 | 9.28Mb
+      - US_1249
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -232,220 +688,675 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN_130
-      - 小螃蟹专用 02
-      - Relay_🇨🇳CN-🇹🇼TW_115
-      - US_1295
-      - CN_157
-      - US_1438
-      - US_692
-      - US_814
-      - US_531
-      - US_546
-      - 香港 01 | 直连
-      - US_745
-      - Relay_🇬🇧GB-🇬🇧GB_257
-      - 美国 01 | 直连
-      - Relay_🇨🇳 CN-🇭🇰HK_126
-      - US_925
-      - ZZ_1087
-      - Relay_🇺🇸US-🇺🇸US_1001
-      - FR_213
-      - Relay_🇬🇧GB-🇬🇧GB_197
-      - Relay_🇺🇸US-🇺🇸US_1308
-      - FR_169
-      - US_796
-      - US_1250
-      - Relay_🇯🇵JP-🇯🇵JP_281
-      - Relay_🇦🇺AU-🇦🇺AU_40
-      - Relay_🇦🇺AU-🇦🇺AU_29
-      - US_570
-      - ZZ_1052
-      - US_1259
-      - Relay_🇺🇸US-🇺🇸US_1002
-      - US_677
-      - US_496
-      - US_771
-      - Relay_🇺🇸US-🇺🇸US_982
-      - US_580
-      - US_1127
-      - Relay_🇺🇸US-🇺🇸US_983
-      - US_635
-      - US_1640
-      - US_704
-      - Relay_🇺🇸US-🇺🇸US_1012
-      - 日本 01 | 直连
-      - Pool_🇳🇱NL_454
-      - Pool_🇳🇱NL_673 | 6.04Mb
-      - Relay_🇺🇸US-🇺🇸US_1008
-      - Relay_🇺🇸US-🇺🇸US_985
-      - 小飞侠专用 01
+      - CN_126 | 5.60Mb
+      - US_2428 | 1.98Mb
+      - NL_853 |23.84Mb
+      - NL_837 |36.20Mb
+      - NL_712 |36.31Mb
+      - NL_687 |37.87Mb
+      - NL_841 |35.88Mb
+      - NL_669 |39.83Mb
+      - NL_726 |27.89Mb
+      - NL_661 |35.73Mb
+      - NL_854 |38.67Mb
+      - NL_697 |37.54Mb
+      - NL_676 |39.67Mb
+      - NL_708 |40.10Mb
+      - NL_816 |38.69Mb
+      - NL_820 |37.54Mb
+      - NL_714 |37.46Mb
+      - NL_797 | 1.94Mb
+      - NL_784 | 4.31Mb
+      - NL_822 |39.93Mb
+      - NL_730 |35.99Mb
+      - ZZ_2009 | 8.74Mb
+      - NO_865 | 9.47Mb
+      - NL_775 |13.07Mb
+      - ZZ_2002 |41.87Mb
+      - NL_773 | 5.04Mb
+      - ZZ_1880 | 2.46Mb
+      - US_1665 |23.71Mb
+      - DE_271 |23.55Mb
+      - NL_765 | 6.23Mb
+      - US_1736 |38.02Mb
+      - US_1640 |13.39Mb
+      - US_1303 |22.26Mb
+      - US_1581 |11.61Mb
+      - US_1315 |20.33Mb
+      - US_1206 |19.74Mb
+      - US_1306 | 7.81Mb
+      - US_1297 |18.97Mb
+      - ZZ_2000 | 2.65Mb
+      - US_1376 |21.81Mb
+      - US_1255 |13.07Mb
+      - US_1266 |11.30Mb
+      - US_1227 |11.99Mb
+      - US_1261 |11.70Mb
+      - US_1201 | 8.36Mb
+      - US_1262 |10.16Mb
+      - US_1685 |10.58Mb
+      - US_1235 |16.55Mb
+      - US_1107 | 9.66Mb
+      - CA_50 |11.72Mb
+      - US_1557 |15.02Mb
+      - Relay_🇨🇳CN-🏁ZZ_851 |18.98Mb
+      - 中国_tg+univstar_27
+      - CN_846
+      - CN_842
+      - CN_88 | 3.95Mb
+      - CN_105
+      - CN_832
+      - CN_840
+      - CN_89 | 2.15Mb
+      - CN_112
+      - CN_122
+      - CN_834
+      - CN_101
+      - CN_125 | 7.36Mb
+      - CN_837
+      - CN_85 | 8.54Mb
+      - _01 | 2.98Mb
+      - CN_98
+      - CN_94
+      - CN_95
+      - CN_110
+      - CN_830
+      - CN_99 | 1.92Mb
+      - CN_100 | 3.88Mb
+      - CN_108
+      - CN_104
+      - CN_841
+      - CN_109 | 3.53Mb
+      - CN_121 | 7.52Mb
+      - CN_838
+      - CN_117 | 8.53Mb
+      - NL_700 |23.18Mb
+      - NL_809 |37.33Mb
+      - NL_768 | 5.96Mb
+      - NL_727 |32.93Mb
+      - NL_791 | 1.60Mb
+      - NL_818 |25.55Mb
+      - NL_698 |36.90Mb
+      - NL_842 |26.46Mb
+      - NL_660 |37.46Mb
+      - NL_752 | 5.39Mb
+      - NL_814 |39.83Mb
+      - US_1341 | 9.70Mb
+      - US_1237 |18.64Mb
+      - US_1236 |21.37Mb
+      - US_1259 | 4.65Mb
+      - ZZ_1934 |13.54Mb
+      - ZZ_1884 |11.62Mb
+      - ZZ_1900 | 9.13Mb
+      - US_2137 | 6.25Mb
+      - ZZ_1887 |11.70Mb
+      - US_1263 |16.67Mb
+      - ZZ_1918 |17.40Mb
+      - ZZ_2007 |10.92Mb
+      - US_1429 | 8.15Mb
+      - US_1213 | 8.60Mb
+      - US_1229 |12.81Mb
+      - ZZ_1896 |11.60Mb
+      - US_2277 | 4.44Mb
+      - ZZ_1930 |11.16Mb
+      - ZZ_1999 | 7.60Mb
+      - ZZ_1901 |11.44Mb
+      - ZZ_1939 |11.94Mb
+      - US_1577 |11.57Mb
+      - RO_879 |19.75Mb
+      - US_1310 |13.05Mb
+      - US_1247 |21.43Mb
+      - US_1327 |14.71Mb
+      - US_1663 |12.52Mb
+      - US_1657 |23.66Mb
+      - US_1570 |20.00Mb
+      - US_1661 |23.84Mb
+      - US_1548 |13.80Mb
+      - US_1409 |14.00Mb
+      - US_1636 |14.52Mb
+      - NL_738 |22.35Mb
+      - FR_311
+      - FR_299 |10.07Mb
+      - FR_333
+      - FR_324 | 9.98Mb
+      - ZZ_1904 |10.73Mb
+      - FR_336 | 9.95Mb
+      - US_1372 |20.01Mb
+      - Relay_🇨🇳CN-🇺🇸US_848
+      - US_1187
+      - US_1355 |25.54Mb
+      - US_1371 |13.75Mb
+      - US_1534 | 4.53Mb
+      - CN_127 |32.58Mb
+      - CN_115 |19.07Mb
+      - US_1307 |10.62Mb
+      - DE_269 |20.77Mb
+      - NL_693 | 9.26Mb
+      - US_1311 |15.01Mb
+      - US_1344 |23.94Mb
+      - US_1430 |14.53Mb
+      - US_1415 |11.56Mb
+      - US_1620 |23.00Mb
+      - US_1629 |24.23Mb
+      - US_1304 |11.38Mb
+      - US_1667 |14.74Mb
+      - US_1622 |22.89Mb
+      - US_1621 |23.78Mb
+      - FR_316
+      - US_1554 |14.34Mb
+      - FR_304
+      - FR_345
+      - US_1222 |21.59Mb
+      - Relay_-🇺🇸US_752 |23.98Mb
+      - FR_328 | 9.28Mb
+      - US_1249
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港 01 | 直连
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CN_130
-      - 小螃蟹专用 02
-      - Relay_🇨🇳CN-🇹🇼TW_115
-      - US_1295
-      - CN_157
-      - US_1438
-      - US_692
-      - US_814
-      - US_531
-      - US_546
-      - 香港 01 | 直连
-      - US_745
-      - Relay_🇬🇧GB-🇬🇧GB_257
-      - 美国 01 | 直连
-      - Relay_🇨🇳 CN-🇭🇰HK_126
-      - US_925
-      - ZZ_1087
-      - Relay_🇺🇸US-🇺🇸US_1001
-      - FR_213
-      - Relay_🇬🇧GB-🇬🇧GB_197
-      - Relay_🇺🇸US-🇺🇸US_1308
-      - FR_169
-      - US_796
-      - US_1250
-      - Relay_🇯🇵JP-🇯🇵JP_281
-      - Relay_🇦🇺AU-🇦🇺AU_40
-      - Relay_🇦🇺AU-🇦🇺AU_29
-      - US_570
-      - ZZ_1052
-      - US_1259
-      - Relay_🇺🇸US-🇺🇸US_1002
-      - US_677
-      - US_496
-      - US_771
-      - Relay_🇺🇸US-🇺🇸US_982
-      - US_580
-      - US_1127
-      - Relay_🇺🇸US-🇺🇸US_983
-      - US_635
-      - US_1640
-      - US_704
-      - Relay_🇺🇸US-🇺🇸US_1012
-      - 日本 01 | 直连
-      - Pool_🇳🇱NL_454
-      - Pool_🇳🇱NL_673 | 6.04Mb
-      - Relay_🇺🇸US-🇺🇸US_1008
-      - Relay_🇺🇸US-🇺🇸US_985
-      - 小飞侠专用 01
+      - CN_126 | 5.60Mb
+      - US_2428 | 1.98Mb
+      - NL_853 |23.84Mb
+      - NL_837 |36.20Mb
+      - NL_712 |36.31Mb
+      - NL_687 |37.87Mb
+      - NL_841 |35.88Mb
+      - NL_669 |39.83Mb
+      - NL_726 |27.89Mb
+      - NL_661 |35.73Mb
+      - NL_854 |38.67Mb
+      - NL_697 |37.54Mb
+      - NL_676 |39.67Mb
+      - NL_708 |40.10Mb
+      - NL_816 |38.69Mb
+      - NL_820 |37.54Mb
+      - NL_714 |37.46Mb
+      - NL_797 | 1.94Mb
+      - NL_784 | 4.31Mb
+      - NL_822 |39.93Mb
+      - NL_730 |35.99Mb
+      - ZZ_2009 | 8.74Mb
+      - NO_865 | 9.47Mb
+      - NL_775 |13.07Mb
+      - ZZ_2002 |41.87Mb
+      - NL_773 | 5.04Mb
+      - ZZ_1880 | 2.46Mb
+      - US_1665 |23.71Mb
+      - DE_271 |23.55Mb
+      - NL_765 | 6.23Mb
+      - US_1736 |38.02Mb
+      - US_1640 |13.39Mb
+      - US_1303 |22.26Mb
+      - US_1581 |11.61Mb
+      - US_1315 |20.33Mb
+      - US_1206 |19.74Mb
+      - US_1306 | 7.81Mb
+      - US_1297 |18.97Mb
+      - ZZ_2000 | 2.65Mb
+      - US_1376 |21.81Mb
+      - US_1255 |13.07Mb
+      - US_1266 |11.30Mb
+      - US_1227 |11.99Mb
+      - US_1261 |11.70Mb
+      - US_1201 | 8.36Mb
+      - US_1262 |10.16Mb
+      - US_1685 |10.58Mb
+      - US_1235 |16.55Mb
+      - US_1107 | 9.66Mb
+      - CA_50 |11.72Mb
+      - US_1557 |15.02Mb
+      - Relay_🇨🇳CN-🏁ZZ_851 |18.98Mb
+      - 中国_tg+univstar_27
+      - CN_846
+      - CN_842
+      - CN_88 | 3.95Mb
+      - CN_105
+      - CN_832
+      - CN_840
+      - CN_89 | 2.15Mb
+      - CN_112
+      - CN_122
+      - CN_834
+      - CN_101
+      - CN_125 | 7.36Mb
+      - CN_837
+      - CN_85 | 8.54Mb
+      - _01 | 2.98Mb
+      - CN_98
+      - CN_94
+      - CN_95
+      - CN_110
+      - CN_830
+      - CN_99 | 1.92Mb
+      - CN_100 | 3.88Mb
+      - CN_108
+      - CN_104
+      - CN_841
+      - CN_109 | 3.53Mb
+      - CN_121 | 7.52Mb
+      - CN_838
+      - CN_117 | 8.53Mb
+      - NL_700 |23.18Mb
+      - NL_809 |37.33Mb
+      - NL_768 | 5.96Mb
+      - NL_727 |32.93Mb
+      - NL_791 | 1.60Mb
+      - NL_818 |25.55Mb
+      - NL_698 |36.90Mb
+      - NL_842 |26.46Mb
+      - NL_660 |37.46Mb
+      - NL_752 | 5.39Mb
+      - NL_814 |39.83Mb
+      - US_1341 | 9.70Mb
+      - US_1237 |18.64Mb
+      - US_1236 |21.37Mb
+      - US_1259 | 4.65Mb
+      - ZZ_1934 |13.54Mb
+      - ZZ_1884 |11.62Mb
+      - ZZ_1900 | 9.13Mb
+      - US_2137 | 6.25Mb
+      - ZZ_1887 |11.70Mb
+      - US_1263 |16.67Mb
+      - ZZ_1918 |17.40Mb
+      - ZZ_2007 |10.92Mb
+      - US_1429 | 8.15Mb
+      - US_1213 | 8.60Mb
+      - US_1229 |12.81Mb
+      - ZZ_1896 |11.60Mb
+      - US_2277 | 4.44Mb
+      - ZZ_1930 |11.16Mb
+      - ZZ_1999 | 7.60Mb
+      - ZZ_1901 |11.44Mb
+      - ZZ_1939 |11.94Mb
+      - US_1577 |11.57Mb
+      - RO_879 |19.75Mb
+      - US_1310 |13.05Mb
+      - US_1247 |21.43Mb
+      - US_1327 |14.71Mb
+      - US_1663 |12.52Mb
+      - US_1657 |23.66Mb
+      - US_1570 |20.00Mb
+      - US_1661 |23.84Mb
+      - US_1548 |13.80Mb
+      - US_1409 |14.00Mb
+      - US_1636 |14.52Mb
+      - NL_738 |22.35Mb
+      - FR_311
+      - FR_299 |10.07Mb
+      - FR_333
+      - FR_324 | 9.98Mb
+      - ZZ_1904 |10.73Mb
+      - FR_336 | 9.95Mb
+      - US_1372 |20.01Mb
+      - Relay_🇨🇳CN-🇺🇸US_848
+      - US_1187
+      - US_1355 |25.54Mb
+      - US_1371 |13.75Mb
+      - US_1534 | 4.53Mb
+      - CN_127 |32.58Mb
+      - CN_115 |19.07Mb
+      - US_1307 |10.62Mb
+      - DE_269 |20.77Mb
+      - NL_693 | 9.26Mb
+      - US_1311 |15.01Mb
+      - US_1344 |23.94Mb
+      - US_1430 |14.53Mb
+      - US_1415 |11.56Mb
+      - US_1620 |23.00Mb
+      - US_1629 |24.23Mb
+      - US_1304 |11.38Mb
+      - US_1667 |14.74Mb
+      - US_1622 |22.89Mb
+      - US_1621 |23.78Mb
+      - FR_316
+      - US_1554 |14.34Mb
+      - FR_304
+      - FR_345
+      - US_1222 |21.59Mb
+      - Relay_-🇺🇸US_752 |23.98Mb
+      - FR_328 | 9.28Mb
+      - US_1249
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CN_130
-      - 小螃蟹专用 02
-      - Relay_🇨🇳CN-🇹🇼TW_115
-      - US_1295
-      - CN_157
-      - US_1438
-      - US_692
-      - US_814
-      - US_531
-      - US_546
-      - 香港 01 | 直连
-      - US_745
-      - Relay_🇬🇧GB-🇬🇧GB_257
-      - 美国 01 | 直连
-      - Relay_🇨🇳 CN-🇭🇰HK_126
-      - US_925
-      - ZZ_1087
-      - Relay_🇺🇸US-🇺🇸US_1001
-      - FR_213
-      - Relay_🇬🇧GB-🇬🇧GB_197
-      - Relay_🇺🇸US-🇺🇸US_1308
-      - FR_169
-      - US_796
-      - US_1250
-      - Relay_🇯🇵JP-🇯🇵JP_281
-      - Relay_🇦🇺AU-🇦🇺AU_40
-      - Relay_🇦🇺AU-🇦🇺AU_29
-      - US_570
-      - ZZ_1052
-      - US_1259
-      - Relay_🇺🇸US-🇺🇸US_1002
-      - US_677
-      - US_496
-      - US_771
-      - Relay_🇺🇸US-🇺🇸US_982
-      - US_580
-      - US_1127
-      - Relay_🇺🇸US-🇺🇸US_983
-      - US_635
-      - US_1640
-      - US_704
-      - Relay_🇺🇸US-🇺🇸US_1012
-      - 日本 01 | 直连
-      - Pool_🇳🇱NL_454
-      - Pool_🇳🇱NL_673 | 6.04Mb
-      - Relay_🇺🇸US-🇺🇸US_1008
-      - Relay_🇺🇸US-🇺🇸US_985
-      - 小飞侠专用 01
+      - CN_126 | 5.60Mb
+      - US_2428 | 1.98Mb
+      - NL_853 |23.84Mb
+      - NL_837 |36.20Mb
+      - NL_712 |36.31Mb
+      - NL_687 |37.87Mb
+      - NL_841 |35.88Mb
+      - NL_669 |39.83Mb
+      - NL_726 |27.89Mb
+      - NL_661 |35.73Mb
+      - NL_854 |38.67Mb
+      - NL_697 |37.54Mb
+      - NL_676 |39.67Mb
+      - NL_708 |40.10Mb
+      - NL_816 |38.69Mb
+      - NL_820 |37.54Mb
+      - NL_714 |37.46Mb
+      - NL_797 | 1.94Mb
+      - NL_784 | 4.31Mb
+      - NL_822 |39.93Mb
+      - NL_730 |35.99Mb
+      - ZZ_2009 | 8.74Mb
+      - NO_865 | 9.47Mb
+      - NL_775 |13.07Mb
+      - ZZ_2002 |41.87Mb
+      - NL_773 | 5.04Mb
+      - ZZ_1880 | 2.46Mb
+      - US_1665 |23.71Mb
+      - DE_271 |23.55Mb
+      - NL_765 | 6.23Mb
+      - US_1736 |38.02Mb
+      - US_1640 |13.39Mb
+      - US_1303 |22.26Mb
+      - US_1581 |11.61Mb
+      - US_1315 |20.33Mb
+      - US_1206 |19.74Mb
+      - US_1306 | 7.81Mb
+      - US_1297 |18.97Mb
+      - ZZ_2000 | 2.65Mb
+      - US_1376 |21.81Mb
+      - US_1255 |13.07Mb
+      - US_1266 |11.30Mb
+      - US_1227 |11.99Mb
+      - US_1261 |11.70Mb
+      - US_1201 | 8.36Mb
+      - US_1262 |10.16Mb
+      - US_1685 |10.58Mb
+      - US_1235 |16.55Mb
+      - US_1107 | 9.66Mb
+      - CA_50 |11.72Mb
+      - US_1557 |15.02Mb
+      - Relay_🇨🇳CN-🏁ZZ_851 |18.98Mb
+      - 中国_tg+univstar_27
+      - CN_846
+      - CN_842
+      - CN_88 | 3.95Mb
+      - CN_105
+      - CN_832
+      - CN_840
+      - CN_89 | 2.15Mb
+      - CN_112
+      - CN_122
+      - CN_834
+      - CN_101
+      - CN_125 | 7.36Mb
+      - CN_837
+      - CN_85 | 8.54Mb
+      - _01 | 2.98Mb
+      - CN_98
+      - CN_94
+      - CN_95
+      - CN_110
+      - CN_830
+      - CN_99 | 1.92Mb
+      - CN_100 | 3.88Mb
+      - CN_108
+      - CN_104
+      - CN_841
+      - CN_109 | 3.53Mb
+      - CN_121 | 7.52Mb
+      - CN_838
+      - CN_117 | 8.53Mb
+      - NL_700 |23.18Mb
+      - NL_809 |37.33Mb
+      - NL_768 | 5.96Mb
+      - NL_727 |32.93Mb
+      - NL_791 | 1.60Mb
+      - NL_818 |25.55Mb
+      - NL_698 |36.90Mb
+      - NL_842 |26.46Mb
+      - NL_660 |37.46Mb
+      - NL_752 | 5.39Mb
+      - NL_814 |39.83Mb
+      - US_1341 | 9.70Mb
+      - US_1237 |18.64Mb
+      - US_1236 |21.37Mb
+      - US_1259 | 4.65Mb
+      - ZZ_1934 |13.54Mb
+      - ZZ_1884 |11.62Mb
+      - ZZ_1900 | 9.13Mb
+      - US_2137 | 6.25Mb
+      - ZZ_1887 |11.70Mb
+      - US_1263 |16.67Mb
+      - ZZ_1918 |17.40Mb
+      - ZZ_2007 |10.92Mb
+      - US_1429 | 8.15Mb
+      - US_1213 | 8.60Mb
+      - US_1229 |12.81Mb
+      - ZZ_1896 |11.60Mb
+      - US_2277 | 4.44Mb
+      - ZZ_1930 |11.16Mb
+      - ZZ_1999 | 7.60Mb
+      - ZZ_1901 |11.44Mb
+      - ZZ_1939 |11.94Mb
+      - US_1577 |11.57Mb
+      - RO_879 |19.75Mb
+      - US_1310 |13.05Mb
+      - US_1247 |21.43Mb
+      - US_1327 |14.71Mb
+      - US_1663 |12.52Mb
+      - US_1657 |23.66Mb
+      - US_1570 |20.00Mb
+      - US_1661 |23.84Mb
+      - US_1548 |13.80Mb
+      - US_1409 |14.00Mb
+      - US_1636 |14.52Mb
+      - NL_738 |22.35Mb
+      - FR_311
+      - FR_299 |10.07Mb
+      - FR_333
+      - FR_324 | 9.98Mb
+      - ZZ_1904 |10.73Mb
+      - FR_336 | 9.95Mb
+      - US_1372 |20.01Mb
+      - Relay_🇨🇳CN-🇺🇸US_848
+      - US_1187
+      - US_1355 |25.54Mb
+      - US_1371 |13.75Mb
+      - US_1534 | 4.53Mb
+      - CN_127 |32.58Mb
+      - CN_115 |19.07Mb
+      - US_1307 |10.62Mb
+      - DE_269 |20.77Mb
+      - NL_693 | 9.26Mb
+      - US_1311 |15.01Mb
+      - US_1344 |23.94Mb
+      - US_1430 |14.53Mb
+      - US_1415 |11.56Mb
+      - US_1620 |23.00Mb
+      - US_1629 |24.23Mb
+      - US_1304 |11.38Mb
+      - US_1667 |14.74Mb
+      - US_1622 |22.89Mb
+      - US_1621 |23.78Mb
+      - FR_316
+      - US_1554 |14.34Mb
+      - FR_304
+      - FR_345
+      - US_1222 |21.59Mb
+      - Relay_-🇺🇸US_752 |23.98Mb
+      - FR_328 | 9.28Mb
+      - US_1249
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN_130
-      - 小螃蟹专用 02
-      - Relay_🇨🇳CN-🇹🇼TW_115
-      - US_1295
-      - CN_157
-      - US_1438
-      - US_692
-      - US_814
-      - US_531
-      - US_546
-      - 香港 01 | 直连
-      - US_745
-      - Relay_🇬🇧GB-🇬🇧GB_257
-      - 美国 01 | 直连
-      - Relay_🇨🇳 CN-🇭🇰HK_126
-      - US_925
-      - ZZ_1087
-      - Relay_🇺🇸US-🇺🇸US_1001
-      - FR_213
-      - Relay_🇬🇧GB-🇬🇧GB_197
-      - Relay_🇺🇸US-🇺🇸US_1308
-      - FR_169
-      - US_796
-      - US_1250
-      - Relay_🇯🇵JP-🇯🇵JP_281
-      - Relay_🇦🇺AU-🇦🇺AU_40
-      - Relay_🇦🇺AU-🇦🇺AU_29
-      - US_570
-      - ZZ_1052
-      - US_1259
-      - Relay_🇺🇸US-🇺🇸US_1002
-      - US_677
-      - US_496
-      - US_771
-      - Relay_🇺🇸US-🇺🇸US_982
-      - US_580
-      - US_1127
-      - Relay_🇺🇸US-🇺🇸US_983
-      - US_635
-      - US_1640
-      - US_704
-      - Relay_🇺🇸US-🇺🇸US_1012
-      - 日本 01 | 直连
-      - Pool_🇳🇱NL_454
-      - Pool_🇳🇱NL_673 | 6.04Mb
-      - Relay_🇺🇸US-🇺🇸US_1008
-      - Relay_🇺🇸US-🇺🇸US_985
-      - 小飞侠专用 01
+      - CN_126 | 5.60Mb
+      - US_2428 | 1.98Mb
+      - NL_853 |23.84Mb
+      - NL_837 |36.20Mb
+      - NL_712 |36.31Mb
+      - NL_687 |37.87Mb
+      - NL_841 |35.88Mb
+      - NL_669 |39.83Mb
+      - NL_726 |27.89Mb
+      - NL_661 |35.73Mb
+      - NL_854 |38.67Mb
+      - NL_697 |37.54Mb
+      - NL_676 |39.67Mb
+      - NL_708 |40.10Mb
+      - NL_816 |38.69Mb
+      - NL_820 |37.54Mb
+      - NL_714 |37.46Mb
+      - NL_797 | 1.94Mb
+      - NL_784 | 4.31Mb
+      - NL_822 |39.93Mb
+      - NL_730 |35.99Mb
+      - ZZ_2009 | 8.74Mb
+      - NO_865 | 9.47Mb
+      - NL_775 |13.07Mb
+      - ZZ_2002 |41.87Mb
+      - NL_773 | 5.04Mb
+      - ZZ_1880 | 2.46Mb
+      - US_1665 |23.71Mb
+      - DE_271 |23.55Mb
+      - NL_765 | 6.23Mb
+      - US_1736 |38.02Mb
+      - US_1640 |13.39Mb
+      - US_1303 |22.26Mb
+      - US_1581 |11.61Mb
+      - US_1315 |20.33Mb
+      - US_1206 |19.74Mb
+      - US_1306 | 7.81Mb
+      - US_1297 |18.97Mb
+      - ZZ_2000 | 2.65Mb
+      - US_1376 |21.81Mb
+      - US_1255 |13.07Mb
+      - US_1266 |11.30Mb
+      - US_1227 |11.99Mb
+      - US_1261 |11.70Mb
+      - US_1201 | 8.36Mb
+      - US_1262 |10.16Mb
+      - US_1685 |10.58Mb
+      - US_1235 |16.55Mb
+      - US_1107 | 9.66Mb
+      - CA_50 |11.72Mb
+      - US_1557 |15.02Mb
+      - Relay_🇨🇳CN-🏁ZZ_851 |18.98Mb
+      - 中国_tg+univstar_27
+      - CN_846
+      - CN_842
+      - CN_88 | 3.95Mb
+      - CN_105
+      - CN_832
+      - CN_840
+      - CN_89 | 2.15Mb
+      - CN_112
+      - CN_122
+      - CN_834
+      - CN_101
+      - CN_125 | 7.36Mb
+      - CN_837
+      - CN_85 | 8.54Mb
+      - _01 | 2.98Mb
+      - CN_98
+      - CN_94
+      - CN_95
+      - CN_110
+      - CN_830
+      - CN_99 | 1.92Mb
+      - CN_100 | 3.88Mb
+      - CN_108
+      - CN_104
+      - CN_841
+      - CN_109 | 3.53Mb
+      - CN_121 | 7.52Mb
+      - CN_838
+      - CN_117 | 8.53Mb
+      - NL_700 |23.18Mb
+      - NL_809 |37.33Mb
+      - NL_768 | 5.96Mb
+      - NL_727 |32.93Mb
+      - NL_791 | 1.60Mb
+      - NL_818 |25.55Mb
+      - NL_698 |36.90Mb
+      - NL_842 |26.46Mb
+      - NL_660 |37.46Mb
+      - NL_752 | 5.39Mb
+      - NL_814 |39.83Mb
+      - US_1341 | 9.70Mb
+      - US_1237 |18.64Mb
+      - US_1236 |21.37Mb
+      - US_1259 | 4.65Mb
+      - ZZ_1934 |13.54Mb
+      - ZZ_1884 |11.62Mb
+      - ZZ_1900 | 9.13Mb
+      - US_2137 | 6.25Mb
+      - ZZ_1887 |11.70Mb
+      - US_1263 |16.67Mb
+      - ZZ_1918 |17.40Mb
+      - ZZ_2007 |10.92Mb
+      - US_1429 | 8.15Mb
+      - US_1213 | 8.60Mb
+      - US_1229 |12.81Mb
+      - ZZ_1896 |11.60Mb
+      - US_2277 | 4.44Mb
+      - ZZ_1930 |11.16Mb
+      - ZZ_1999 | 7.60Mb
+      - ZZ_1901 |11.44Mb
+      - ZZ_1939 |11.94Mb
+      - US_1577 |11.57Mb
+      - RO_879 |19.75Mb
+      - US_1310 |13.05Mb
+      - US_1247 |21.43Mb
+      - US_1327 |14.71Mb
+      - US_1663 |12.52Mb
+      - US_1657 |23.66Mb
+      - US_1570 |20.00Mb
+      - US_1661 |23.84Mb
+      - US_1548 |13.80Mb
+      - US_1409 |14.00Mb
+      - US_1636 |14.52Mb
+      - NL_738 |22.35Mb
+      - FR_311
+      - FR_299 |10.07Mb
+      - FR_333
+      - FR_324 | 9.98Mb
+      - ZZ_1904 |10.73Mb
+      - FR_336 | 9.95Mb
+      - US_1372 |20.01Mb
+      - Relay_🇨🇳CN-🇺🇸US_848
+      - US_1187
+      - US_1355 |25.54Mb
+      - US_1371 |13.75Mb
+      - US_1534 | 4.53Mb
+      - CN_127 |32.58Mb
+      - CN_115 |19.07Mb
+      - US_1307 |10.62Mb
+      - DE_269 |20.77Mb
+      - NL_693 | 9.26Mb
+      - US_1311 |15.01Mb
+      - US_1344 |23.94Mb
+      - US_1430 |14.53Mb
+      - US_1415 |11.56Mb
+      - US_1620 |23.00Mb
+      - US_1629 |24.23Mb
+      - US_1304 |11.38Mb
+      - US_1667 |14.74Mb
+      - US_1622 |22.89Mb
+      - US_1621 |23.78Mb
+      - FR_316
+      - US_1554 |14.34Mb
+      - FR_304
+      - FR_345
+      - US_1222 |21.59Mb
+      - Relay_-🇺🇸US_752 |23.98Mb
+      - FR_328 | 9.28Mb
+      - US_1249
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -461,54 +1372,168 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN_130
-      - 小螃蟹专用 02
-      - Relay_🇨🇳CN-🇹🇼TW_115
-      - US_1295
-      - CN_157
-      - US_1438
-      - US_692
-      - US_814
-      - US_531
-      - US_546
-      - 香港 01 | 直连
-      - US_745
-      - Relay_🇬🇧GB-🇬🇧GB_257
-      - 美国 01 | 直连
-      - Relay_🇨🇳 CN-🇭🇰HK_126
-      - US_925
-      - ZZ_1087
-      - Relay_🇺🇸US-🇺🇸US_1001
-      - FR_213
-      - Relay_🇬🇧GB-🇬🇧GB_197
-      - Relay_🇺🇸US-🇺🇸US_1308
-      - FR_169
-      - US_796
-      - US_1250
-      - Relay_🇯🇵JP-🇯🇵JP_281
-      - Relay_🇦🇺AU-🇦🇺AU_40
-      - Relay_🇦🇺AU-🇦🇺AU_29
-      - US_570
-      - ZZ_1052
-      - US_1259
-      - Relay_🇺🇸US-🇺🇸US_1002
-      - US_677
-      - US_496
-      - US_771
-      - Relay_🇺🇸US-🇺🇸US_982
-      - US_580
-      - US_1127
-      - Relay_🇺🇸US-🇺🇸US_983
-      - US_635
-      - US_1640
-      - US_704
-      - Relay_🇺🇸US-🇺🇸US_1012
-      - 日本 01 | 直连
-      - Pool_🇳🇱NL_454
-      - Pool_🇳🇱NL_673 | 6.04Mb
-      - Relay_🇺🇸US-🇺🇸US_1008
-      - Relay_🇺🇸US-🇺🇸US_985
-      - 小飞侠专用 01
+      - CN_126 | 5.60Mb
+      - US_2428 | 1.98Mb
+      - NL_853 |23.84Mb
+      - NL_837 |36.20Mb
+      - NL_712 |36.31Mb
+      - NL_687 |37.87Mb
+      - NL_841 |35.88Mb
+      - NL_669 |39.83Mb
+      - NL_726 |27.89Mb
+      - NL_661 |35.73Mb
+      - NL_854 |38.67Mb
+      - NL_697 |37.54Mb
+      - NL_676 |39.67Mb
+      - NL_708 |40.10Mb
+      - NL_816 |38.69Mb
+      - NL_820 |37.54Mb
+      - NL_714 |37.46Mb
+      - NL_797 | 1.94Mb
+      - NL_784 | 4.31Mb
+      - NL_822 |39.93Mb
+      - NL_730 |35.99Mb
+      - ZZ_2009 | 8.74Mb
+      - NO_865 | 9.47Mb
+      - NL_775 |13.07Mb
+      - ZZ_2002 |41.87Mb
+      - NL_773 | 5.04Mb
+      - ZZ_1880 | 2.46Mb
+      - US_1665 |23.71Mb
+      - DE_271 |23.55Mb
+      - NL_765 | 6.23Mb
+      - US_1736 |38.02Mb
+      - US_1640 |13.39Mb
+      - US_1303 |22.26Mb
+      - US_1581 |11.61Mb
+      - US_1315 |20.33Mb
+      - US_1206 |19.74Mb
+      - US_1306 | 7.81Mb
+      - US_1297 |18.97Mb
+      - ZZ_2000 | 2.65Mb
+      - US_1376 |21.81Mb
+      - US_1255 |13.07Mb
+      - US_1266 |11.30Mb
+      - US_1227 |11.99Mb
+      - US_1261 |11.70Mb
+      - US_1201 | 8.36Mb
+      - US_1262 |10.16Mb
+      - US_1685 |10.58Mb
+      - US_1235 |16.55Mb
+      - US_1107 | 9.66Mb
+      - CA_50 |11.72Mb
+      - US_1557 |15.02Mb
+      - Relay_🇨🇳CN-🏁ZZ_851 |18.98Mb
+      - 中国_tg+univstar_27
+      - CN_846
+      - CN_842
+      - CN_88 | 3.95Mb
+      - CN_105
+      - CN_832
+      - CN_840
+      - CN_89 | 2.15Mb
+      - CN_112
+      - CN_122
+      - CN_834
+      - CN_101
+      - CN_125 | 7.36Mb
+      - CN_837
+      - CN_85 | 8.54Mb
+      - _01 | 2.98Mb
+      - CN_98
+      - CN_94
+      - CN_95
+      - CN_110
+      - CN_830
+      - CN_99 | 1.92Mb
+      - CN_100 | 3.88Mb
+      - CN_108
+      - CN_104
+      - CN_841
+      - CN_109 | 3.53Mb
+      - CN_121 | 7.52Mb
+      - CN_838
+      - CN_117 | 8.53Mb
+      - NL_700 |23.18Mb
+      - NL_809 |37.33Mb
+      - NL_768 | 5.96Mb
+      - NL_727 |32.93Mb
+      - NL_791 | 1.60Mb
+      - NL_818 |25.55Mb
+      - NL_698 |36.90Mb
+      - NL_842 |26.46Mb
+      - NL_660 |37.46Mb
+      - NL_752 | 5.39Mb
+      - NL_814 |39.83Mb
+      - US_1341 | 9.70Mb
+      - US_1237 |18.64Mb
+      - US_1236 |21.37Mb
+      - US_1259 | 4.65Mb
+      - ZZ_1934 |13.54Mb
+      - ZZ_1884 |11.62Mb
+      - ZZ_1900 | 9.13Mb
+      - US_2137 | 6.25Mb
+      - ZZ_1887 |11.70Mb
+      - US_1263 |16.67Mb
+      - ZZ_1918 |17.40Mb
+      - ZZ_2007 |10.92Mb
+      - US_1429 | 8.15Mb
+      - US_1213 | 8.60Mb
+      - US_1229 |12.81Mb
+      - ZZ_1896 |11.60Mb
+      - US_2277 | 4.44Mb
+      - ZZ_1930 |11.16Mb
+      - ZZ_1999 | 7.60Mb
+      - ZZ_1901 |11.44Mb
+      - ZZ_1939 |11.94Mb
+      - US_1577 |11.57Mb
+      - RO_879 |19.75Mb
+      - US_1310 |13.05Mb
+      - US_1247 |21.43Mb
+      - US_1327 |14.71Mb
+      - US_1663 |12.52Mb
+      - US_1657 |23.66Mb
+      - US_1570 |20.00Mb
+      - US_1661 |23.84Mb
+      - US_1548 |13.80Mb
+      - US_1409 |14.00Mb
+      - US_1636 |14.52Mb
+      - NL_738 |22.35Mb
+      - FR_311
+      - FR_299 |10.07Mb
+      - FR_333
+      - FR_324 | 9.98Mb
+      - ZZ_1904 |10.73Mb
+      - FR_336 | 9.95Mb
+      - US_1372 |20.01Mb
+      - Relay_🇨🇳CN-🇺🇸US_848
+      - US_1187
+      - US_1355 |25.54Mb
+      - US_1371 |13.75Mb
+      - US_1534 | 4.53Mb
+      - CN_127 |32.58Mb
+      - CN_115 |19.07Mb
+      - US_1307 |10.62Mb
+      - DE_269 |20.77Mb
+      - NL_693 | 9.26Mb
+      - US_1311 |15.01Mb
+      - US_1344 |23.94Mb
+      - US_1430 |14.53Mb
+      - US_1415 |11.56Mb
+      - US_1620 |23.00Mb
+      - US_1629 |24.23Mb
+      - US_1304 |11.38Mb
+      - US_1667 |14.74Mb
+      - US_1622 |22.89Mb
+      - US_1621 |23.78Mb
+      - FR_316
+      - US_1554 |14.34Mb
+      - FR_304
+      - FR_345
+      - US_1222 |21.59Mb
+      - Relay_-🇺🇸US_752 |23.98Mb
+      - FR_328 | 9.28Mb
+      - US_1249
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
